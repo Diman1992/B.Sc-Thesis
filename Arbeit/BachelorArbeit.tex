@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper,twoside]{report}
+\input{Tex/longheader.tex}
+\input{Tex/global}
+\begin{document}
+\pagenumbering{Roman}
+
+% Anmerkung: Die Seitenraender wurden asymmetrisch gewaehlt,
+%            damit genug Platz fuer eine Klemmbindung da ist.
+%            Da neue Kapitel auf der rechten Seite (ungerade
+%            Seitennummer) beginnen sollten, muss ggf. am Ende
+%            des vorhergehenden Kapitels eine Leerseite
+%            eingefuegt werden:
+%
+%            \newpage
+%            \thispagestyle{empty}
+%            \ \\
+%            \newpage
+%
+%            Die Seitenraender koennen aber auch in der Datei Tex/global.tex
+%            veraendert werden.
+
+% >>> Titelseite <<<
+
+\newcommand{\thetitle}{Formfaktoren des semileptonischen $D \rightarrow K l \bar \nu$ Zerfalls}
+
+\thispagestyle{empty}
+\begin{center}
+\Huge\textbf{\thetitle}
+\vfill
+\begin{fmffile}{s2imple}
+\begin{fmfgraph}(140,125)
+% Note that the size is given in normal parentheses
+% instead of curly brackets.
+% Define external vertices from bottom to top
+\fmfleft{i1,i2}
+\fmfright{o1,o2}
+\fmf{fermion,label = $u$}{i1,v1,o1}
+\fmf{fermion}{i2,v2,o2}
+\fmf{photon}{v1,o2}
+\end{fmfgraph}
+\end{fmffile}
+\vfill
+\Large
+Bachelorarbeit \\ zur Erlangung des akademischen Grades \\ Bachelor of Science \\
+\vspace{20pt}
+\normalsize
+vorgelegt von \\[5pt]
+{\Large Dimitrios Skodras} \\[5pt]
+geboren in Aschaffenburg \\
+\vspace{20pt}
+Lehrstuhl für Theoretische Physik IV \\ Fakultät Physik \\
+Technische Universität Dortmund \\ 2014
+\end{center}
+\newpage
+
+% >>> Gutachterseite <<<
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{tabbing}
+1. Gutachter : \=\kill
+1. Gutachter : \>Prof. Dr. Musterfrau \\[11pt]
+2. Gutachter : \>Prof. Dr. Mustermann \\[11pt]
+\end{tabbing}
+\vspace{11pt}
+Datum des Einreichens der Arbeit: TT.\,Monat\,JJJJ
+\newpage
+
+% >>> Kurzfassung/Abstract <<<
+
+\thispagestyle{empty}
+%Kuzfassung
+\section*{Kurzfassung}
+Hier folgt eine kurze Zusammenfassung des Inhalts und der Ergebnisse der Arbeit in deutscher Sprache.\\
+\ \\
+
+\newpage
+
+% >>> Hauptteil <<<
+
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+\tableofcontents\newpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures\newpage
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables\newpage
+
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\chapter{Einleitung}
+
+Hier folgt eine kurze Einleitung in die
+
+\chapter{Theoretische Grundlagen}
+\section{Stadardmodell der Elementarteilchenphysik}
+ggf. über gruppen
+\subsection{Elementarer Teilchenzoo}
+elementare Teilchen
+d-meson, k-meson
+\subsection{Quantenchromodynamik}
+parität
+
+\subsection{Elektroschwache Wechselwirkung}
+V-A-Theorie
+vierstromwechselwirkung
+ckm-matrix
+
+\section{Relativistische Kinematik}
+SRT
+lorentzinvarianz
+\section{Parametrisierung von Formfaktoren}
+parametrisierungen nennen und auf den speziellen näher eingehen
+AP1 + BP2
+z-expansion
+
+\cite{b:feynman}
+\chapter{Messungen}
+\section{Energiebereich von $q^2$}
+\section{Ermittlung der Formfaktoren}
+
+
+\chapter{Zusammenfassung und Ausblick}
+
+Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen diskutiert werden. 
+
+
+% >>> Anhang <<<
+
+\begin{appendix}
+%\input{Kapitel/Anhang}
+\end{appendix}
+
+% >>> Literaturverzeichnis <<<
+
+\renewcommand{\bibname}{Quellenverzeichnis}
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{unsrt} 
+\bibliography{BachelorArbeit}
+
+\newpage
+\thispagestyle{empty}
+\ \\
+
+% >>> Erklaerung <<<
+
+\input{Kapitel/Erklaerung}
+
+\end{document}

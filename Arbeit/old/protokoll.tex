@@ -1,0 +1,83 @@
+% ========================================
+%	Header einbinden
+% ========================================
+
+\input{Tex/longheader.tex}
+\input{Tex/global}
+
+% ========================================
+%	Angaben für das Titelblatt
+% ========================================
+
+\title{Versuch 61 - Der HeNe-LASER\\				% Titel des Versuchs 
+\large TU Dortmund, Fakultät Physik\\ 
+\normalsize Fortgeschrittenen-Praktikum}
+
+\author{Jan Adam\\			% Name Praktikumspartner A
+{\small \href{jan.adam@tu-dortmund.de}{jan.adam@tu-dortmund.de}}	% Erzeugt interaktiven einen Link
+\and						% um einen weiteren Author hinzuzfügen
+Dimitrios Skodras\\					% Name Praktikumspartner B
+{\small \href{dimitrios.skodras@tu-dortmund.de}{dimitrios.skodras@tu-dortmund.de}}		% Erzeugt interaktiven einen Link
+}
+\date{21. Februar 2014}				% Das Datum der Versuchsdurchführung
+
+% ========================================
+%	Das Dokument beginnt
+% ========================================
+
+\begin{document}
+\pagenumbering{Roman}
+
+% ========================================
+%	Titelblatt erzeugen
+% ========================================
+
+\maketitle					% Jetzt wird die Titelseite erzeugt
+\thispagestyle{empty} 				% Weder Kopfzeile noch Fußzeile
+
+% ========================================
+%	Der Vorspann
+% ========================================
+
+%\newpage					% Wenn Verzeichnisse auf einer neuen Seite beginnen sollen
+%\pagestyle{empty}				% Weder Kopf- noch Fußzeile für Verzeichnisse
+
+\tableofcontents
+
+%\newpage					% eine neue Seite
+%\thispagestyle{empty}				% Weder Kopf- noch Fußzeile für Verzeichnisse
+%\listoffigures					% Abbildungsverzeichnis
+
+%\newpage					% eine neue Seite
+%\thispagestyle{empty}				% Weder Kopf- noch Fußzeile für Verzeichnisse
+%\listoftables					% Tabellenverzeichnis
+\newpage					% eine neue Seite
+
+
+% ========================================
+%	Kapitel
+% ========================================
+
+%\section{Einleitung}				% Bei Bedarf
+
+\section{Theorie}
+
+\section{Durchführung}
+
+\section{Auswertung}
+
+\parskip 340pt
+\Large{Literatur}\\\\
+
+% ========================================
+%	Literaturverzeichnis
+% ========================================
+
+%\bibliographystyle{plainnat}			% Bibliographie-Style auswählen
+%\bibliography{BIBDATEI}			% Literaturverzeichnis
+
+% ========================================
+%	Das Dokument endent
+% ========================================
+
+\end{document}
