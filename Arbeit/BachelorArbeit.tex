@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper,twoside]{report}
 \input{Tex/longheader.tex}
 \input{Tex/global}
+ \setlength{\parskip}{1.5ex}
 \begin{document}
 \pagenumbering{Roman}
 
@@ -27,18 +28,9 @@
 \begin{center}
 \Huge\textbf{\thetitle}
 \vfill
-\begin{fmffile}{s2imple}
-\begin{fmfgraph}(140,125)
 % Note that the size is given in normal parentheses
 % instead of curly brackets.
 % Define external vertices from bottom to top
-\fmfleft{i1,i2}
-\fmfright{o1,o2}
-\fmf{fermion,label = $u$}{i1,v1,o1}
-\fmf{fermion}{i2,v2,o2}
-\fmf{photon}{v1,o2}
-\end{fmfgraph}
-\end{fmffile}
 \vfill
 \Large
 Bachelorarbeit \\ zur Erlangung des akademischen Grades \\ Bachelor of Science \\
@@ -90,25 +82,91 @@ Hier folgt eine kurze Zusammenfassung des Inhalts und der Ergebnisse der Arbeit 
 
 \chapter{Einleitung}
 
-Hier folgt eine kurze Einleitung in die
 
-\chapter{Theoretische Grundlagen}
+\chapter{Theorie}
+Ehe die Matrixelemente errechnet werden, ist es erforderlich, Kenntnis von beteiligten Zusammenhängen zu haben. Zum einen werden die beim Zerfall beteiligten
+Teilchen und ihre fundamentalen Wechselwirkungen beleuchtet. Dazu gehören die D- und K-Mesonen mit Quarks als Konstituenten, sowie den Leptonen als Teilchen
+und die schwache Wechselwirkung 
+Da es sich um sehr kleine Teilchen handelt ist eine Betrachtung der Quantenmechanik erforderlich. 
+Da sie zusätzlich leicht und daher hinsichtlich der Lichtgeschwindigkeit schnell sind, bleiben Gesetzmäßigkeiten der relativistische Kinematik nicht aus.
+Zum anderen werden allgemein Formfaktorparametrisierungen und im speziellen die Reihenentwicklung thematisiert.
+\section{Voraussetzungen moderner Physik}
+Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aufgrund ihrer Richtigkeit und Exaktheit die Voraussetzungen an moderne 
+Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint, sowie ihre Vereinigung, die relativistische
+Quantenmechanik gemeint. Davon sind im Rahmen dieser Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
+von Bedeutung.
+
+\subsection{Relativistische Kinematik}
+Die SRT stellt die fundamentale Forderung, dass die Form der Naturgesetze unabhängig vom Inertialsystem gleich ist. Mit der Lichtgeschwindigkeit $c$ als
+größte vorkommende Geschwindigkeit ist sie ebenfalls in allen Inertialsystemen gleich groß. Die relativistische Energie-Impuls Beziehung 
+$E^2 = \left(mc^2\right)^2 + \left(\vec pc\right)^2$ beschreibt einen allgemeinen Zusammenhang zwischen der Energie $E$, der Masse $m$ und dem Impuls $\vec p$.
+In der Hochenergiephysik ($E_{\text{CMS}} \approx 10^4$ GeV) gilt der hochrelativistische Grenzfall, bei dem Energie hauptsächlich durch den Impuls bestimmt wird.
+In natürlichen Einheiten wird $c = 1$ gesetzt, was zu $E^2 = \left|p\right|^2$ führt.
+
+Zur Beschreibung der Bewegung von relativistischen Teilchen wird wegen der Energie-Impuls-Beziehung und der Verknüpfung von Raum und Zeit ($x = t$) das Konzept
+der Vierer-Vektoren eingeführt. Es gestaltet sich so, dass die Zeit als 0. Komponente des Raums und die Energie als 0. Komponente des Impulses angesehen werden
+kann, was die 4-Dimensionalität zeigt \cite{RelKin}.
+\begin{align}
+ x^\mu &= (t,\,x,\,y,\,z)^\mu \hspace{2cm} \text{Vierer-Ort}\\
+ p^\mu &= (E,\,p_x,\,p_y,\,p_z)^\mu \hspace{1.35cm} \text{Vierer-Impuls}
+\end{align}
+Der Index $\mu$ kann ganzzahlige Werte zwischen 0 und 4 annehmen und steht für die jeweilige Komponente des Vektors. Im Gegensatz zu euklidischen Räumen 
+kann ein Skalarprodukt zweier Vierer-Vektoren nur dann beschrieben werden, wenn einer kovariant (Index unten) und der andere kontravariant (Index oben) ist.
+Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lorentz-Transformationen konstant lässt
+\begin{equation}
+  p^2 = p^\mu \eta_{\mu \nu} p^\nu = p^\mu p_\mu = E^2 - \vec p^2 = m^2,
+\end{equation}
+was wieder die relativistische Energie-Impuls-Beziehung ist. Die Einsteinsche Summenkonvention wird hierbei angewandt.
+
+\subsection{Dirac-Gleichung}
+Aus der nicht-relativistischen Schrödinger-Gleichung als quantenmechanische Wellengleichung ergibt sich durch erste Quantisierung eine Ersetzung von Energie und
+Impuls durch partielle Differentialoperatoren
+\begin{align*}
+ E \rightarrow \text{i}\hbar\partial_t, \quad p \rightarrow -\text{i}\hbar\nabla.
+\end{align*}
+Da die Schrödinger-Gleichung nicht lorentzinvariant ist, sind andere Ansätze durchgeführt worden, die der zuvor genannten Energie-Impuls-Beziehung $p^\mu p_\mu = m^2$
+genügen. Die Klein-Gordon-Gleichung für spinlose Teilchen, die aus ihr direkt folgt, ist zwar relativistisch korrekt, weist jedoch keine positiv definite 
+Wahrscheinlichkeitsdichte auf. Die Dirac-Gleichung für Spin$\frac12$-Teilchen ist ebenfalls unter Lorentztransformationen invariant und besitzt nun
+zusätzlich eine positiv definite Wahrscheinlichkeitsdichte, was eine Interpretation ihrer Lösungen als Wahrscheinlichkeitsamplitude zulässt. Mit $\hbar = 1$
+lautet die Dirac-Gleichung
+\begin{equation}
+ (\slashed{p} - m )\psi(x) = 0,
+\end{equation}
+mit $\psi(x)$ als Wellenfunktion und $\slashed{p}$ als Impulsoperator in der Feynman-Slash-Notation
+\begin{equation}
+ \slashed{A} := \gamma^\mu A_\mu.
+\end{equation}
+
+
+
+\subsection{Fermis Goldene Regel}
+
 \section{Stadardmodell der Elementarteilchenphysik}
-ggf. über gruppen
-\subsection{Elementarer Teilchenzoo}
+Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichsymmetrien, die diese beschreiben. Die sichtbare Materie wird 
+in drei Generationen von fundamentalen Fermionen zusammengesetzt, deren Attribute in Tabelle \ref{tab_particlezoo} dargestellt sind. 
+
+\begin{table}[H]
+\begin{tabular}{c|cccc|ccc} \toprule \toprule
+ Generation & & $m$ in MeV & $\tau$ in s & $q$ in e & & $m$ in MeV & $q$ in e\\
+ \midrule
+  1 & e & 0,511 & stabil & -1 & u & 1 & +$\frac23$\\
+\\\bottomrule
+ \end{tabular}
+\caption{elementarer Teilchenzoo \cite{SM}}
+\label{tab_particlezoo}
+\end{table}
+
+
+\subsection{Teilcheninhalt}
 elementare Teilchen
 d-meson, k-meson
-\subsection{Quantenchromodynamik}
+\subsection{Schwache Wechselwirkung}
 parität
-
-\subsection{Elektroschwache Wechselwirkung}
 V-A-Theorie
 vierstromwechselwirkung
 ckm-matrix
 
-\section{Relativistische Kinematik}
-SRT
-lorentzinvarianz
+
 \section{Parametrisierung von Formfaktoren}
 parametrisierungen nennen und auf den speziellen näher eingehen
 AP1 + BP2
@@ -135,8 +193,15 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
 
 \renewcommand{\bibname}{Quellenverzeichnis}
 \addcontentsline{toc}{chapter}{\bibname}
-\bibliographystyle{unsrt} 
-\bibliography{BachelorArbeit}
+%\bibliographystyle{unsrt} 
+%\bibliography{BachelorArbeit}
+\begin{thebibliography}{xxx}
+ \bibitem[1]{RelKin}M. zur Nedden ``Detektoren der Elementarteilchenphysik'' \href{http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph/dettph_cont.pdf}{http://www-hera-b.desy.de/people/nedden/lectures/05\_06/dettph/dettph\_cont.pdf}, 2006
+ \bibitem[2]{DissForm}N. Offen ``B-Zerfallsformfaktoren aus QCD-Summenregeln''\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
+ \bibitem[3]{SM} W.N. Cottingham, D.A. Greenwood, ``An Introduction to the Standard Model of Particle Physics'' ISBN-13 978-0-511-27377-3, 2nd Edition, 2007
+ \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
+\end{thebibliography}
+
 
 \newpage
 \thispagestyle{empty}

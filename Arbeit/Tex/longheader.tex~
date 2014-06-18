@@ -18,13 +18,10 @@
 \usepackage{threeparttable}
 \usepackage{footnote}
 \usepackage{feynmf}
-\usepackage{bbm}
-\usepackage{slashed}
 
 \newfloat{formel}{htbp}{for}
 \floatname{formel}{Formel}
 
-\setstretch {1.433}
 
 \usepackage{longtable}
 
@@ -41,7 +38,7 @@
 %\usepackage{showkeys}
 
 % Abstand zwischen zwei Abs�zen nach DIN (1,5 Zeilen)
-% \setlength{\parskip}{1.5ex}
+ \setlength{\parskip}{1.5ex}
 
 % Einrckung am Anfang eines neuen Absatzes nach DIN (keine)
 %\setlength{\parindent}{0pt}

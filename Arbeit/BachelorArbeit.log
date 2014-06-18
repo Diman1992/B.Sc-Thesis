@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  26 MAY 2014 01:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  18 JUN 2014 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,6 +406,16 @@ Package: feynmf 1996/12/02 v1.08 LaTeX/Metafont Feynman Diagram Package (ohl)
 \c@fmfgraph=\count105
 \grep@infile=\read1
 \grep@outfile=\write4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
 )
 \@float@every@formel=\toks28
 \c@formel=\count106
@@ -854,26 +864,26 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 (./BachelorArbeit.aux)
 \openout1 = `BachelorArbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatflt package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -903,7 +913,7 @@ Option `amssymb' provided!
 \everyMPtoPDFconversion=\toks34
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 4.
+Package hyperref Info: Link coloring OFF on input line 5.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -913,64 +923,60 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count145
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
 (./BachelorArbeit.out) (./BachelorArbeit.out)
 \@outlinefile=\write6
 \openout6 = `BachelorArbeit.out'.
 
-LaTeX Info: Redefining \Ref on input line 4.
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Info: Redefining \Ref on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-feynmf: File s2imple.tfm found.
-feynmf: Nevertheless, if the picture has changed, reprocess s2imple.mf.
-feynmf: If dimension have changed, reprocess s2imple.mf and BachelorArbeit.tex.
-
-\openout3 = `s2imple.mf'.
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 [3] (./BachelorArbeit.toc
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 6.
-)
+ [4
+
+])
 \tf@toc=\write7
 \openout7 = `BachelorArbeit.toc'.
 
- [4
 
-] (./BachelorArbeit.lof)
+Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+
+
+[5] (./BachelorArbeit.lof)
 \tf@lof=\write8
 \openout8 = `BachelorArbeit.lof'.
 
- [5
+ [6
 
 ] (./BachelorArbeit.lot)
 \tf@lot=\write9
 \openout9 = `BachelorArbeit.lot'.
 
- [6
+ [7
 
 ]
 Kapitel 1.
@@ -979,40 +985,64 @@ Kapitel 1.
 ]
 Kapitel 2.
 
-LaTeX Warning: Citation `b:feynman' on page 2 undefined on input line 117.
+Underfull \vbox (badness 1953) has occurred while \output is active []
 
-[2
+ [2
 
 ]
+Overfull \hbox (5.5061pt too wide) in paragraph at lines 106--109
+[]\T1/aer/m/n/10.95 Zur Be-schrei-bung der Be-we-gung von re-la-ti-vi-sti-schen
+ Teil-chen wird we-gen der Energie-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+
+
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+
+
+[4]
+
+LaTeX Warning: Citation `b:feynman' on page 5 undefined on input line 175.
+
+
+Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+
+
+[5]
 Kapitel 3.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 119.
+(Font)              <7> on input line 177.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 119.
+(hyperref)                removing `math shift' on input line 177.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 119.
+(hyperref)                removing `superscript' on input line 177.
 
-[3
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 177.
+
+[6
 
 ]
 Kapitel 4.
-(./BachelorArbeit.bbl [4
+[7
+
+] [8
 
 ]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
@@ -1022,62 +1052,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--16
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--148
+Underfull \hbox (badness 10000) in paragraph at lines 18--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--148
+Underfull \hbox (badness 10000) in paragraph at lines 18--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--148
+Underfull \hbox (badness 10000) in paragraph at lines 18--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--148
+Underfull \hbox (badness 10000) in paragraph at lines 18--213
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[6] [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+[9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+
+Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+
+
+[10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
  (./BachelorArbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `BachelorArbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 7D88C181360A78B209C91A8918639DF1;1073.
+(rerunfilecheck)             Checksum: 9F5D314297DE9371237EFFAA32304364;1200.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 9945 strings out of 493305
- 141106 string characters out of 6139897
- 233097 words of memory out of 5000000
- 13092 multiletter control sequences out of 15000+600000
- 46072 words of font info for 116 fonts, out of 8000000 for 9000
+ 10017 strings out of 493305
+ 142066 string characters out of 6139897
+ 234623 words of memory out of 5000000
+ 13134 multiletter control sequences out of 15000+600000
+ 55004 words of font info for 128 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,8n,38p,332b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
- <./s2imple.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/eurosym/feymr10.pfb>
-Output written on BachelorArbeit.pdf (13 pages, 136263 bytes).
+ 38i,10n,38p,332b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on BachelorArbeit.pdf (17 pages, 174205 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 261 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
