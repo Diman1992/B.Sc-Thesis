@@ -22,7 +22,7 @@
 
 % >>> Titelseite <<<
 
-\newcommand{\thetitle}{Formfaktoren des semileptonischen $D \rightarrow K l \bar \nu$ Zerfalls}
+\newcommand{\thetitle}{Formfaktoren des semileptonischen $D^+ \rightarrow \bar K^0 l^+ \nu$ Zerfalls}
 
 \thispagestyle{empty}
 \begin{center}
@@ -117,7 +117,6 @@ Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lore
   p^2 = p^\mu \eta_{\mu \nu} p^\nu = p^\mu p_\mu = E^2 - \vec p^2 = m^2,
 \end{equation}
 was wieder die relativistische Energie-Impuls-Beziehung ist. Die Einsteinsche Summenkonvention wird hierbei angewandt.
-
 \subsection{Dirac-Gleichung}
 Aus der nicht-relativistischen Schrödinger-Gleichung als quantenmechanische Wellengleichung ergibt sich durch erste Quantisierung \cite{TeilFortgeschr} eine Ersetzung von Energie 
 und Impuls durch partielle Differentialoperatoren
@@ -208,26 +207,57 @@ Der Wahrscheinlichkeitsstrom lautet somit
 
 
 \subsection{Fermis Goldene Regel}
-
+df
 \section{Stadardmodell der Elementarteilchenphysik}
-Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichsymmetrien, die diese beschreiben. Die sichtbare Materie wird 
-in drei Generationen von fundamentalen Fermionen zusammengesetzt, deren Attribute in Tabelle \ref{tab_particlezoo} dargestellt sind. 
-
-\begin{table}[H]
-\begin{tabular}{c|cccc|ccc} \toprule \toprule
- Generation & & $m$ in MeV & $\tau$ in s & $q$ in e & & $m$ in MeV & $q$ in e\\
- \midrule
-  1 & e & 0,511 & stabil & -1 & u & 1 & +$\frac23$\\
-\\\bottomrule
- \end{tabular}
-\caption{elementarer Teilchenzoo \cite{SM}}
-\label{tab_particlezoo}
-\end{table}
-
+Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichtheorien, die diese beschreiben. Die sichtbare Materie wird 
+aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs gehören die Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache
+Wechselwirkung, die hier näher beleuchtet wird. 
 
 \subsection{Teilcheninhalt}
-elementare Teilchen
-d-meson, k-meson
+Seit langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und den Atomkern, der seinerseits aus
+Protonen und Neutronen zusammengesetzt ist, die ihrerseits wiederum aus Quarks bestehen. Nach derzeitigem Stand gelten Elektronen und die anderen geladenen 
+Leptonen $l$ und Quarks als punktförmige
+Teilchen, die keine Substruktur aufweisen. Antiteilchen gibt es zu jedem Teilchen. Sie gleichen sich zwar in ihrer Masse, tragen jedoch in allen ladungsartigen Quantenzahlen, wie der Leptonenzahl oder
+elektrische Ladung und Parität ein entgegengesetztes Vorzeichen. Die stabilen, sehr leichten Neutrinos $\nu$ existieren zwar nicht in gebundenen Zuständen, gelten jedoch als elementar und sind daher 
+ebenfalls im elementaren Teilchenzoo \cite{PDG} in Tabelle \ref{tab_particlezoo} aufgeführt.
+\begin{table}[H]
+\begin{tabular}{c|cccc|ccc} \toprule 
+ Generation & & $m$ in MeV & $\tau$ in s & $q$ in e & & $m$ in MeV & $q$ in e\\
+ \midrule
+  1 & $e$ & 0,511 & stabil & -1 & $u$ & 1,5-4 & +$\frac23$\\
+  &$\nu_\text{e}$& <10$^{-6}$ &  & 0 & $d$ & 4-8 & -$\frac13$\\
+  2 & $\mu$ & 105,7 & 2,2$\cdot 10^{-6}$ & -1 & $c$ &1150-1350& +$\frac23$\\
+  &$\nu_\mu$ & & & 0 & $s$ &80-135& -$\frac13$\\
+  3& $\tau$ &1777& 2,9$\cdot 10^{-13}$ & -1 & $t$ & 169000-174000 & +$\frac23$\\
+  &$\nu_\tau$& & & 0 & $b$ &4100-4400 & -$\frac13$
+\\\bottomrule \bottomrule
+ \end{tabular}
+\caption{Kenndaten elementarer Fermionen (ohne Antiteilchen)}
+\label{tab_particlezoo}
+\end{table}
+\noindent
+Aus Quarks $q$ und ihren Partnern, den Antiquarks $\bar q$ ist es nun möglich, verschiedenste Kombinationen zu bilden, die jedoch nach außen hin immer eine
+ganzzahlige Ladung tragen müssen. Diese Quarkkombinationen werden Hadronen genannt und werden durch die Anzahl an Valenzquarks in (Anti-)Baryonen ($\bar q\bar q\bar q$/$qqq$) und in 
+Mesonen ($q\bar q$) unterklassifiziert. Hier interessant sind die Mesonen, die je aus mindestens einem Quark der 2. Generation bestehen. Für diese Arbeit
+relevant sind das $D^+$-Meson, welches unter schwacher Wechselwirkung in ein $\bar K^0$-Meson übergeht. In Tabelle \ref{tab_DKMeson} sind ihre Attribute
+aufgeführt.
+\begin{table}[H]
+\begin{tabular}{c|ccc|cccc} \toprule 
+  & $q\bar q$ &  $m$ in MeV & $q$ in e & $I(J^P)$ & $I_z$ & $S$ & $C$\\
+ \midrule
+  $D^+$ & $c\bar d$ & 1869  & +1 & $\frac12(0^-)$ & +$\frac12$ & 0 & 1\\
+ $\bar K^0$ & $s\bar d$ & 497  & +0 & $\frac12(0^-)$ & +$\frac12$ & -1& 0
+\\\bottomrule \bottomrule
+ \end{tabular}
+\caption{Kenndaten der im Zerfall beteiligten Mesonen}
+\label{tab_DKMeson}
+\end{table}
+\noindent
+Die hier neu auftauchenden Größen sind im einzelnen der starke Isospin $I$, seine dritte Komponente $I_z$, der Gesamtdrehimpuls $J$, die Parität $P$, die
+Strangeness $S$, sowie die Charmeness $C$. Da je ein Quark der ersten Generation vertreten ist, nimmt $I$ den Wert $\frac12$ an. Da es sich hierbei um ein 
+$\bar d$ handelt, ist $I_z$ $+\frac12$. Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks entgegengesetzt 
+ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihr Vorzeichen ändern, ergibt sich $P=-1$.
+
 \subsection{Schwache Wechselwirkung}
 parität
 V-A-Theorie
@@ -240,10 +270,19 @@ parametrisierungen nennen und auf den speziellen näher eingehen
 AP1 + BP2
 z-expansion
 
-\cite{b:feynman}
-\chapter{Messungen}
-\section{Energiebereich von $q^2$}
+\chapter{Ergebnisse}
+\section{Kinematische Größen}
+Die Formfaktoren werden allgemein in Abhängigkeit des Impulsübertrags $q^2$ angegeben. 
+\begin{figure}[H]
+\includegraphics[width=1\textwidth]{Abbildungen/DZerfall.png}
+\caption{Zwei Zerfallsmöglichkeiten des $D^+$-Mesons  mit extremen $q^2$-Werten}
+\label{pic_DZerfall}
+\end{figure}
+
+
 \section{Ermittlung der Formfaktoren}
+\subsection{Die Formfaktoren $f_0$ und $f_-$}
+\subsection{Fit des Formfaktors $f_+$}
 
 
 \chapter{Zusammenfassung und Ausblick}
@@ -265,10 +304,10 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
 %\bibliography{BachelorArbeit}
 \begin{thebibliography}{xxx}
  \bibitem[1]{RelKin}Nedden zur, M.: \textit{Detektoren der Elementarteilchenphysik}[pdf]\\ \href{http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph/dettph_cont.pdf}{http://www-hera-b.desy.de/people/nedden/lectures/05\_06/dettph/dettph\_cont.pdf}, 2006
- \bibitem[2]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
- \bibitem[3]{TeilFortgeschr}Schleper, P.: \textit{Teilchenphysik für Fortgeschrittene}\\ \href{http://www.desy.de/~schleper/lehre/}{http://www.desy.de/\midtilde schleper/lehre/}, 2011
- \bibitem[4]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, ISBN-13 978-0072320022 
- \bibitem[5]{SM} Cottingham, W.N., Greenwood, D.A.: \textit{An Introduction to the Standard Model of Particle Physics} 2nd Edition, 2007, ISBN-13 978-0-511-27377-3 
+ \bibitem[2]{TeilFortgeschr}Schleper, P.: \textit{Teilchenphysik für Fortgeschrittene}[pdf]\\ \href{http://www.desy.de/~schleper/lehre/}{http://www.desy.de/\midtilde schleper/lehre/}, 2011
+ \bibitem[3]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, \\ISBN-13 978-0072320022 
+ \bibitem[4]{PDG} Beringer, J. et al.: \textit{Particle Data Group}, Phys. Rev. D86, 010001, 2012
+ \bibitem[5]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
  \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
 \end{thebibliography}
 
