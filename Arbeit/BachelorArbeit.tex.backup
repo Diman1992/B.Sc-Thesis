@@ -1,9 +1,11 @@
 \documentclass[11pt,a4paper,twoside]{report}
 \input{Tex/longheader.tex}
 \input{Tex/global}
+\usepackage{titlesec}
  \setlength{\parskip}{1.5ex}
 \begin{document}
 \pagenumbering{Roman}
+ \titlespacing{\section}{0}{0}{2cm}[0cm]
 
 % Anmerkung: Die Seitenraender wurden asymmetrisch gewaehlt,
 %            damit genug Platz fuer eine Klemmbindung da ist.
@@ -62,7 +64,7 @@ Datum des Einreichens der Arbeit: TT.\,Monat\,JJJJ
 
 \thispagestyle{empty}
 %Kuzfassung
-\section*{Kurzfassung}
+\section{Kurzfassung}
 Hier folgt eine kurze Zusammenfassung des Inhalts und der Ergebnisse der Arbeit in deutscher Sprache.\\
 \ \\
 
@@ -118,6 +120,7 @@ Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lore
 \end{equation}
 was wieder die relativistische Energie-Impuls-Beziehung ist. Die Einsteinsche Summenkonvention wird hierbei angewandt.
 \subsection{Dirac-Gleichung}
+\vspace{-0.5cm}
 Aus der nicht-relativistischen Schrödinger-Gleichung als quantenmechanische Wellengleichung ergibt sich durch erste Quantisierung \cite{TeilFortgeschr} eine Ersetzung von Energie 
 und Impuls durch partielle Differentialoperatoren
 \begin{align*}
@@ -129,7 +132,7 @@ Wahrscheinlichkeitsdichte auf. Die Dirac-Gleichung für Spin$\frac12$-Teilchen i
 zusätzlich eine positiv definite Wahrscheinlichkeitsdichte, was eine Interpretation ihrer Lösungen als Wahrscheinlichkeitsamplitude zulässt. Daher muss diese
 Gleichung linear in der ersten Zeit- und Ortsableitung sein und der folgenden Schrödinger-Form genügen \cite{RelQuantMech}
 \begin{equation}
- \text{i} \partial_t \psi = \left(-\text{i}\alpha^k\partial_k + \beta m\right)\psi = H \psi,
+ \text{i} \partial_t \psi = \left(-\text{i}\alpha^k\partial_k + \beta m\right)\psi = \mathcal{H} \psi,
  \label{eq_diracSchroedinger}
 \end{equation}
 mit $\hbar = 1$ und $H$ dem diracschen Hamiltonian. $\alpha^k = \gamma^0\gamma^k$ und $\beta = \gamma^0$ sind die historischen Dirac-Matrizen. Gelöst wird
@@ -203,11 +206,78 @@ $(\gamma^\mu)^\dagger = \gamma^0\gamma^\mu\gamma^0$. Die daraus resultierenden G
 Der Wahrscheinlichkeitsstrom lautet somit
 \begin{equation}
  j^\mu = \bar \psi \gamma^\mu \psi.
+ \label{eq_diracstrom}
 \end{equation}
 
 
 \subsection{Fermis Goldene Regel}
-df
+\label{sec_fermi}
+In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, dessen Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
+bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsbreite $\Gamma$ als bestimmbare Größe zu erheben
+\begin{equation}
+ \Gamma \tau = 1 \quad \leftrightarrow\quad  \Gamma = \frac{1}{\tau},
+\end{equation} 
+die ein Maß für die Breite eines gemessenen Peaks darstellt. Für einen beliebigen Zerfall ist es von Interesse, eben diese Zerfallsbreite auszurechnen und dazu
+benötigt man im Allgemeinen etwas wie eine Zerfallsamplitude $M$ (auch Matrixelement genannt) und einen verfügbaren lorentzinvarianten Phasenraum $\Phi$ 
+\cite{Griffiths}\cite{TeilFortgeschr}. Die Amplitude,
+die mithilfe der Feynman Regeln berechenbar ist, enthält hierbei die dynamischen Informationen, der Phasenraum die kinematischen, also die Massen, Energien
+und Impulse der beteiligten Teilchen. Nach Fermis goldener Regel lässt sich die differentielle Zerfallsbreite ausdrücken durch
+\begin{equation}
+ \dx \Gamma(D \rightarrow K l \nu) = \frac{\left|M\right|^2}{2m_D}\dx \Phi(K, \,l,\, \nu),
+ \label{eq_fermirule}
+\end{equation}
+mit $m_D$ der Masse des D-Mesons. Der Phasenraum lässt sich schreiben als
+\begin{equation}
+ \dx \Phi = (2\pi)^4 \frac{\dx^3p_K}{2(2\pi)^3E_k}\frac{\dx^3k_l}{2(2\pi)^3E_l}\frac{\dx^3k_\nu}{2(2\pi)^3E_\nu}\delta(p_D-p_K-k_l-k_\nu),
+\end{equation}
+wobei $k_i$ fortan Leptonimpulse, $p_i$ Hadronimpulse, die Summe $p_D+p_K$ knapp als $P$ und die Differenz $p_D - p_K$ als $q$ bezeichnet werden. 
+Dabei ist $\delta$ die diracsche Deltafunktion, deren Aufgabe die Erhaltung von Energie und Impuls ist. Ziel ist es nun grob einen Ausdruck zu finden,
+theoretisch die differentielle Zerfallsbreite zu berechnen. Das Matrixelement berechnet sich über den Erwartungswert eines Hamiltonians,
+der sich in einen Quark- und einen Leptonenstrom aufteilen lässt, die wiederum mit \eqref{eq_diracstrom} umgeformt werden können. 
+Ihr Aussehen wird später in Abschnitt \ref{sec_schwacheWW} näher behandelt. 
+\begin{align}
+ M &= \big\langle Kl\nu|\mathcal{H}|D\big\rangle\\
+ &= \big\langle K\, \big|j_\text{quark}^\mu\big|\,D \big\rangle \,\cdot\,\big\langle l\nu\,\big|j_\mu^\text{lepton}\big|\,0\big\rangle\nonumber\\
+ &= \big\langle K(p_K)\, \big|\bar s \gamma^\mu(1-\gamma_5) c \big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
+ &=\frac{G_F V}{\sqrt{2}} \big[f_+(q^2) P^\mu  + f_-(q^2) q^\mu\big] \bar u \gamma_\mu(1-\gamma_5)v\nonumber
+ \end{align}
+Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. Weiterhin sind $f$ die noch zu
+diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet wird. Nach der Quadratur von $M$ wird der leptonische Anteil über 
+Casimirs Trick \cite{Griffiths} umgeformt
+\begin{align}
+ \big|M\big|^2 &= \frac{G_F^2|V|^2}{2}|f_+(q^2)|^2 P^\mu P^\nu \cdot 8\big(k_{l,\mu} k_{\nu,\nu} - g_{\mu\nu}k_lk_\nu + k_{l,\nu}k_{\nu,\mu}\big)\nonumber\\
+ &=4G_F^2|V|^2 |f_+(q^2)|^2 \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big) k_{l,\nu}k_{\nu,\mu},
+ \label{eq_fermiMelement}
+\end{align}
+wobei die Indizes $k_{\text{lepton},\text{lorentzindex}}$ bedeuten. Für die Phasenraumbetrachtung sind im Ruhesystem des D-Mesons die Gleichheiten
+\begin{align}
+ \frac{\dx^3 p_K}{2E_K} = 2\pi |p_K| \dx E_K \qquad \text{und} \qquad |p_K| = \frac{\sqrt{\lambda(m_D^2,m_K^2,q^2)}}{2m_D},
+\end{align}
+sowie die Integration
+\begin{align}
+ \int \frac{\dx^3k_l}{2E_l}\frac{\dx^3k_\nu}{2E_\nu}\delta^4(q-k_l-k_\nu)k_\mu k_\nu = \frac{\pi}{24}(q^2 g_{\mu\nu} + 2 q_\mu q_\nu)
+\end{align}
+gegeben. Das ergibt sich für das Phasenraumvolumen mit Übernahme von $k_{l,\nu}$ und $k_{\nu,\mu}$ aus \eqref{eq_fermiMelement} somit
+\begin{align}
+ \dx \Phi &= (2\pi)^4 \frac{\dx p_k}{(2\pi)^9 2E} \int \frac{\dx^3k_l}{2E_l}\frac{\dx^3k_\nu}{2E_\nu}\delta^4(q-k_l-k_\nu)k_\mu k_\nu \nonumber\\
+ &= \frac{|p_K| \dx E}{(2\pi)^4}\frac{\pi}{24}(q^2g_{\mu\nu} + 2 q_\mu q_\nu)
+ \label{eq_fermiPhase}
+\end{align}
+Um nun schließlich die differentielle Zerfallsbreite zusammenzufassen, werden \eqref{eq_fermiMelement} und \eqref{eq_fermiPhase} angepasst verwendet. Im
+folgenden Ausdruck wird eine Gleichheit
+\begin{align}
+ \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big)\big(2q_\mu q_\nu + q^2g_{\mu\nu}) = 4 \lambda(m_D^2,m_K^2,q^2) = 16 m_D^2 |p_K|^2
+\end{align}
+und ein aus der Kinematik ableitbarer Zusammenhang $\dx E = \dx q^2 / 2m_D$ benutzt. Die zu Beginn genannte Gleichung \eqref{eq_fermirule} wird 
+nun abschließend ausgedrückt als
+\begin{align}
+ \dx \Gamma = \frac{G_F^2|V|^2}{24\pi^3} |f_+(q^2)|^2 |p_K|^3 \dx q^2.
+\end{align}
+Da im weiteren Verlauf $|f_+(q^2)|V$ berechnet werden soll, jedoch die komplette von $q^2$ abhängige Zerfallsbreite gemessen wird, ist dieser eben hergeleitete
+Zusammenhang dieser Größen von Bedeutung.
+
+
+
 \section{Stadardmodell der Elementarteilchenphysik}
 Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichtheorien, die diese beschreiben. Die sichtbare Materie wird 
 aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs gehören die Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache
@@ -259,15 +329,16 @@ $\bar d$ handelt, ist $I_z$ $+\frac12$. Mesonen tragen ganzzahligen Gesamtdrehim
 ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihr Vorzeichen ändern, ergibt sich $P=-1$.
 
 \subsection{Schwache Wechselwirkung}
+\label{sec_schwacheWW}
 parität
 V-A-Theorie
 vierstromwechselwirkung
 ckm-matrix
 
 
-\section{Parametrisierung von Formfaktoren}
-parametrisierungen nennen und auf den speziellen näher eingehen
-AP1 + BP2
+\section{Parametrisieren von Formfaktoren}
+motivation von formfaktoren
+f+ P1 + f- P2 (und f0 P3)
 z-expansion
 
 \chapter{Ergebnisse}
@@ -306,8 +377,9 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
  \bibitem[1]{RelKin}Nedden zur, M.: \textit{Detektoren der Elementarteilchenphysik}[pdf]\\ \href{http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph/dettph_cont.pdf}{http://www-hera-b.desy.de/people/nedden/lectures/05\_06/dettph/dettph\_cont.pdf}, 2006
  \bibitem[2]{TeilFortgeschr}Schleper, P.: \textit{Teilchenphysik für Fortgeschrittene}[pdf]\\ \href{http://www.desy.de/~schleper/lehre/}{http://www.desy.de/\midtilde schleper/lehre/}, 2011
  \bibitem[3]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, \\ISBN-13 978-0072320022 
- \bibitem[4]{PDG} Beringer, J. et al.: \textit{Particle Data Group}, Phys. Rev. D86, 010001, 2012
- \bibitem[5]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
+ \bibitem[4]{Griffiths}Griffiths, D.: \textit{Introduction to Elementary Particles}, 2008, \\ISBN-13 978-3527406012
+ \bibitem[5]{PDG} Beringer, J. et al.: \textit{Particle Data Group}, Phys. Rev. D86, 010001, 2012
+ \bibitem[6]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
  \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
 \end{thebibliography}
 

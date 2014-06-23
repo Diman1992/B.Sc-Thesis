@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  21 JUN 2014 19:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  24 JUN 2014 00:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1013,30 +1013,33 @@ LaTeX Info: Redefining \nameref on input line 5.
 \openout6 = `BachelorArbeit.out'.
 
 LaTeX Info: Redefining \Ref on input line 5.
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 [3] (./BachelorArbeit.toc
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 6.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [4
 
 ])
@@ -1044,7 +1047,7 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 \openout7 = `BachelorArbeit.toc'.
 
 
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [5] (./BachelorArbeit.lof)
@@ -1066,134 +1069,145 @@ Kapitel 1.
 ]
 Kapitel 2.
 
-Underfull \vbox (badness 1953) has occurred while \output is active []
+Underfull \vbox (badness 2753) has occurred while \output is active []
 
  [2
 
 ]
-Overfull \hbox (5.5061pt too wide) in paragraph at lines 106--109
+Overfull \hbox (5.5061pt too wide) in paragraph at lines 107--110
 []\T1/aer/m/n/10.95 Zur Be-schrei-bung der Be-we-gung von re-la-ti-vi-sti-schen
  Teil-chen wird we-gen der Energie-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [3]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 143.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 145.
 
-LaTeX Font Info:    No file TS1aer.fd. on input line 143.
+LaTeX Font Info:    No file TS1aer.fd. on input line 145.
 
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 143.
+(Font)              for symbol `textperiodcentered' on input line 145.
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 149.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 151.
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [5]
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [6]
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [7]
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [8]
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
+
+
+[9]
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
+
+
+[10]
 Kapitel 3.
-<Abbildungen/DZerfall.png, id=217, 627.7854pt x 286.9119pt>
+<Abbildungen/DZerfall.png, id=246, 627.7854pt x 286.9119pt>
 File: Abbildungen/DZerfall.png Graphic file (type png)
 
 <use Abbildungen/DZerfall.png>
-Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 277.
+Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 347.
 (pdftex.def)             Requested size: 412.56496pt x 188.54813pt.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 278.
+(Font)              <7> on input line 348.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 278.
+(Font)              <5> on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 284.
+(hyperref)                removing `subscript' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 284.
+(hyperref)                removing `subscript' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 354.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+(hyperref)                removing `math shift' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 285.
+(hyperref)                removing `subscript' on input line 355.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 285.
+(hyperref)                removing `math shift' on input line 355.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [11
 
  <./Abbildungen/DZerfall.png>]
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
-[10]
+[12]
 Kapitel 4.
-[11
+[13
 
 ]
-Overfull \hbox (15.6941pt too wide) in paragraph at lines 306--307
+Overfull \hbox (15.6941pt too wide) in paragraph at lines 376--377
 []\T1/aer/m/n/10.95 http://www-hera-b.desy.de/people/nedden/lectures/05_06/dett
 ph/dettph_cont.pdf[],
  []
 
-[12
+[14
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
@@ -1203,52 +1217,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--16
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--322
+Underfull \hbox (badness 10000) in paragraph at lines 18--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--322
+Underfull \hbox (badness 10000) in paragraph at lines 18--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--322
+Underfull \hbox (badness 10000) in paragraph at lines 18--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--322
+Underfull \hbox (badness 10000) in paragraph at lines 18--393
 
  []
 
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-
-Overfull \vbox (1.64209pt too high) has occurred while \output is active []
-
-
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+[15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
  (./BachelorArbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
 Package rerunfilecheck Info: File `BachelorArbeit.out' has not changed.
-(rerunfilecheck)             Checksum: D6DC5AADA4344FA88112C2D2B3E4F586;1364.
+(rerunfilecheck)             Checksum: 7AC167E7D6869467538DA7995F476620;1364.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
  ) 
 Here is how much of TeX's memory you used:
- 10485 strings out of 493305
- 149039 string characters out of 6139897
+ 10505 strings out of 493305
+ 149277 string characters out of 6139897
  240796 words of memory out of 5000000
- 13557 multiletter control sequences out of 15000+600000
+ 13564 multiletter control sequences out of 15000+600000
  60906 words of font info for 147 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,38p,332b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,38p,332b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eldimano/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr/shar
 e/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/font
@@ -1268,10 +1278,10 @@ public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
 m/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on BachelorArbeit.pdf (21 pages, 294043 bytes).
+Output written on BachelorArbeit.pdf (23 pages, 310721 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
