@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  24 JUN 2014 00:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  24 JUN 2014 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,9 +1037,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
 [3] (./BachelorArbeit.toc
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 6.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [4
 
 ])
@@ -1132,82 +1129,109 @@ Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
-[9]
+[9] <Abbildungen/4fermi.jpg, id=257, 1516.66624pt x 451.6875pt>
+File: Abbildungen/4fermi.jpg Graphic file (type jpg)
+
+<use Abbildungen/4fermi.jpg>
+Package pdftex.def Info: Abbildungen/4fermi.jpg used on input line 346.
+(pdftex.def)             Requested size: 330.05322pt x 98.28947pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
 [10]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
+
+
+[11 <./Abbildungen/4fermi.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
+
+
+[12]
+Overfull \vbox (2.27994pt too high) has occurred while \output is active []
+
+
+[13]
 Kapitel 3.
-<Abbildungen/DZerfall.png, id=246, 627.7854pt x 286.9119pt>
+<Abbildungen/DZerfall.png, id=284, 627.7854pt x 286.9119pt>
 File: Abbildungen/DZerfall.png Graphic file (type png)
 
 <use Abbildungen/DZerfall.png>
-Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 347.
+Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 405.
 (pdftex.def)             Requested size: 412.56496pt x 188.54813pt.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 348.
+(Font)              <7> on input line 406.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 348.
+(Font)              <5> on input line 406.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 354.
+(hyperref)                removing `math shift' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 354.
+(hyperref)                removing `subscript' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 354.
+(hyperref)                removing `math shift' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 354.
+(hyperref)                removing `math shift' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 354.
+(hyperref)                removing `subscript' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 354.
+(hyperref)                removing `math shift' on input line 412.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 355.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 355.
+(hyperref)                removing `subscript' on input line 413.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 355.
+(hyperref)                removing `math shift' on input line 413.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [14
 
  <./Abbildungen/DZerfall.png>]
 Overfull \vbox (2.27994pt too high) has occurred while \output is active []
 
 
-[12]
+[15]
 Kapitel 4.
-[13
+[16
 
 ]
-Overfull \hbox (15.6941pt too wide) in paragraph at lines 376--377
+Overfull \hbox (15.6941pt too wide) in paragraph at lines 434--435
 []\T1/aer/m/n/10.95 http://www-hera-b.desy.de/people/nedden/lectures/05_06/dett
 ph/dettph_cont.pdf[],
  []
 
-[14
+[17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
@@ -1217,48 +1241,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--16
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--393
+Underfull \hbox (badness 10000) in paragraph at lines 18--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--393
+Underfull \hbox (badness 10000) in paragraph at lines 18--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--393
+Underfull \hbox (badness 10000) in paragraph at lines 18--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--393
+Underfull \hbox (badness 10000) in paragraph at lines 18--452
 
  []
 
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 395.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 395.
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
  (./BachelorArbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 395.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 395.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
 Package rerunfilecheck Info: File `BachelorArbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 7AC167E7D6869467538DA7995F476620;1364.
+(rerunfilecheck)             Checksum: F176EF5E793B771863D1AE5D86DB1E59;1522.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 395.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
  ) 
 Here is how much of TeX's memory you used:
- 10505 strings out of 493305
- 149277 string characters out of 6139897
+ 10527 strings out of 493305
+ 149592 string characters out of 6139897
  240796 words of memory out of 5000000
- 13564 multiletter control sequences out of 15000+600000
+ 13572 multiletter control sequences out of 15000+600000
  60906 words of font info for 147 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,38p,332b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,38p,332b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eldimano/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr/shar
 e/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/font
@@ -1278,10 +1302,10 @@ public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosy
 m/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on BachelorArbeit.pdf (23 pages, 310721 bytes).
+Output written on BachelorArbeit.pdf (26 pages, 406423 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

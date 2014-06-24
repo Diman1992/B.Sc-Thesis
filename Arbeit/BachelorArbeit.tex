@@ -329,6 +329,64 @@ ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar s
 
 \subsection{Schwache Wechselwirkung}
 \label{sec_schwacheWW}
+Als schwache, kurzreichweitige Wechselwirkung ist die Schwache Wechselwirkung eine der fundamentalen Kräfte, die im Gegensatz zur elektromagnetischen oder
+gravitativen recht spät beschrieben worden ist. Da keine der anderen in der Lage ist, Phänomene wie den Kern-$\beta$-Zerfall zu beschreiben, ist die 
+schwache Wechselwirkung von Interesse, wenn es sich um Wechselwirkungen dreht, die Parität und Flavour von Teilchen verändern. In niederenergetischen Prozessen
+bringt die klassische Theorie von Fermi ähnliche Ergebnisse, wie die moderne quantenfeldtheoretische Glashow-Weinberg-Salam Theorie (GWS). Diese beinhaltet die
+sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Eine unitäre 
+3x3-Matrix von großem Interesse ist die CKM-Matrix, die Übergangswahrscheinlichkeiten einzelner Quarks zueinander beschreibt.
+
+\subsubsection{Fermi-Wechselwirkung}
+Zur Beschreibung wird eine hadronische Stromdichte $V_\mu^{c\,\dagger}$ eingeführt \cite{Klapdor}, die ein Aussehen wie \eqref{eq_diracstrom} besitzen. 
+$c$ steht hierbei für charged und bedeutet, dass Ladung
+übertragen wird. Die hier nicht näher beschriebenen Austauschteilchen müssen daher selbst Ladung tragen und werden $W^\pm$-Bosonen genannt, an die zwei 
+geladene Ströme koppeln. Durch ihre hohe Masse von 82 GeV, kommt die kurze Reichweite zustande, was die Fermi-Wechselwirkung in einem Punkt erklärt. In
+Abbildung \ref{pic_4fermi} sind die Feynman-Diagramme beider Darstellungen gezeigt.
+\begin{figure}[H]
+\includegraphics[width=0.8\textwidth]{Abbildungen/4fermi.jpg}
+\caption{Feynman-Diagramme für GSW-Theorie (l.) und Fermi-Wechselwirkung (r.)}
+\label{pic_4fermi}
+\end{figure}
+Zum hadronischen Strom kommt natürlich auch ein leptonischer Strom $l_\mu^c$, der im Aussehen seinem Pendant gleicht. Aus ihnen wird über eine Kopplungskonstante
+ein hermitescher Hamiltonian konstruiert, der bereits in \ref{sec_fermi} vorweg genommen wurde
+\begin{equation}
+ \mathcal{H} = \frac{G_F}{\sqrt{2}}\big(V^{c,\mu}\,l_\mu^{c\,\dagger} + l^{c,\mu}\,V_\mu^{c\,\dagger}\big),
+\end{equation}
+dessen Raumzeitstruktur als Vektor-Vektor-Kopplung (VV) bezeichnet wird. Die auftretenden Ströme verhalten sich unter Lorentz-Transformationen wie ein Raumzeit-Vektor.
+Es zeigt sich, dass diese Kopplung nicht die einzige lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
+die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Axialvektorströme verhalten sich unter
+Paritätstransformationen genau gegensätzlich zu Vektorströmen. Aus den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
+der Hamiltonian (pseudo-)skalar sein muss, was die Kontrahierbarkeit beider Ströme erfordert. Eine dieser Kopplungen (VA) würde eine Paritätsverletzung erfordern,
+da der Hamiltonian pseudoskalar ist und daher nicht mit dem Paritätsoperator vertauscht. Durch die Klärung des $\theta-\tau$-Rätsels und dem Experiment von Wu,
+konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung bestätigt werden.
+
+Der Helizitätsoperator für Fermionen $H$ als Skalarprodukt des Impulsoperators $\bar p$, der eine vektorielle Größe ist und dem Spinoperator $\vec \sigma$, 
+der seinerseits ein Axialvektor ist, zeigt ebenfalls für Neutrinos die Paritätsverletzung. Positive und negative Helizität wären unter
+Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
+Invarianz muss ein entsprechender Operator gefunden werden. Bei masselosen Teilchen ergibt sich ein Projektionsoperator, der aus Spinoren die linkshändige 
+Komponente ergibt.
+\begin{equation}
+ \mathcal{P} = \frac12(1-\gamma_5),
+\end{equation}
+mit den Eigenschaften
+\begin{equation}
+ \mathcal{P}u_- = -u_- \qquad \text{und}\qquad \mathcal{P}u_+ = 0.
+\end{equation}
+Hieraus ergibt sich eine Erweiterung des bisher benutzten Leptonenstroms um linkshändige Neutrinos, die sich, wie in Abschnitt \ref{sec_fermi}, schreiben lässt als
+\begin{equation}
+ l_\mu^c = \bar \psi_l \gamma_\mu (1-\gamma_5) \psi_\nu.
+\end{equation}
+Ebenfalls folgt eine Erweiterung des gesamten hadronischen Stroms $h_\mu^{c\,\dagger}$ in gleicher Form wie des leptonischen als
+\begin{equation}
+ h_\mu^{c\,\dagger} = \bar \psi_p \gamma_\mu(1-c_A\gamma_5)\psi_n,
+\end{equation}
+mit $c_A$ als ein von der inneren Struktur der nicht punktförmigen Hadronen abhängiger Faktor, der durch Renormierungseffekte der starken Wechselwirkung entsteht.
+Der Faktor 1/2 fällt bei beiden schwachen Strömen nach Konvention weg. 
+Beide Ströme enthalten neben dem ursprünglich allein gedachten Vektoranteil nun noch einen Axialvektoranteil, was sich in der Bezeichnung V-A-Struktur
+niederschlägt.
+
+
+\subsubsection{CKM-Matrix}
 parität
 V-A-Theorie
 vierstromwechselwirkung
@@ -378,7 +436,8 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
  \bibitem[3]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, \\ISBN-13 978-0072320022 
  \bibitem[4]{Griffiths}Griffiths, D.: \textit{Introduction to Elementary Particles}, 2008, \\ISBN-13 978-3527406012
  \bibitem[5]{PDG} Beringer, J. et al.: \textit{Particle Data Group}, Phys. Rev. D86, 010001, 2012
- \bibitem[6]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
+ \bibitem[6]{Klapdor}Grotz, K., Klapdor H.V.: \textit{Die schwache Wechselwirkung in Kern-, Teilchen- und Astrophysik}, 1989, 1st edition, ISBN-13 978-3519030355
+ \bibitem[7]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
  \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
 \end{thebibliography}
 
