@@ -227,7 +227,7 @@ und Impulse der beteiligten Teilchen. Nach Fermis goldener Regel lässt sich die
 \end{equation}
 mit $m_D$ der Masse des D-Mesons. Der Phasenraum lässt sich schreiben als
 \begin{equation}
- \dx \Phi = (2\pi)^4 \frac{\dx^3p_K}{2(2\pi)^3E_k}\frac{\dx^3k_l}{2(2\pi)^3E_l}\frac{\dx^3k_\nu}{2(2\pi)^3E_\nu}\delta(p_D-p_K-k_l-k_\nu),
+ \dx \Phi = (2\pi)^4 \frac{\dx^3p_K}{2(2\pi)^3E_k}\frac{\dx^3k_l}{2(2\pi)^3E_l}\frac{\dx^3k_\nu}{2(2\pi)^3E_\nu}\delta^4(p_D-p_K-k_l-k_\nu),
 \end{equation}
 wobei $k_i$ fortan Leptonimpulse, $p_i$ Hadronimpulse, die Summe $p_D+p_K$ knapp als $P$ und die Differenz $p_D - p_K$ als $q$ bezeichnet werden. 
 Dabei ist $\delta$ die diracsche Deltafunktion, deren Aufgabe die Erhaltung von Energie und Impuls ist. Ziel ist es nun grob einen Ausdruck zu finden,
@@ -235,12 +235,14 @@ theoretisch die differentielle Zerfallsbreite zu berechnen. Das Matrixelement be
 der sich in einen Quark- und einen Leptonenstrom aufteilen lässt, die wiederum mit \eqref{eq_diracstrom} umgeformt werden können. 
 Ihr Aussehen wird später in Abschnitt \ref{sec_schwacheWW} näher behandelt. 
 \begin{align}
- M &= \big\langle Kl\nu|\mathcal{H}|D\big\rangle\\
+ M &= \big\langle Kl\nu|\mathcal{H}|D\big\rangle\nonumber\\
  &= \big\langle K\, \big|j_\text{quark}^\mu\big|\,D \big\rangle \,\cdot\,\big\langle l\nu\,\big|j_\mu^\text{lepton}\big|\,0\big\rangle\nonumber\\
  &= \big\langle K(p_K)\, \big|\bar s \gamma^\mu(1-\gamma_5) c \big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
- &=\frac{G_F V}{\sqrt{2}} \big[f_+(q^2) P^\mu  + f_-(q^2) q^\mu\big] \bar u \gamma_\mu(1-\gamma_5)v\nonumber
+ &=\frac{G_F V}{\sqrt{2}} \big[f_+(q^2) P^\mu  + f_-(q^2) q^\mu\big] \bar u \gamma_\mu(1-\gamma_5)v
+ \label{eq_fermiMG_F}
  \end{align}
-Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. Weiterhin sind $f$ die noch zu
+Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. $\bar s$ und $c$ sind quantenfeldtheoretische 
+Vernichtungs- bzw. Erzeugungsoperatoren des jeweiligen Quarks. Weiterhin sind $f$ die noch zu
 diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet wird. Nach der Quadratur von $M$ wird der leptonische Anteil über 
 Casimirs Trick \cite{Griffiths} umgeformt
 \begin{align}
@@ -293,12 +295,12 @@ ebenfalls im elementaren Teilchenzoo \cite{PDG} in Tabelle \ref{tab_particlezoo}
 \begin{tabular}{c|cccc|ccc} \toprule 
  Generation & & $m$ in MeV & $\tau$ in s & $q$ in e & & $m$ in MeV & $q$ in e\\
  \midrule
-  1 & $e$ & 0,511 & stabil & -1 & $u$ & 1,5-4 & +$\frac23$\\
-  &$\nu_\text{e}$& <10$^{-6}$ &  & 0 & $d$ & 4-8 & -$\frac13$\\
-  2 & $\mu$ & 105,7 & 2,2$\cdot 10^{-6}$ & -1 & $c$ &1150-1350& +$\frac23$\\
-  &$\nu_\mu$ & & & 0 & $s$ &80-135& -$\frac13$\\
-  3& $\tau$ &1777& 2,9$\cdot 10^{-13}$ & -1 & $t$ & 169000-174000 & +$\frac23$\\
-  &$\nu_\tau$& & & 0 & $b$ &4100-4400 & -$\frac13$
+  1 & $e$ & 0,511 & stabil & -1 & $u$ & 2,3 & +$\frac23$\\
+  &$\nu_\text{e}$& <10$^{-6}$ &  & 0 & $d$ & 4,8 & $-\frac13$\\
+  2 & $\mu$ & 105,7 & 2,2$\cdot 10^{-6}$ & -1 & $c$ &1275& +$\frac23$\\
+  &$\nu_\mu$ & & & 0 & $s$ &95& $-\frac13$\\
+  3& $\tau$ &1777& 2,9$\cdot 10^{-13}$ & -1 & $t$ & 173500 & +$\frac23$\\
+  &$\nu_\tau$& & & 0 & $b$ &4180 & $-\frac13$
 \\\bottomrule \bottomrule
  \end{tabular}
 \caption{Kenndaten elementarer Fermionen (ohne Antiteilchen)}
@@ -362,15 +364,81 @@ konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung
 
 Der Helizitätsoperator für Fermionen $H$ als Skalarprodukt des Impulsoperators $\bar p$, der eine vektorielle Größe ist und dem Spinoperator $\vec \sigma$, 
 der seinerseits ein Axialvektor ist, zeigt ebenfalls für Neutrinos die Paritätsverletzung. Positive und negative Helizität wären unter
-Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$ 
-
+Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
+Invarianz muss ein entsprechender Operator gefunden werden. Bei masselosen Teilchen ergibt sich ein Projektionsoperator, der aus Spinoren die linkshändige 
+Komponente ergibt.
+\begin{equation}
+ \mathcal{P} = \frac12(1-\gamma_5),
+\end{equation}
+mit den Eigenschaften
+\begin{equation}
+ \mathcal{P}u_- = -u_- \qquad \text{und}\qquad \mathcal{P}u_+ = 0.
+\end{equation}
+Hieraus ergibt sich eine Erweiterung des bisher benutzten Leptonenstroms um linkshändige Neutrinos, die sich, wie in Abschnitt \ref{sec_fermi}, schreiben lässt als
+\begin{equation}
+ l_\mu^c = \bar \psi_l \gamma_\mu (1-\gamma_5) \psi_\nu.
+\end{equation}
+Ebenfalls folgt eine Erweiterung des gesamten hadronischen Stroms $h_\mu^{c\,\dagger}$ in gleicher Form wie des leptonischen als
+\begin{equation}
+ h_\mu^{c\,\dagger} = \bar \psi_p \gamma_\mu(1-c_A\gamma_5)\psi_n,
+\end{equation}
+mit $c_A$ als ein von der inneren Struktur der nicht punktförmigen Hadronen abhängiger Faktor, der durch Renormierungseffekte der starken Wechselwirkung entsteht.
+Der Faktor 1/2 fällt bei beiden schwachen Strömen nach Konvention weg. 
+Beide Ströme enthalten neben dem ursprünglich allein gedachten Vektoranteil nun noch einen Axialvektoranteil, was sich in der Bezeichnung V-A-Struktur
+niederschlägt.
 
 \subsubsection{CKM-Matrix}
-parität
-V-A-Theorie
-vierstromwechselwirkung
-ckm-matrix
-
+Durch die Paritätsverletzung zeigt sich, dass die geladenen, schwachen Ströme an linkshändige Teilchen und rechtshändige Antiteilchen koppelt \cite{DissForm}\cite{Sibold}. 
+So liegt der Schluss nahe, Dubletts von Teilchen zu erzeugen, die in gleicher Stärke koppeln. Diese werden aus den zwei Leptonen aus je einer Generation 
+($e$ und $\nu_e$, sowie $\mu$ und $\nu_\mu$) und dem Up- und Down-Quark gebildet. Das zu Beginn der CKM-Matrix-Entwicklung (Cabibbo, Kobayashi, Maskawa) 
+bereits bekannte Strange-Quark
+mit einem damals noch hypothetischen Charme-Quark zu einem Dublett zusammenzufassen, birgt Schwierigkeiten, da Mesonen mit einem $s$ bei einem leptonischen
+Zerfall, beispielsweise $K^+(u\bar s) \rightarrow \mu^+ \nu_\mu$, dem derzeitigem Verständnis widersprechen. Mit der von Cabibbo entworfenen Idee, das $d$-
+und das $s$-Quark als gedrehte Quarkzustände 
+\begin{align}
+ \begin{pmatrix}
+  d'\\
+  s'
+ \end{pmatrix} = \begin{pmatrix}
+		  \,\,\,d \cos \theta_c + s \sin \theta_c\\
+		  -d \sin \theta_c + s\cos \theta_c
+		  \end{pmatrix}
+\end{align}
+zu betrachten, ist die Erklärung dieses Flavourwechsels möglich und lässt sich in folgendem Strom ausdrücken
+\begin{align}
+ j^\mu &= (\bar u\, \bar c) \gamma^\mu (1-\gamma_5) U \begin{pmatrix}
+                                                      d\\
+                                                      s
+                                                     \end{pmatrix},\\
+ U &= \begin{pmatrix}
+      \,\,\,\,\cos \theta_c\quad \sin \theta_c\\
+      -\sin \theta_c\quad \cos \theta_c
+     \end{pmatrix}.
+\end{align}
+Die Univeralität der Zerfallsamplitude $M$ aus \eqref{eq_fermiMG_F}, die bisher nur die Kopplungskontante $G_F$ besaß, hat nun noch den neuen Parameter
+$theta_c$, der Cabibbo-Winkel genannt wird. Dieser Winkel beschreibt die den zusätzlichen Kopplungsfaktor der $W^\pm$-Bosonen an die schwachen 
+Wechselwirkungseigenzustände $u, d', c, s'$ des $u$-,$d$-,$s$-, bzw. $c$-Quarks. Aus der Betrachtung von Zerfällen $u\rightarrow d$ und $s\rightarrow d$ lässt
+sich $\theta_c \approx 13^\circ$ bestimmen. Die zwei dimensionale Matrix $U$ war zwar wegen Erhaltung der euklidischen Norm unitär, konnte jedoch nicht die 
+bald gefundene CP-Verletzung (Charge, Parity) erklären. Nach Kobayashi und Maskawa muss folglich eine dritte Fermionengeneration existieren,
+die $U$ in eine 3x3-Matrix erweitern würde, die zwar weiterhin unitär aber nun zusätzlich eine komplexe Phase $\e^{\text{i}\phi}$ enthalten müsse. $V_{CKM}$ ist
+ausdrückbar in der Standardparametrisierung, bei der die vier freien Parameter die eben genannte komplexe Phase und drei Eulerwinkel 
+$\theta_{12} = \theta_c,\, \theta_{13}$ und $\theta_{23}$ sind. Die Wolfenstein-Parametrisierung beschreibt die CKM-Matrix ihrerseits mit den vier Parametern
+$\lambda,\, A,\, \rho$ und $\eta$, welche die Verbindungen $\lambda = \sin\theta_{12},\, A\lambda^2 = \sin\theta_{23}$ und $A\lambda^3(\rho-\text{i}\eta) = \sin\theta_{13}\e^{-\text{i}\phi}$
+haben.
+\begin{align}
+ V_{CKM} = \begin{pmatrix}
+            V_{ud}\,V_{us}\,V_{ub}\\
+            V_{cd}\,V_{cs}\,V_{cb}\\
+            V_{td}\,V_{ts}\,V_{tb}\\
+           \end{pmatrix} = \begin{pmatrix}
+			    1-\frac12\lambda^2 & \lambda & \lambda^3A(\rho-\text{i}\eta)\\
+			    -\lambda & 1-\frac12 \lambda^2 &\lambda^2A\\
+			    \lambda^3A(1-\rho-\text{i}\eta) &-\lambda^2A & 1
+			    \end{pmatrix}
+\end{align}
+Sollte die CP-Verletzung einzig aus der komplexen Phase kommen, lässt sich zeigen, dass CP-verletzende Amplituden proportional zur Fläche des sogenannten
+Unitaritätsdreiecks sind. Es handelt sich hierbei um ein Dreieck in der komplexen Ebene mit $\rho$ und $\eta$ als Achsen. Die Seiten werden durch Komponenten
+von $V_{CKM}$ repräsentiert.
 
 \section{Parametrisieren von Formfaktoren}
 motivation von formfaktoren
@@ -379,12 +447,20 @@ z-expansion
 
 \chapter{Ergebnisse}
 \section{Kinematische Größen}
-Die Formfaktoren werden allgemein in Abhängigkeit des Impulsübertrags $q^2$ angegeben. 
+Die Formfaktoren werden allgemein in Abhängigkeit des Impulsübertrags $q^2$ angegeben. Da dieser nicht beliebige Werte annehmen kann, ist es sinnvoll, den 
+möglichen Wertebereich zu ermitteln.  In Abbildung \ref{pic_DZerfall} sind die beiden Randbereiche dargestellt. Im linken Teil des Bildes befindet sich das 
+entstehende Kaon wieder in Ruhe und im rechten Teil nimmt es die gleiche Menge an Impuls auf, wie das Leptonenpaar.
 \begin{figure}[H]
 \includegraphics[width=1\textwidth]{Abbildungen/DZerfall.png}
 \caption{Zwei Zerfallsmöglichkeiten des $D^+$-Mesons  mit extremen $q^2$-Werten}
 \label{pic_DZerfall}
 \end{figure}
+Zur Berechnung wird entsprechend den Regeln der Vierer-Impuls-Algebra die Vierer-Impuls-Erhaltung im Ruhesystem des D-Mesons betrachtet
+\begin{align}
+ p_D^\mu &= p_K^\mu + p_l^\mu + p_\nu^\mu \nonumber\\
+ p_D^\mu - p_K^\mu &= q^\mu\nonumber\\
+ \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 \nonumber\\
+\end{align}
 
 
 \section{Ermittlung der Formfaktoren}
@@ -405,18 +481,19 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
 
 % >>> Literaturverzeichnis <<<
 
-\renewcommand{\bibname}{Quellenverzeichnis}
+\renewcommand{\bibname}{Literaturverzeichnis}
 \addcontentsline{toc}{chapter}{\bibname}
 %\bibliographystyle{unsrt} 
 %\bibliography{BachelorArbeit}
 \begin{thebibliography}{xxx}
- \bibitem[1]{RelKin}Nedden zur, M.: \textit{Detektoren der Elementarteilchenphysik}[pdf]\\ \href{http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph/dettph_cont.pdf}{http://www-hera-b.desy.de/people/nedden/lectures/05\_06/dettph/dettph\_cont.pdf}, 2006
- \bibitem[2]{TeilFortgeschr}Schleper, P.: \textit{Teilchenphysik für Fortgeschrittene}[pdf]\\ \href{http://www.desy.de/~schleper/lehre/}{http://www.desy.de/\midtilde schleper/lehre/}, 2011
- \bibitem[3]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, \\ISBN-13 978-0072320022 
- \bibitem[4]{Griffiths}Griffiths, D.: \textit{Introduction to Elementary Particles}, 2008, \\ISBN-13 978-3527406012
+ \bibitem[1]{RelKin}Nedden zur, M.: \textit{Detektoren der Elementarteilchenphysik}[pdf], 2006\\ \href{http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph/dettph_cont.pdf}{http://www-hera-b.desy.de/people/nedden/lectures/05\_06/dettph/dettph\_cont.pdf}
+ \bibitem[2]{TeilFortgeschr}Schleper, P.: \textit{Teilchenphysik für Fortgeschrittene}[pdf], 2011\\ \href{http://www.desy.de/~schleper/lehre/}{http://www.desy.de/\midtilde schleper/lehre/}
+ \bibitem[3]{RelQuantMech}Bjorken, J.D., Drell, S.D.: \textit{Relativstic Quantum Mechanics}, 1964, 1st edition \\ISBN-13 978-0072320022 
+ \bibitem[4]{Griffiths}Griffiths, D.: \textit{Introduction to Elementary Particles}, 2008, 1st edition \\ISBN-13 978-3527406012
  \bibitem[5]{PDG} Beringer, J. et al.: \textit{Particle Data Group}, Phys. Rev. D86, 010001, 2012
  \bibitem[6]{Klapdor}Grotz, K., Klapdor H.V.: \textit{Die schwache Wechselwirkung in Kern-, Teilchen- und Astrophysik}, 1989, 1st edition, ISBN-13 978-3519030355
- \bibitem[7]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}, 2008
+ \bibitem[7]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}, 2008\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}
+ \bibitem[8]{Sibold}Sibold, K.: \textit{Theorie der Elementarteilchen}, 2001, 1st edition, \\ISBN-13: 978-3519032526
  \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
 \end{thebibliography}
 
