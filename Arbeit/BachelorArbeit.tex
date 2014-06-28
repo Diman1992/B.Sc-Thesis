@@ -58,6 +58,20 @@ Technische Universität Dortmund \\ 2014
 \vspace{11pt}
 Datum des Einreichens der Arbeit: 14. Juli, 2014
 \newpage
+\thispagestyle{empty}
+\begin{flushright} 
+\textit{``Es gibt nichts Praktischeres, als eine gute Theorie.''}\\
+- \textit{Kant, Immanuel}\\
+\vspace{2cm}
+% \textit{``Was dürfen wir hoffen?''}\\
+% - \textit{Kant, Immanuel}\\
+% \vspace{2cm}
+% \textit{``Kein Mensch ist so wichtig, wie er sich nimmt.''}\\
+% - \textit{Kant, Immanuel}
+\end{flushright}
+
+\newpage
+
 
 % >>> Kurzfassung/Abstract <<<
 
@@ -84,16 +98,21 @@ Hier folgt eine kurze Zusammenfassung des Inhalts und der Ergebnisse der Arbeit 
 \chapter{Einleitung}
 
 
+
 \chapter{Theorie}
-Ehe die Matrixelemente errechnet werden, ist es erforderlich, Kenntnis von beteiligten Zusammenhängen zu haben. Zum einen werden die beim Zerfall beteiligten
-Teilchen und ihre fundamentalen Wechselwirkungen beleuchtet. Dazu gehören die D- und K-Mesonen mit Quarks als Konstituenten, sowie den Leptonen als Teilchen
-und die schwache Wechselwirkung 
-Da es sich um sehr kleine Teilchen handelt ist eine Betrachtung der Quantenmechanik erforderlich. 
-Da sie zusätzlich leicht und daher hinsichtlich der Lichtgeschwindigkeit schnell sind, bleiben Gesetzmäßigkeiten der relativistische Kinematik nicht aus.
-Zum anderen werden allgemein Formfaktorparametrisierungen und im speziellen die Reihenentwicklung thematisiert.
+Um Kenntnis über die Formfaktoren zu erlangen, ist es erforderlich, zuvor beteilgte Zusammenhäge zu beleuchten. Ein Einblick in die historische Physik
+des 20. Jahrhunderts soll die Grundlage für die den Zerfall entscheidende Schwache Wechselwirkung schaffen. Zuletzt wird eine Parametrisierung von Formfaktoren
+vorgestellt.
+
+% Ehe die Matrixelemente errechnet werden, ist es erforderlich, Kenntnis von beteiligten Zusammenhängen zu haben. Zum einen werden die beim Zerfall beteiligten
+% Teilchen und ihre fundamentalen Wechselwirkungen beleuchtet. Dazu gehören die D- und K-Mesonen mit Quarks als Konstituenten, sowie den Leptonen als Teilchen
+% und die schwache Wechselwirkung 
+% Da es sich um sehr kleine Teilchen handelt ist eine Betrachtung der Quantenmechanik erforderlich. 
+% Da sie zusätzlich leicht und daher hinsichtlich der Lichtgeschwindigkeit schnell sind, bleiben Gesetzmäßigkeiten der relativistische Kinematik nicht aus.
+% Zum anderen werden allgemein Formfaktorparametrisierungen und im speziellen die Reihenentwicklung thematisiert.
 \section{Voraussetzungen moderner Physik}
 Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aufgrund ihrer Richtigkeit und Exaktheit die Voraussetzungen an moderne 
-Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint, sowie ihre Vereinigung, die relativistische
+Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik, sowie ihre Vereinigung, die relativistische
 Quantenmechanik gemeint. Davon sind im Rahmen dieser Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
 von Bedeutung.
 
@@ -341,6 +360,7 @@ sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die 
 Flavourwechseln werden Quarks mit gewisser Wahrscheinlichkeit in andere Quarks umgewandelt, die mit die unitäre 3x3-CKM-Matrix angegeben wird. 
 
 \subsubsection{Parität}
+\label{sec_parity}
 Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt er dieser als invariant. Mathematisch zeigt sich
 dies, indem der zugehörige, quantenmechanische Operator mit dem den Prozess charakterisierenden Hamiltonoperator vertauscht. Das bedeutet, dass beide eine
 gemeinsame Basis aus Eigenzuständen mit zugehörien Eigenwerten, auch Quantenzahlen genannt, haben. Die Parität, als diskrete Symmetrie, wechselt bezüglich 
@@ -455,10 +475,10 @@ von $V_{CKM}$ repräsentiert.
 
 \section{Parametrisieren von Formfaktoren}
 Der wie in Abschnitt \ref{sec_fermiWW} dargestellte hadronischen Strom $h_\mu^{c\dagger}$ lässt sich aufgrund von starken Wechselwirkungen zwischen den 
-Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermi} bereits vorweggenommen, durch Formfaktoren ausgedrückt\cite{KimPham}. Dieser
-Sachverhalt wird am für den betrachteten Zerfall relevanten Feynmangraphen in Abbildung \ref{pic_Dfeyn} dargestellt.
+Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermi} bereits vorweggenommen, durch einheitenlose Formfaktoren 
+ausgedrückt\cite{KimPham}. Dieser Sachverhalt wird am für den betrachteten Zerfall relevanten Feynmangraphen in Abbildung \ref{pic_Dfeyn} dargestellt.
 \begin{figure}[H]
-\includegraphics[width=0.7\textwidth]{Abbildungen/DFeyn.png}
+\includegraphics[width=0.8\textwidth]{Abbildungen/DFeyn.png}
 \caption{Feynmangraph zum $D^+\rightarrow \bar K_0 l^+ \nu_l$ Zerfall.}
 \label{pic_Dfeyn}
 \end{figure}
@@ -472,10 +492,10 @@ dessen Beschreibung dienen
 \end{align}
 Es gibt viele Ansätze, diese Formfaktoren zu bestimmen. Neben dem theoretischen Weg über die Gitterquantenchromodynamik, existieren einige Parametrisierungen,
 die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisierungen weisen ein schlechtes Konvergenzverhalten nahe der semileptonischen Bereiche
-des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekte Schätzung des Formfaktors übrig lässt. Eine Darstellung, die ein solches Problem nicht hat,
-ist die sogenannte Reihenentwicklung
+des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekte Schätzung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
+ist die sogenannte $z$-Reihenentwicklung
 \begin{align}
- f(q^2) = \frac{\mathcal{N}}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(q^2).
+ f(q^2) = \frac{\mathcal{N}}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(t_0,\, q^2).
 \end{align}
 Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
 \begin{align}
@@ -484,21 +504,14 @@ Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGa
 mit der experimentell zugänglichen differentiellen Zerfallsbreite in Abhängigkeit des Impulsübertrags $\dx \Gamma/\dx q^2$. Die Koeffizienten $a_i$ sind
 aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch gesichert, dass $|z|<1$ im physikalischen Bereich. Sie wird dargestellt durch
 \begin{align}
- z(t_0, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}},
+ z(t_0,\, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}},
 \end{align}
 worin $t_\pm$ bestimmt sind durch $t_\pm = (m_D \pm m_K)$ und $t_0$ als ein konstantes Optimum gewählt wird, was klassischerweise zu 
-$t_0 = t_+(1-(1-t_-/t_+)^{1/2})$ bestimmt wird, da es den Maximalwert von $z(t_0,q^2)$ minimiert.
+$t_0 = t_+(1-(1-t_-/t_+)^{1/2})$ bestimmt wird, da es den Maximalwert von $z(t_0,\, q^2)$ minimiert.
 
-
-
-
-Der axialvektorielle Anteil in \eqref{eq_fermiMG_F}, 
-
-ho-kim s.592
-ho-him kap. 10
-motivation von formfaktoren
-f+ P1 + f- P2 (und f0 P3)
-z-expansion
+Bei Übergängen mit nicht verschiendendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren $P$ zu einem vektoriellen Teilchen $V$, treten 
+weitere Formfaktoren auf. Die Ausdrücke für diesen Strom und die Abhängigkeiten der Formfaktoren $A_i(q^2)$ sind teilweise sehr komplex, sodass wegen
+der hier nicht bestehenden Relevanz nicht näher darauf eingegangen wird.
 
 \chapter{Ergebnisse}
 \section{Kinematische Größen}
@@ -515,21 +528,47 @@ entstehende Kaon wieder in Ruhe und im rechten Teil nimmt es die gleiche Menge a
 Zur Berechnung wird entsprechend den Regeln der Vierer-Impuls-Algebra die Vierer-Impuls-Erhaltung im Ruhesystem des D-Mesons betrachtet
 \begin{align}
  p_D^\mu &= p_K^\mu + p_l^\mu + p_\nu^\mu \nonumber\\
- p_D^\mu - p_K^\mu &= q^\mu\nonumber\\
- \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 \nonumber\\
- m_D^2 + m_K^2 - 2m_DE_K &= q^2.
+ p_D^\mu - p_K^\mu &= q^\mu = p_l^\mu + p_\nu^\mu \nonumber\\
+ \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 =  (p_l^\mu + p_\nu^\mu )^2\nonumber\\
+ m_D^2 + m_K^2 - 2m_DE_K &= q^2 = m_l^2 + m_\nu^2 + E_lE_\nu - |\vec p_l||\vec p_\nu|\cos(\xi).
 \end{align}
-Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Für vernachlässigbare Leptonmassen ($m_l=m_\nu=0)$
-verschwindet $q^2$, falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen. Es resultiert ein Wertebereich von
+An diesem Ausdruck lässt sich der in Abschnitt \ref{sec_fermi} verwandte Zusammenhang $\dx E = \dx q^2/2m_D$ erkennen.
+Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Für vernachlässigbare Leptonmassen 
+($m_l=m_\nu=0$), gilt $E=|\vec p|$ und $q^2$ verschwindet , falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen, also der Zwischenwinkel
+$\xi = 0$. Es resultiert ein Wertebereich von
 \begin{equation}
  0 \leq q^2 \leq (m_D - m_K)^2.
 \end{equation}
 
 \section{Ermittlung der Formfaktoren}
+Von den möglichen Formfaktoren werden alle bis auf einen im Folgenden verschwinden. Das betrifft die Axialvektorformfaktoren $A_i$ aus 
+Paritätserhaltungsgründen und den Formfaktor $f_-$ durch vernachlässigbare Leptonmassen. Der verbleibende $f_+$ wird über die Minimierung einer
+$\chi^2$-Funktion ermittelt.
 
+\subsection{Die Axialvektorformfaktoren und $f_-$}
+Wie an manchen Stellen bereits erwähnt und vorausgesetzt, verschwinden die Formfaktoren des Axialvektorstroms. Formfaktoren beschreiben starke 
+Wechselwirkungen zwischen dem zerfallenden Quark (hier $c$) und dem Spectatorquark (hier $\bar d$), was heißt, dass auftretende Größen unter Parität
+ein invariantes Verhalten zeigen müssen. Folglich muss nach Abschnitt \ref{sec_parity} das Produkt der Paritätsquantenzahlen beteiligter Ströme gleich dem
+des zerfallenden $D^+$-Mesons sein
+\begin{align}
+ \mathcal{P} \, \big\langle\bar K^0\,\big|V^\mu|\,D^+\big\rangle &= (-1)\cdot(-1)\cdot(-1) \stackrel{!}{=} \mathcal{P} \big|D^+\big\rangle = -1 \nonumber \\
+ \mathcal{P} \, \big\langle\bar K^0\,\big|A^\mu|\,D^+\big\rangle &= (-1)\cdot(+1)\cdot(-1) \stackrel{!}{=} \mathcal{P} \big|D^+\big\rangle = -1. \nonumber
+\end{align}
+Da letzte Gleichung offensichtlich nicht erfüllt ist, existiert kein Axialvektorstrom. Damit einer existiere, müsse dieser dieselbe Eigenparität haben,
+wie die beiden Mesonen. Aufgrund seiner Eigenschaft $J^P = 1^+$, hätte er eine Struktur 
+$A^\mu = \epsilon^{\mu \alpha \beta \gamma}p_{D,\alpha}\,p_{K,\beta}\,p_{X,\gamma}$, wobei jedoch kein dritter Freiheitsgrad als Viererimpuls eines
+weiteren Teilchen $X$ vorhanden ist, um diesen Ausdruck zu konstruieren.
 
-\subsection{Die Formfaktoren $f_0$ und $f_-$}
-
+Um nachzuvollziehen, was mit $f_-$ geschieht, wird das Matrixelement aus \eqref{eq_fermiMG_F} ohne $f_+$ betrachtet. Der Impulsübertrag $q^\mu$ ist nicht
+nur die Differenz der mesonischen Viererimpulse, sondern auch die Summe der leptonischen. Unter Einbezug des leptonischen Stroms ersetzt die Dirac-Gleichung
+\eqref{eq_dirac} die $k_i$ und ersetzt sie durch die zugehörigen Massen, die als vernachlässigbar gelten.
+\begin{align}
+ M_- &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(p_D-p_K)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
+ &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(k_\nu+k_l)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
+ &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (\slashed{k}_\nu + \slashed{k}_l) (1-\gamma_5)v_l\nonumber\\
+ &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (m_\nu + m_l) (1-\gamma_5)v_l\nonumber \\
+ &=0
+ \end{align}
 
 \subsection{Fit des Formfaktors $f_+$}
 
@@ -560,7 +599,8 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
  \bibitem[6]{Klapdor}Grotz, K., Klapdor H.V.: \textit{Die schwache Wechselwirkung in Kern-, Teilchen- und Astrophysik}, 1989, 1st edition, ISBN-13 978-3519030355
  \bibitem[7]{DissForm}Offen, N.: \textit{B-Zerfallsformfaktoren aus QCD-Summenregeln}, 2008\\ \href{http://d-nb.info/987811061}{http://d-nb.info/987811061}
  \bibitem[8]{Sibold}Sibold, K.: \textit{Theorie der Elementarteilchen}, 2001, 1st edition, \\ISBN-13: 978-3519032526
- \bibitem[30]{bla}{Versuch V28 Elektronen-Spin-Resonanz }
+ \bibitem[9]{KimPham}Ho-Kim, Q., Pham, X.: \textit{Elementary Particles and Their Interactions}, 1998, \\ ISBN-13: 978-3540636670
+ \bibitem[10]{PhysRev_Data}Besson, D., et al. (CLEO Collaboration), 2009, Phys. Rev. D 80, 032005 
 \end{thebibliography}
 
 
