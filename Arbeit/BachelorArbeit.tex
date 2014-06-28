@@ -52,11 +52,11 @@ Technische Universität Dortmund \\ 2014
 \vspace*{\fill}
 \begin{tabbing}
 1. Gutachter : \=\kill
-1. Gutachter : \>Prof. Dr. Musterfrau \\[11pt]
-2. Gutachter : \>Prof. Dr. Mustermann \\[11pt]
+1. Gutachter : \>Prof. Dr. Gudrun Hiller \\[11pt]
+2. Gutachter : \>Dr. Martin Jung\\[11pt]
 \end{tabbing}
 \vspace{11pt}
-Datum des Einreichens der Arbeit: TT.\,Monat\,JJJJ
+Datum des Einreichens der Arbeit: 14. Juli, 2014
 \newpage
 
 % >>> Kurzfassung/Abstract <<<
@@ -238,11 +238,13 @@ Ihr Aussehen wird später in Abschnitt \ref{sec_schwacheWW} näher behandelt.
  M &= \big\langle Kl\nu|\mathcal{H}|D\big\rangle\nonumber\\
  &= \big\langle K\, \big|j_\text{quark}^\mu\big|\,D \big\rangle \,\cdot\,\big\langle l\nu\,\big|j_\mu^\text{lepton}\big|\,0\big\rangle\nonumber\\
  &= \big\langle K(p_K)\, \big|\bar s \gamma^\mu(1-\gamma_5) c \big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
+ &:= \big\langle K(p_K)\, \big|V^\mu - A^\mu\big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
  &=\frac{G_F V}{\sqrt{2}} \big[f_+(q^2) P^\mu  + f_-(q^2) q^\mu\big] \bar u \gamma_\mu(1-\gamma_5)v
  \label{eq_fermiMG_F}
  \end{align}
 Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. $\bar s$ und $c$ sind quantenfeldtheoretische 
-Vernichtungs- bzw. Erzeugungsoperatoren des jeweiligen Quarks. Weiterhin sind $f$ die noch zu
+Vernichtungs- bzw. Erzeugungsoperatoren des jeweiligen Quarks. $V^\mu$ und $A^\mu$ sind der vektorielle und axialvektorielle Anteil des Quarkstroms, der 
+in Abschnitt \ref{sec_fermiWW} beschrieben wird. Weiterhin sind $f$ die noch zu
 diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet wird. Nach der Quadratur von $M$ wird der leptonische Anteil über 
 Casimirs Trick \cite{Griffiths} umgeformt
 \begin{align}
@@ -273,13 +275,14 @@ und ein aus der Kinematik ableitbarer Zusammenhang $\dx E = \dx q^2 / 2m_D$ benu
 nun abschließend ausgedrückt als
 \begin{align}
  \dx \Gamma = \frac{G_F^2|V|^2}{24\pi^3} |f_+(q^2)|^2 |p_K|^3 \dx q^2.
+ \label{eq_fermidGammafinal}
 \end{align}
 Da im weiteren Verlauf $|f_+(q^2)|V$ berechnet werden soll, jedoch die komplette von $q^2$ abhängige Zerfallsbreite gemessen wird, ist dieser eben hergeleitete
 Zusammenhang dieser Größen von Bedeutung.
 
 
 
-\section{Stadardmodell der Elementarteilchenphysik}
+\section{Standardmodell der Elementarteilchenphysik}
 Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichtheorien, die diese beschreiben. Die sichtbare Materie wird 
 aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs gehören die Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache
 Wechselwirkung, die hier näher beleuchtet wird. 
@@ -331,14 +334,23 @@ ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar s
 
 \subsection{Schwache Wechselwirkung}
 \label{sec_schwacheWW}
-Als schwache, kurzreichweitige Wechselwirkung ist die Schwache Wechselwirkung eine der fundamentalen Kräfte, die im Gegensatz zur elektromagnetischen oder
-gravitativen recht spät beschrieben worden ist. Da keine der anderen in der Lage ist, Phänomene wie den Kern-$\beta$-Zerfall zu beschreiben, ist die 
-schwache Wechselwirkung von Interesse, wenn es sich um Wechselwirkungen dreht, die Parität und Flavour von Teilchen verändern. In niederenergetischen Prozessen
-bringt die klassische Theorie von Fermi ähnliche Ergebnisse, wie die moderne quantenfeldtheoretische Glashow-Weinberg-Salam Theorie (GWS). Diese beinhaltet die
-sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Eine unitäre 
-3x3-Matrix von großem Interesse ist die CKM-Matrix, die Übergangswahrscheinlichkeiten einzelner Quarks zueinander beschreibt.
+Die schwache Wechselwirkung gilt als die einzige der vier fundamentalen Kräfte, die beispielsweise Paritäts- und Flavoureigenschaften von Teilchen verändert.
+Bei niederenergetischen Prozessen bringt die klassische Theorie von Fermi ähnliche Ergebnisse, wie die moderne quantenfeldtheoretische Glashow-Weinberg-Salam 
+Theorie (GWS). Diese beinhaltet die
+sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Bei den 
+Flavourwechseln werden Quarks mit gewisser Wahrscheinlichkeit in andere Quarks umgewandelt, die mit die unitäre 3x3-CKM-Matrix angegeben wird. 
+
+\subsubsection{Parität}
+Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt er dieser als invariant. Mathematisch zeigt sich
+dies, indem der zugehörige, quantenmechanische Operator mit dem den Prozess charakterisierenden Hamiltonoperator vertauscht. Das bedeutet, dass beide eine
+gemeinsame Basis aus Eigenzuständen mit zugehörien Eigenwerten, auch Quantenzahlen genannt, haben. Die Parität, als diskrete Symmetrie, wechselt bezüglich 
+eines beliebigen Ursprungs das Vorzeichen vektorieller oder pseudoskalarer Größen eines physikalischen Zustands \cite{Klapdor}. Axialvektorielle oder skalare Größen bleiben
+hingegen unberührt. Somit ergeben sich als Quantenzahlen für den Paritätsoperator $\mathcal{P}$ die Werte $\pi = \pm1$. Bei zweifacher Ausführung entsteht 
+der ursprüngliche Zustand, da Eigenwerte diskreter Symmetrien multiplikativ sind. Unter Berücksichtigung einer sogenannten Eigenparität, die eine feste
+Teilcheneigenschaft ist, zeigt sich experimentell die Erhaltung der Parität bei elektromagnetischen und starken Wechselwirkungen.
 
 \subsubsection{Fermi-Wechselwirkung}
+\label{sec_fermiWW}
 Zur Beschreibung wird eine hadronische Stromdichte $V_\mu^{c\,\dagger}$ eingeführt \cite{Klapdor}, die ein Aussehen wie \eqref{eq_diracstrom} besitzen. 
 $c$ steht hierbei für charged und bedeutet, dass Ladung
 übertragen wird. Die hier nicht näher beschriebenen Austauschteilchen müssen daher selbst Ladung tragen und werden $W^\pm$-Bosonen genannt, an die zwei 
@@ -439,9 +451,51 @@ haben.
 \end{align}
 Sollte die CP-Verletzung einzig aus der komplexen Phase kommen, lässt sich zeigen, dass CP-verletzende Amplituden proportional zur Fläche des sogenannten
 Unitaritätsdreiecks sind. Es handelt sich hierbei um ein Dreieck in der komplexen Ebene mit $\rho$ und $\eta$ als Achsen. Die Seiten werden durch Komponenten
-von $V_{CKM}$ repräsentiert. Der betrachtete Zerfall kann nun als in Abbildung \ref{pic_DFeynman} dargestellter Feynmangraph dargestellt werden.
+von $V_{CKM}$ repräsentiert.
 
 \section{Parametrisieren von Formfaktoren}
+Der wie in Abschnitt \ref{sec_fermiWW} dargestellte hadronischen Strom $h_\mu^{c\dagger}$ lässt sich aufgrund von starken Wechselwirkungen zwischen den 
+Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermi} bereits vorweggenommen, durch Formfaktoren ausgedrückt\cite{KimPham}. Dieser
+Sachverhalt wird am für den betrachteten Zerfall relevanten Feynmangraphen in Abbildung \ref{pic_Dfeyn} dargestellt.
+\begin{figure}[H]
+\includegraphics[width=0.7\textwidth]{Abbildungen/DFeyn.png}
+\caption{Feynmangraph zum $D^+\rightarrow \bar K_0 l^+ \nu_l$ Zerfall.}
+\label{pic_Dfeyn}
+\end{figure}
+\noindent
+In einem Zweikörper-Zerfall $E\rightarrow PQ$ sind zwei Freiheitsgrade möglich, die den Prozess charakterisieren. Dies sind die Viererimpulse des Eduktteilchens
+$p_E$ und der des Produktteilchens $p_P$, da der Viererimpuls des verliebenen Produktteilchens $q^\mu$ von den vorigen determiniert wird. Da der vektorielle 
+Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist, gibt es hierbei zwei Formfaktoren $f_\pm$, die der allgemeinsten Form
+dessen Beschreibung dienen
+\begin{align}
+ \big\langle K(p_K)\,\big|V^\mu\big|\, D(p_D)\big\rangle = f_+(q^2)(p_D+p_K)^\mu + f_-(q^2)(p_D-p_K)^\mu.
+\end{align}
+Es gibt viele Ansätze, diese Formfaktoren zu bestimmen. Neben dem theoretischen Weg über die Gitterquantenchromodynamik, existieren einige Parametrisierungen,
+die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisierungen weisen ein schlechtes Konvergenzverhalten nahe der semileptonischen Bereiche
+des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekte Schätzung des Formfaktors übrig lässt. Eine Darstellung, die ein solches Problem nicht hat,
+ist die sogenannte Reihenentwicklung
+\begin{align}
+ f(q^2) = \frac{\mathcal{N}}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(q^2).
+\end{align}
+Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
+\begin{align}
+ \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
+\end{align}
+mit der experimentell zugänglichen differentiellen Zerfallsbreite in Abhängigkeit des Impulsübertrags $\dx \Gamma/\dx q^2$. Die Koeffizienten $a_i$ sind
+aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch gesichert, dass $|z|<1$ im physikalischen Bereich. Sie wird dargestellt durch
+\begin{align}
+ z(t_0, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}},
+\end{align}
+worin $t_\pm$ bestimmt sind durch $t_\pm = (m_D \pm m_K)$ und $t_0$ als ein konstantes Optimum gewählt wird, was klassischerweise zu 
+$t_0 = t_+(1-(1-t_-/t_+)^{1/2})$ bestimmt wird, da es den Maximalwert von $z(t_0,q^2)$ minimiert.
+
+
+
+
+Der axialvektorielle Anteil in \eqref{eq_fermiMG_F}, 
+
+ho-kim s.592
+ho-him kap. 10
 motivation von formfaktoren
 f+ P1 + f- P2 (und f0 P3)
 z-expansion
@@ -465,16 +519,18 @@ Zur Berechnung wird entsprechend den Regeln der Vierer-Impuls-Algebra die Vierer
  \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 \nonumber\\
  m_D^2 + m_K^2 - 2m_DE_K &= q^2.
 \end{align}
-Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Falls das Kaon sämtliche Energie aufnimmt,
-verschwindet $q^2$ unter der zusätzlichen Betrachtung vernachlässigbarer Leptonmassen. Es resultiert ein Wertebereich von
+Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Für vernachlässigbare Leptonmassen ($m_l=m_\nu=0)$
+verschwindet $q^2$, falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen. Es resultiert ein Wertebereich von
 \begin{equation}
  0 \leq q^2 \leq (m_D - m_K)^2.
 \end{equation}
 
-
-
 \section{Ermittlung der Formfaktoren}
+
+
 \subsection{Die Formfaktoren $f_0$ und $f_-$}
+
+
 \subsection{Fit des Formfaktors $f_+$}
 
 
@@ -491,8 +547,8 @@ Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen d
 
 % >>> Literaturverzeichnis <<<
 
-\renewcommand{\bibname}{Literaturverzeichnis}
 \addcontentsline{toc}{chapter}{\bibname}
+\renewcommand{\bibname}{Literaturverzeichnis}
 %\bibliographystyle{unsrt} 
 %\bibliography{BachelorArbeit}
 \begin{thebibliography}{xxx}

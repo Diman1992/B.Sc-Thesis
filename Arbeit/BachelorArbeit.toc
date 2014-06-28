@@ -7,16 +7,17 @@
 \contentsline {subsection}{\numberline {2.1.1}Relativistische Kinematik}{3}{subsection.8}
 \contentsline {subsection}{\numberline {2.1.2}Dirac-Gleichung}{4}{subsection.12}
 \contentsline {subsection}{\numberline {2.1.3}Fermis Goldene Regel}{6}{subsection.22}
-\contentsline {section}{\numberline {2.2}Stadardmodell der Elementarteilchenphysik}{9}{section.33}
+\contentsline {section}{\numberline {2.2}Standardmodell der Elementarteilchenphysik}{9}{section.33}
 \contentsline {subsection}{\numberline {2.2.1}Teilcheninhalt}{9}{subsection.34}
 \contentsline {subsection}{\numberline {2.2.2}Schwache Wechselwirkung}{10}{subsection.37}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Fermi-Wechselwirkung}{11}{subsubsection.38}
-\contentsline {subsubsection}{\numberline {2.2.2.2}CKM-Matrix}{13}{subsubsection.45}
-\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{14}{section.50}
-\contentsline {chapter}{\numberline {3}Ergebnisse}{15}{chapter.51}
-\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{15}{section.52}
-\contentsline {section}{\numberline {3.2}Ermittlung der Formfaktoren}{16}{section.56}
-\contentsline {subsection}{\numberline {3.2.1}Die Formfaktoren $f_0$ und $f_-$}{16}{subsection.57}
-\contentsline {subsection}{\numberline {3.2.2}Fit des Formfaktors $f_+$}{16}{subsection.58}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{17}{chapter.59}
-\contentsline {chapter}{Literaturverzeichnis}{17}{chapter.59}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Parit\IeC {\"a}t}{11}{subsubsection.38}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Fermi-Wechselwirkung}{11}{subsubsection.39}
+\contentsline {subsubsection}{\numberline {2.2.2.3}CKM-Matrix}{13}{subsubsection.46}
+\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{15}{section.51}
+\contentsline {chapter}{\numberline {3}Ergebnisse}{18}{chapter.57}
+\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{18}{section.58}
+\contentsline {section}{\numberline {3.2}Ermittlung der Formfaktoren}{19}{section.62}
+\contentsline {subsection}{\numberline {3.2.1}Die Formfaktoren $f_0$ und $f_-$}{19}{subsection.63}
+\contentsline {subsection}{\numberline {3.2.2}Fit des Formfaktors $f_+$}{19}{subsection.64}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{20}{chapter.65}
+\contentsline {chapter}{Literaturverzeichnis}{20}{chapter.65}
