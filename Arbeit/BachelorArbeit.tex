@@ -3,7 +3,7 @@
 \input{Tex/global}
  \setlength{\parskip}{1.5ex}
 \begin{document}
-\begin{spacing}{1,5}
+\begin{spacing}{1,2}
 \pagenumbering{Roman}
 
 % Anmerkung: Die Seitenraender wurden asymmetrisch gewaehlt,
@@ -23,7 +23,7 @@
 
 % >>> Titelseite <<<
 
-\newcommand{\thetitle}{Formfaktoren des semileptonischen $D^+ \rightarrow \bar K^0 l^+ \nu$ Zerfalls}
+\newcommand{\thetitle}{Formfaktoren des semileptonischen $D \rightarrow  K l \nu$ Zerfalls}
 
 \thispagestyle{empty}
 \begin{center}
@@ -78,29 +78,39 @@ Datum des Einreichens der Arbeit: 14. Juli, 2014
 \thispagestyle{empty}
 %Kuzfassung
 \section*{Kurzfassung}
-Anhand des Flächeninhalts des Unitaritätsdreiecks, das aus Elementen der CKM-Matrix gebildet wird, kann man die Stärke der CP-Verletzung bestimmen. Ihre
-Einträge beschreiben die Wahrscheinlichkeit eines Übergangs zwischen schwach zerfallenden Quarks. Da diese Quarks nicht ungebunden existieren, muss der
-Einfluss der ``Spectatorquarks'' mitberücksichtigt werden, was durch den Ausdruck einheitenloser Formfaktoren geschieht in Abhängigkeit des Impulsübertrags.
-Durch Minimierung eines $\chi^2$-Tests anhand von Daten der CLEO Collaboration werden geeignete Koeffizienten einer Reihenentwicklung mittels
-eines Python-Scripts bestimmt.
-Hieraus ergibt sich für den nicht verschwindenden Formfaktor $f_+$, multipliziert mit dem entsprechenden CKM-Element $V_{cs}$ bei nicht vorhandenem 
-Impulsübertrag $q^2$ ein Wert von $f_+(0)|V_{cs}| = 0,707(10)$. Dies gilt für den angegebenen Zerfall. Übergänge mit anderen Spectatorquarks ergeben ähnliche
-Ergebnisse mit einem Unterschied von bis zu 5\%.
+Im Zuge dieser Arbeit sollen dimensionslose Formfaktoren ermittelt werden, die eine Darstellung eines zerfallrelevanten Matrixelements bilden. Sie werden
+durch eine $z$-Reihenentwicklung parametrisiert und anhand von Daten der CLEO Collaboration unter Minimierung einer $\chi^2$-Funktion bis zur 
+zweiten Ordnung gefittet. Die Fitparameter sind $a_0$ = X, $a_1$ = Y, $a_2$ = Z und der Wert für den verbleibenden Formfaktor ist $f_+(q^2=0)$ = V, wobei 
+$q^2$ der Impulsübertrag des Leptonpaares ist.
+
+% Anhand des Flächeninhalts des Unitaritätsdreiecks, das aus Elementen der CKM-Matrix gebildet wird, kann man die Stärke der CP-Verletzung bestimmen. Ihre
+% Einträge beschreiben die Wahrscheinlichkeit eines Übergangs zwischen schwach zerfallenden Quarks. Da diese Quarks nicht ungebunden existieren, muss der
+% Einfluss der ``Spectatorquarks'' mitberücksichtigt werden, was durch den Ausdruck einheitenloser Formfaktoren geschieht in Abhängigkeit des Impulsübertrags.
+% Durch Minimierung eines $\chi^2$-Tests anhand von Daten der CLEO Collaboration werden geeignete Koeffizienten einer Reihenentwicklung mittels
+% eines Python-Scripts bestimmt.
+% Hieraus ergibt sich für den nicht verschwindenden Formfaktor $f_+$, multipliziert mit dem entsprechenden CKM-Element $V_{cs}$ bei nicht vorhandenem 
+% Impulsübertrag $q^2$ ein Wert von $f_+(0)|V_{cs}| = 0,707(10)$. Dies gilt für den angegebenen Zerfall. Übergänge mit anderen Spectatorquarks ergeben ähnliche
+% Ergebnisse mit einem Unterschied von bis zu 5\%.
 
 \section*{Abstract}
-It is possible to determine the magnitude of the CP-violation by calculating the area of the unitarity triangle, build by elements of the CKM-matrix. Her
-entries characterise the propability of a transition between weak decaying quarks. They are never found in unbound states, so the simple view on the converting
-quark is not sufficient, wherefore you need to consider the additional spectatorquark, that happens through form factors which depend on
-the momentum transfer. With a Python-Script, it is possible, to ascertain the coefficients of a series expansion for the form factor by minimizing a 
-$\chi^2$-test in reference to
-data from the CLEO Collaboration. It reveals for the remaining form factor $f_+$, multiplied by the corresponding CKM-element $V_{cs}$ at a vanishing
-momentum transfer $q^2$ in a value of $f_+(0)|V_{cs}| = 0,707(10)$. This counts for the given decay mode, but other transitions with other spectatorquarks
-state the same results within an accuracy of 5\%.
+As part of this thesis form factors get ascertained, which build an exposition of a matrix element pertinent to the decay. They are parameterised by a
+series expansion of the $z$-expansion and fitted to the second order by data of the CLEO Collaboration under minimizing a $\chi^2$-function. The resulting
+fit parameters are $a_0$ = X, $a_1$ = Y, $a_2$ = Z and the value for the form factor is $f_+(q^2=0)$ = V, where $q^2$ is the momentum transfer carried by
+the lepton pair.
+
+% It is possible to determine the magnitude of the CP-violation by calculating the area of the unitarity triangle, build by elements of the CKM-matrix. Her
+% entries characterise the propability of a transition between weak decaying quarks. They are never found in unbound states, so the simple view on the converting
+% quark is not sufficient, wherefore you need to consider the additional spectatorquark, that happens through form factors which depend on
+% the momentum transfer. With a Python-Script, it is possible, to ascertain the coefficients of a series expansion for the form factor by minimizing a 
+% $\chi^2$-test in reference to
+% data from the CLEO Collaboration. It reveals for the remaining form factor $f_+$, multiplied by the corresponding CKM-element $V_{cs}$ at a vanishing
+% momentum transfer $q^2$ in a value of $f_+(0)|V_{cs}| = 0,707(10)$. This counts for the given decay mode, but other transitions with other spectatorquarks
+% state the same results within an accuracy of 5\%.
 \newpage
 
 % >>> Hauptteil <<<
 
-\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+%\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \tableofcontents\newpage
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoffigures\newpage
@@ -111,19 +121,37 @@ state the same results within an accuracy of 5\%.
 \pagenumbering{arabic}
 
 \chapter{Einleitung}
-Der Mensch versucht, zu erkennen, was die Welt im Innersten zusammenhält, so wie Johann Wolfang von Goethe es in Faust I schreibt. Hier geht es
-jedoch weniger um Dinge, die zusammenhalten, als eher jene, die zerfallen. Im letzten Jahrhundert ist sehr viel Aufwendung investiert worden, die grundlegensten
-Bestandteile unserer Natur zu identifizieren, also die Materie, die uns umgibt und die vier fundamentalen Kräfte, die ihre Wechselwirkungen miteinander
-beschreiben. Dazu zählen die gravitative, die elektromagnetische, die starke und die schwache Kraft. Außer der Gravitation bilden die verbleibenden
-mit den elementaren Teilchen das sogenannte Standardmodell. Dieses Modell ist bei Weitem noch nicht vollständig, wie beispielsweise anhand der unzureichenden
-Erklärung des Materie-Antimaterie-Ungleichgewichts zu Beginn des Universums oder der nicht verschwindenden Masse von Neutrinos zu erkennen ist. Es ist jedoch
-zugleich beispielsweise imstande, Teilchen vorherzusagen, die erst später vom Experiment bestätigt worden sind. Dazu zählen das renommierte Higgs-Boson, oder
-die dritte Generation der Fermionen. Die Existenz dieses neuhinzukommenden Quarktupels ist nötig, um empirisch gezeigte Asymmetrien der Ladungs- und 
-Paritätskonjugation (CP-Verletzung) zu erklären. Dies spiegelt sich in der sogenannten CKM-Matrix wider, die eine Übergangswahrscheinlichkeit zwischen 
-Quarks angibt und durch die schwache Wechselwirkung beschrieben wird. Von großem Interesse ist es heute, die Elemente dieser Matrix zu beziffern. Da jedoch
-Quarks nicht einzeln, sondern nur gebunden auftauchen, fließt bei der Übergangsbeschreibung der Einfluss der starken Wechselwirkung mit ein. Dieser ist nicht
-leicht zu quantifizieren, weshalb ein Näherungsmodell genutzt wird, um Abhilfe zu schaffen. Dies geschieht durch sogenannte Formfaktoren, die für diesen
-konkreten Zerfall bestimmt werden sollen.
+Wie Johann Wolfang von Goethe es in Faust I schreibt, versucht der Mensch, zu erkennen, was die Welt im Innersten zusammenhält. Im vergangenen Jahrhundert
+sind sehr viele Aufwendungen investiert worden, diese metaphorische Frage zu beantworten, also die grundlegenden Bestandteile der Natur zu identifizieren.
+Dazu zählen heute die sichtbare Materie und die fundamentalen Kräfte, die ihre Wechselwirkungen beschreiben. Nur eine davon, die schwache Wechselwirkung, kann
+beispielsweise den Übergang von Teilchen mit anderen Flavourquantenzahlen beschreiben, was in dem hier betrachteten Zerfall zutrifft. Die Wahrscheinlichkeit
+eines solchen Übergangs wird durch Einträge der sogenannten CKM-Matrix angegeben, deren Ermittlung und Prüfung auf Unitarität Gegenstand heutiger Forschung
+sind. Zu Beginn dieser Arbeit wird auf theoretische Grundlagen eingegangen, was die Relativitätstheorie und die Quantenmechanik betrifft. Weiterhin wird
+das Standardmodell betrachtet und dabei im speziellen die schwache Wechselwirkungen mit ihren hier relevanten Mechanismen, wie der Fermi-Wechselwirkung und
+dem CKM-Mechanismus. Hinzu kommt ein Teil zur Parametrisierung von Formfaktoren, wobei hier eine Methode der Reihenentwicklung gezeigt wird. Schließlich
+werden die ermittelten Ergebnisse vorgestellt, was die Diskussion der meisten Formfaktoren, sowie den Fit für den Formfaktor $f_+$ beinhaltet.
+% Da die Quantenchromodynamik, eine weitere fundamentale Kraft, wegen ihrer starken Kopplung die analytische Berechnung sehr erschwert, wird das 
+% relevante Matrixelement durch sogenannte einheitenlose Formfaktoren ausgedrückt
+% Diese sind die Gravitation, die starke 
+% Wechselwirkung und die elektroschwache Wechselwirkung, wobei bisher nur die beiden zuletzt genannten zum sogenannten Standardmodell zählen. Es stellt eine 
+% Zusammenfassung der  bisher erforschten Physik dar, ist zwar bei Weitem noch nicht vollständig, jedoch beispielsweise imstande, Teilchen zu postulieren, die 
+% anschließend von Experimenten bestätigt worden sind. 
+% Dazu zählt die dritte Fermionengeneration, die theoretisch gefordert worden ist, um empirisch gezeigte
+% Asymmetrien der Ladungs- und Paritätskonjugation (CP-Verletzung) zu erklären. Die CKM-Matrix, die Übergangswahrscheinlichkeiten zwischen Quarks angibt,
+% kann durchhat
+% Der Mensch versucht, zu erkennen, was die Welt im Innersten zusammenhält, so wie Johann Wolfang von Goethe es in Faust I schreibt. Hier geht es
+% jedoch weniger um Dinge, die zusammenhalten, als eher jene, die zerfallen. Im letzten Jahrhundert ist sehr viel Aufwendung investiert worden, die grundlegensten
+% Bestandteile unserer Natur zu identifizieren, also die Materie, die uns umgibt und die vier fundamentalen Kräfte, die ihre Wechselwirkungen miteinander
+% beschreiben. Dazu zählen die gravitative, die elektromagnetische, die starke und die schwache Kraft. Außer der Gravitation bilden die verbleibenden
+% mit den elementaren Teilchen das sogenannte Standardmodell. Dieses Modell ist bei Weitem noch nicht vollständig, wie beispielsweise anhand der unzureichenden
+% Erklärung des Materie-Antimaterie-Ungleichgewichts zu Beginn des Universums oder der nicht verschwindenden Masse von Neutrinos zu erkennen ist. Es ist jedoch
+% zugleich beispielsweise imstande, Teilchen vorherzusagen, die erst später vom Experiment bestätigt worden sind. Dazu zählen das renommierte Higgs-Boson, oder
+% die dritte Generation der Fermionen. Die Existenz dieses neuhinzukommenden Quarktupels ist nötig, um empirisch gezeigte Asymmetrien der Ladungs- und 
+% Paritätskonjugation (CP-Verletzung) zu erklären. Dies spiegelt sich in der sogenannten CKM-Matrix wider, die eine Übergangswahrscheinlichkeit zwischen 
+% Quarks angibt und durch die schwache Wechselwirkung beschrieben wird. Von großem Interesse ist es heute, die Elemente dieser Matrix zu beziffern. Da jedoch
+% Quarks nicht einzeln, sondern nur gebunden auftauchen, fließt bei der Übergangsbeschreibung der Einfluss der starken Wechselwirkung mit ein. Dieser ist nicht
+% leicht zu quantifizieren, weshalb ein Näherungsmodell genutzt wird, um Abhilfe zu schaffen. Dies geschieht durch sogenannte Formfaktoren, die für diesen
+% konkreten Zerfall bestimmt werden sollen.
 
 \chapter{Theorie}
 Um Kenntnis über die Formfaktoren zu erlangen, ist es erforderlich, zuvor beteilgte Zusammenhäge zu beleuchten. Ein Einblick in die historische Physik
@@ -137,14 +165,15 @@ vorgestellt.
 % Da sie zusätzlich leicht und daher hinsichtlich der Lichtgeschwindigkeit schnell sind, bleiben Gesetzmäßigkeiten der relativistische Kinematik nicht aus.
 % Zum anderen werden allgemein Formfaktorparametrisierungen und im speziellen die Reihenentwicklung thematisiert.
 \section{Voraussetzungen moderner Physik}
-Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aufgrund ihrer Richtigkeit und Exaktheit die Voraussetzungen an moderne 
-Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik, sowie ihre Vereinigung, die relativistische
-Quantenmechanik gemeint. Davon sind im Rahmen dieser Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
+Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aus heutiger Sicht aufgrund ihrer Richtigkeit und Exaktheit die 
+Voraussetzungen an moderne 
+Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint. Davon sind im Rahmen dieser 
+Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
 von Bedeutung.
 
 \subsection{Relativistische Kinematik}
-Die SRT stellt die fundamentale Forderung, dass die Form der Naturgesetze unabhängig vom Inertialsystem gleich ist. Mit der Lichtgeschwindigkeit $c$ als
-größte vorkommende Geschwindigkeit ist sie ebenfalls in allen Inertialsystemen gleich groß. Die relativistische Energie-Impuls Beziehung 
+Die SRT stellt die fundamentale Forderung, dass die Form der Naturgesetze unabhängig vom Inertialsystem gleich ist. Die Lichtgeschwindigkeit $c$ als
+größte vorkommende Geschwindigkeit ist in allen Inertialsystemen gleich groß. Die relativistische Energie-Impuls Beziehung 
 $E^2 = \left(mc^2\right)^2 + \left(\vec pc\right)^2$ beschreibt einen allgemeinen Zusammenhang zwischen der Energie $E$, der Masse $m$ und dem Impuls $\vec p$.
 In der Hochenergiephysik ($E_{\text{CMS}} \approx 10^4$ GeV) gilt der hochrelativistische Grenzfall, bei dem Energie hauptsächlich durch den Impuls bestimmt wird.
 In natürlichen Einheiten wird $c = 1$ gesetzt, was zu $E^2 = \left|p\right|^2$ führt.
@@ -156,9 +185,9 @@ kann, was die 4-Dimensionalität zeigt \cite{RelKin}.
  x^\mu &= (t,\,x,\,y,\,z)^\mu \hspace{2cm} \text{Vierer-Ort}\\
  p^\mu &= (E,\,p_x,\,p_y,\,p_z)^\mu \hspace{1.35cm} \text{Vierer-Impuls}
 \end{align}
-Der Index $\mu$ kann ganzzahlige Werte zwischen 0 und 4 annehmen und steht für die jeweilige Komponente des Vektors. Im Gegensatz zu euklidischen Räumen 
+Der Index $\mu$ kann ganzzahlige Werte zwischen 0 und 3 annehmen und steht für die jeweilige Komponente des Vektors. Im Gegensatz zu euklidischen Räumen 
 kann ein Skalarprodukt zweier Vierer-Vektoren nur dann beschrieben werden, wenn einer kovariant (Index unten) und der andere kontravariant (Index oben) ist.
-Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lorentz-Transformationen konstant lässt
+Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lorentz-Transformationen invariant lässt
 \begin{equation}
   p^2 = p^\mu \eta_{\mu \nu} p^\nu = p^\mu p_\mu = E^2 - \vec p^2 = m^2,
 \end{equation}
@@ -189,7 +218,7 @@ mit $\slashed{p}$ als Impulsoperator in der Feynman-Slash-Notation
 \begin{equation}
  \slashed{A} := \gamma^\mu A_\mu = \gamma^0 A_0 - \gamma^i\cdot A_i
 \end{equation}
-und $\psi$ als Wellenfunktion, da $\gamma^\mu \in \text{M}^{4\text{x}4}$, mit den vier Freiheitsgraden: Teilchen, Antiteilchen, Spin-Up, Spin-Down.
+und $\psi$ als Wellenfunktion, mit den vier Freiheitsgraden (da $\gamma^\mu \in \text{M}^{4\times4}$): Teilchen, Antiteilchen, Spin-Up, Spin-Down.
 Die $\gamma$-Matrizen in der Dirac-Pauli-Notation lauten
 \begin{equation*}
   \gamma^0 = \begin{pmatrix} 
@@ -218,7 +247,7 @@ mit $\mathbbm{1}$ als 2x2-Einheitsmatrix und den $\sigma^i$ als Paulimatrizen
 \end{equation*}
 Die Lösungen der freien Dirac-Gleichung sind folgende Wellenfunktionen
 \begin{align}
- \psi_+(x) = u(p)^{(1,2)} \e^{-ip^\mu x_mu}\qquad\text{und}\qquad \psi_-(x) = v(p)^{(1,2)} \e^{+ip^\mu x_mu},
+ \psi_+(x) = u(p)^{(1,2)} \e^{-ip^\mu x_\mu}\qquad\text{und}\qquad \psi_-(x) = v(p)^{(1,2)} \e^{+ip^\mu x_\mu},
  \label{eq_diracLsg}
 \end{align}
 die eingesetzt in \eqref{eq_dirac} die Gleichungen für die Spinoren
@@ -245,7 +274,7 @@ wird. Wie bereits erwähnt, existiert bei der Dirac-Gleichung ein Wahrscheinlich
  \partial_\mu j^\mu = 0
 \end{equation}
 genügt. Zur Ermittlung wird \eqref{eq_diracSchroedinger} von links mit der komplex konjugierten Wellenfunktion und die komplex konjugierte
-Form von \eqref{eq_diracSchroedinger} von rechts mit der normalen Wellenfunktion multipliziert. Hierzu dient die Gleichheit 
+Form von \eqref{eq_diracSchroedinger} von rechts mit der nicht komplex konjugierten Wellenfunktion multipliziert. Hierzu dient die Gleichheit 
 $(\gamma^\mu)^\dagger = \gamma^0\gamma^\mu\gamma^0$. Die daraus resultierenden Gleichungen voneinander abgezogen ergeben die eben genannte Kontinuitätsgleichung.
 Der Wahrscheinlichkeitsstrom lautet somit
 \begin{equation}
@@ -257,13 +286,13 @@ Der Wahrscheinlichkeitsstrom lautet somit
 \subsection{Fermis Goldene Regel}
 \label{sec_fermi}
 In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, dessen Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
-bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsbreite $\Gamma$ als bestimmbare Größe zu erheben
+bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsrate $\Gamma$ als bestimmbare Größe zu erheben
 \begin{equation}
- \Gamma \tau = 1 \quad \leftrightarrow\quad  \Gamma = \frac{1}{\tau},
+ \Gamma \tau = 1 \quad \leftrightarrow\quad  \Gamma = \frac{1}{\tau}.
 \end{equation} 
-die ein Maß für die Breite eines gemessenen Peaks darstellt. Für einen beliebigen Zerfall ist es von Interesse, eben diese Zerfallsbreite auszurechnen und dazu
-benötigt man im Allgemeinen etwas wie eine Zerfallsamplitude $M$ (auch Matrixelement genannt) und einen verfügbaren lorentzinvarianten Phasenraum $\Phi$ 
-\cite{Griffiths}\cite{TeilFortgeschr}. Die Amplitude,
+Für einen beliebigen Zerfall ist es von Interesse, eben diese Zerfallsrate auszurechnen und dazu
+benötigt man im Allgemeinen eine Zerfallsamplitude $M$ (auch Matrixelement genannt) und einen verfügbaren lorentzinvarianten Phasenraum $\Phi$ 
+\cite{TeilFortgeschr}\cite{Griffiths}. Die Amplitude,
 die mithilfe der Feynman Regeln berechenbar ist, enthält hierbei die dynamischen Informationen, der Phasenraum die kinematischen, also die Massen, Energien
 und Impulse der beteiligten Teilchen. Nach Fermis goldener Regel lässt sich die differentielle Zerfallsbreite ausdrücken durch
 \begin{equation}
@@ -272,25 +301,30 @@ und Impulse der beteiligten Teilchen. Nach Fermis goldener Regel lässt sich die
 \end{equation}
 mit $m_D$ der Masse des D-Mesons. Der Phasenraum lässt sich schreiben als
 \begin{equation}
- \dx \Phi = (2\pi)^4 \frac{\dx^3p_K}{2(2\pi)^3E_k}\frac{\dx^3k_l}{2(2\pi)^3E_l}\frac{\dx^3k_\nu}{2(2\pi)^3E_\nu}\delta^4(p_D-p_K-k_l-k_\nu),
+ \dx \Phi = (2\pi)^4 \frac{\dx^3p_K}{2(2\pi)^3E_K}\frac{\dx^3k_l}{2(2\pi)^3E_l}\frac{\dx^3k_\nu}{2(2\pi)^3E_\nu}\delta^4(p_D-p_K-k_l-k_\nu),
 \end{equation}
-wobei $k_i$ fortan Leptonimpulse, $p_i$ Hadronimpulse, die Summe $p_D+p_K$ knapp als $P$ und die Differenz $p_D - p_K$ als $q$ bezeichnet werden. 
-Dabei ist $\delta$ die diracsche Deltafunktion, deren Aufgabe die Erhaltung von Energie und Impuls ist. Ziel ist es nun grob einen Ausdruck zu finden,
-theoretisch die differentielle Zerfallsbreite zu berechnen. Das Matrixelement berechnet sich über den Erwartungswert eines Hamiltonians,
-der sich in einen Quark- und einen Leptonenstrom aufteilen lässt, die wiederum mit \eqref{eq_diracstrom} umgeformt werden können. 
-Ihr Aussehen wird später in Abschnitt \ref{sec_schwacheWW} näher behandelt. 
+wobei $k_i$ fortan Leptonimpulse, $p_i$ Hadronimpulse, $P$ kurz die Summe $p_D+p_K$ und $q$ die Differenz $p_D - p_K$ bezeichnet. 
+Dabei ist $\delta$ die diracsche Deltafunktion, deren Aufgabe die Erhaltung von Energie und Impuls ist. Ziel ist es nun einen Ausdruck zu finden,
+theoretisch die differentielle Zerfallsbreite zu berechnen. Das hierzu benötigte Matrixelement wird über den Erwartungswert eines Hamiltonians berechnet,
+der sich in einen Quark- und einen Leptonenstrom aufteilen lässt. Deren Struktur wird durch \eqref{eq_diracstrom} und die V-A-Theorie aus Abschnitt 
+\ref{sec_fermiWW} vorgegeben. Da der leptonische Anteil nicht stark wechselwirkt, ist eine explizite Darstellung des Erwartungswert möglich. Anders hingegen
+verhält es sich beim Quarkstrom, der nach Abschnitt \ref{sec_paramForm} durch Formfaktoren $f_\pm$ ausgedrückt werden kann. (STIMMT DAS SO?)
+% Das Matrixelement berechnet sich über den Erwartungswert eines Hamiltonians,
+% der sich in einen Quark- und einen Leptonenstrom aufteilen lässt, die wiederum mit \eqref{eq_diracstrom} umgeformt werden können. 
+% Ihr Aussehen wird später in Abschnitt \ref{sec_schwacheWW} näher behandelt. 
 \begin{align}
  M &= \big\langle Kl\nu|\mathcal{H}|D\big\rangle\nonumber\\
- &= \big\langle K\, \big|j_\text{quark}^\mu\big|\,D \big\rangle \,\cdot\,\big\langle l\nu\,\big|j_\mu^\text{lepton}\big|\,0\big\rangle\nonumber\\
- &= \big\langle K(p_K)\, \big|\bar s \gamma^\mu(1-\gamma_5) c \big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
- &:= \big\langle K(p_K)\, \big|V^\mu - A^\mu\big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
+ &= \frac{G_F V}{\sqrt{2}}\big\langle K\, \big|j_\text{quark}^\mu\big|\,D \big\rangle \,\cdot\,\big\langle l\nu\,\big|j_\mu^\text{lepton}\big|\,0\big\rangle\nonumber\\
+ &= \frac{G_F V}{\sqrt{2}}\big\langle K(p_K)\, \big|\bar s \gamma^\mu(1-\gamma_5) c \big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
+ &:= \frac{G_F V}{\sqrt{2}}\big\langle K(p_K)\, \big|V^\mu - A^\mu\big|\,D(p_D) \big\rangle \, \cdot \,\bar u(k_l) \gamma_\mu(1-\gamma_5)v(k_\nu)\nonumber\\
  &=\frac{G_F V}{\sqrt{2}} \big[f_+(q^2) P^\mu  + f_-(q^2) q^\mu\big] \bar u \gamma_\mu(1-\gamma_5)v
  \label{eq_fermiMG_F}
  \end{align}
 Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. $\bar s$ und $c$ sind quantenfeldtheoretische 
-Vernichtungs- bzw. Erzeugungsoperatoren des jeweiligen Quarks. $V^\mu$ und $A^\mu$ sind der vektorielle und axialvektorielle Anteil des Quarkstroms, der 
+Vernichtungs- bzw. Erzeugungsoperatoren der jeweiligen Quarks. $V^\mu$ und $A^\mu$ sind der vektorielle und axialvektorielle Anteil des Quarkstroms, der 
 in Abschnitt \ref{sec_fermiWW} beschrieben wird. Weiterhin sind $f$ die noch zu
-diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet wird. Nach der Quadratur von $M$ wird der leptonische Anteil über 
+diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet werden soll, da in Abschnitt \ref{sec_paramForm} gezeigt wird, dass dieser
+der einzig verbleibende ist. Nach der Quadratur von $M$ wird der leptonische Anteil über 
 Casimirs Trick \cite{Griffiths} umgeformt
 \begin{align}
  \big|M\big|^2 &= \frac{G_F^2|V|^2}{2}|f_+(q^2)|^2 P^\mu P^\nu \cdot 8\big(k_{l,\mu} k_{\nu,\nu} - g_{\mu\nu}k_lk_\nu + k_{l,\nu}k_{\nu,\mu}\big)\nonumber\\
@@ -305,18 +339,18 @@ sowie die Integration
 \begin{align}
  \int \frac{\dx^3k_l}{2E_l}\frac{\dx^3k_\nu}{2E_\nu}\delta^4(q-k_l-k_\nu)k_\mu k_\nu = \frac{\pi}{24}(q^2 g_{\mu\nu} + 2 q_\mu q_\nu)
 \end{align}
-gegeben. Das ergibt sich für das Phasenraumvolumen mit Übernahme von $k_{l,\nu}$ und $k_{\nu,\mu}$ aus \eqref{eq_fermiMelement} somit
+gegeben. Es ergibt sich für das Phasenraumvolumen mit Übernahme von $k_{l,\nu}$ und $k_{\nu,\mu}$ aus \eqref{eq_fermiMelement} somit
 \begin{align}
  \dx \Phi &= (2\pi)^4 \frac{\dx p_k}{(2\pi)^9 2E} \int \frac{\dx^3k_l}{2E_l}\frac{\dx^3k_\nu}{2E_\nu}\delta^4(q-k_l-k_\nu)k_\mu k_\nu \nonumber\\
  &= \frac{|p_K| \dx E}{(2\pi)^4}\frac{\pi}{24}(q^2g_{\mu\nu} + 2 q_\mu q_\nu)
  \label{eq_fermiPhase}
 \end{align}
 Um nun schließlich die differentielle Zerfallsbreite zusammenzufassen, werden \eqref{eq_fermiMelement} und \eqref{eq_fermiPhase} angepasst verwendet. Im
-folgenden Ausdruck wird eine Gleichheit
+folgenden Ausdruck wird die Gleichheit
 \begin{align}
  \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big)\big(2q_\mu q_\nu + q^2g_{\mu\nu}) = 4 \lambda(m_D^2,m_K^2,q^2) = 16 m_D^2 |p_K|^2
 \end{align}
-und ein aus der Kinematik ableitbarer Zusammenhang $\dx E = \dx q^2 / 2m_D$ benutzt. Die zu Beginn genannte Gleichung \eqref{eq_fermirule} wird 
+und der aus der Kinematik ableitbarer Zusammenhang $\dx E = \dx q^2 / 2m_D$ benutzt. Die zu Beginn genannte Gleichung \eqref{eq_fermirule} wird 
 nun abschließend ausgedrückt als
 \begin{align}
  \dx \Gamma = \frac{G_F^2|V|^2}{24\pi^3} |f_+(q^2)|^2 |p_K|^3 \dx q^2.
@@ -329,8 +363,8 @@ Zusammenhang dieser Größen von Bedeutung.
 
 \section{Standardmodell der Elementarteilchenphysik}
 Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichtheorien, die diese beschreiben. Die sichtbare Materie wird 
-aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs gehören die Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache
-Wechselwirkung, die hier näher beleuchtet wird. 
+aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs, denen jeweils Bosonen als Austauschteilchen zugeordnet werden, gehören die 
+Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache Wechselwirkung, die hier näher beleuchtet wird. 
 
 \subsection{Teilcheninhalt}
 Seit langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und den Atomkern, der seinerseits aus
@@ -364,8 +398,10 @@ aufgeführt.
 \begin{tabular}{c|ccc|cccc} \toprule 
   & $q\bar q$ &  $m$ in MeV & $q$ in e & $I(J^P)$ & $I_z$ & $S$ & $C$\\
  \midrule
-  $D^+$ & $c\bar d$ & 1869  & +1 & $\frac12(0^-)$ & +$\frac12$ & 0 & 1\\
- $\bar K^0$ & $s\bar d$ & 497  & +0 & $\frac12(0^-)$ & +$\frac12$ & -1& 0
+  $D^+$ & $c\bar d$ & 1869 & $+1$ & $\frac12(0^-)$ & $+\frac12$ & 0 & $+1$\\
+  $D^0$ & $c\bar u$ & 1865 & $0$  & $\frac12(0^-)$ & $-\frac12$ & 0 & $+1$\\
+  $\bar K^0$ & $s\bar d$ & 497 & $0$ & $\frac12(0^-)$ & $+\frac12$ & $-1$& 0\\
+  $K^-$ & $s\bar u $ & 493 & $-1$ & $\frac12(0^-)$ & $-\frac12$ & $-1$ & 0
 \\\bottomrule \bottomrule
  \end{tabular}
 \caption{Kenndaten der im Zerfall beteiligten Mesonen}
@@ -373,21 +409,22 @@ aufgeführt.
 \end{table}
 \noindent
 Die hier neu auftauchenden Größen sind im einzelnen der starke Isospin $I$, seine dritte Komponente $I_z$, der Gesamtdrehimpuls $J$, die Parität $P$, die
-Strangeness $S$, sowie die Charmeness $C$. Da je ein Quark der ersten Generation vertreten ist, nimmt $I$ den Wert $\frac12$ an. Da es sich hierbei um ein 
+Strangeness $S$, sowie die Charmeness $C$. Da es sich hierbei um ein 
 $\bar d$ handelt, ist $I_z$ $+\frac12$. Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks entgegengesetzt 
-ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihr Vorzeichen ändern, ergibt sich $P=-1$.
+ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihre Wellenfunktion das Vorzeichen ändern, 
+ergibt sich $P=-1$.
 
 \subsection{Schwache Wechselwirkung}
 \label{sec_schwacheWW}
 Die schwache Wechselwirkung gilt als die einzige der vier fundamentalen Kräfte, die beispielsweise Paritäts- und Flavoureigenschaften von Teilchen verändert.
-Bei niederenergetischen Prozessen bringt die klassische Theorie von Fermi ähnliche Ergebnisse, wie die moderne quantenfeldtheoretische Glashow-Weinberg-Salam 
-Theorie (GWS). Diese beinhaltet die
-sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Bei den 
-Flavourwechseln werden Quarks mit gewisser Wahrscheinlichkeit in andere Quarks umgewandelt, die mit die unitäre 3x3-CKM-Matrix angegeben wird. 
+Als niederenergetischen Grenzfall der modernen, quantenfeldtheoretischen Glashow-Weinberg-Salam Theorie (GWS) wird die klassische Theorie von Fermi 
+reproduziert. Diese beinhaltet die
+sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Bei solchen
+flavourändernden Übergängen gibt die unitäre 3$\times$3-CKM-Matrix die Wahrscheinlichkeit dazu an. 
 
 \subsubsection{Parität}
 \label{sec_parity}
-Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt er dieser als invariant. Mathematisch zeigt sich
+Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt dieser als invariant. Mathematisch zeigt sich
 dies, indem der zugehörige, quantenmechanische Operator mit dem den Prozess charakterisierenden Hamiltonoperator vertauscht. Das bedeutet, dass beide eine
 gemeinsame Basis aus Eigenzuständen mit zugehörien Eigenwerten, auch Quantenzahlen genannt, haben. Die Parität, als diskrete Symmetrie, wechselt bezüglich 
 eines beliebigen Ursprungs das Vorzeichen vektorieller oder pseudoskalarer Größen eines physikalischen Zustands \cite{Klapdor}. Axialvektorielle oder skalare Größen bleiben
@@ -397,7 +434,8 @@ Teilcheneigenschaft ist, zeigt sich experimentell die Erhaltung der Parität bei
 
 \subsubsection{Fermi-Wechselwirkung}
 \label{sec_fermiWW}
-Zur Beschreibung wird eine hadronische Stromdichte $V_\mu^{c\,\dagger}$ eingeführt \cite{Klapdor}, die ein Aussehen wie \eqref{eq_diracstrom} besitzen. 
+Zur Beschreibung der schwachen Wechselwirkung wird eine hadronische Stromdichte $V_\mu^{c\,\dagger}$ eingeführt \cite{Klapdor}, die eine Form wie 
+\eqref{eq_diracstrom} besitzt. 
 $c$ steht hierbei für charged und bedeutet, dass Ladung
 übertragen wird. Die hier nicht näher beschriebenen Austauschteilchen müssen daher selbst Ladung tragen und werden $W^\pm$-Bosonen genannt, an die zwei 
 geladene Ströme koppeln. Durch ihre hohe Masse von 82 GeV, kommt die kurze Reichweite zustande, was die Fermi-Wechselwirkung in einem Punkt erklärt. In
@@ -408,12 +446,12 @@ Abbildung \ref{pic_4fermi} sind die Feynman-Diagramme beider Darstellungen gezei
 \label{pic_4fermi}
 \end{figure}
 Zum hadronischen Strom kommt natürlich auch ein leptonischer Strom $l_\mu^c$, der im Aussehen seinem Pendant gleicht. Aus ihnen wird über eine Kopplungskonstante
-ein hermitescher Hamiltonian konstruiert, der bereits in \ref{sec_fermi} vorweg genommen wurde
+ein hermitescher Hamiltonian konstruiert, der bereits in Abschnitt \ref{sec_fermi} vorweg genommen wurde
 \begin{equation}
  \mathcal{H} = \frac{G_F}{\sqrt{2}}\big(V^{c,\mu}\,l_\mu^{c\,\dagger} + l^{c,\mu}\,V_\mu^{c\,\dagger}\big),
 \end{equation}
 dessen Raumzeitstruktur als Vektor-Vektor-Kopplung (VV) bezeichnet wird. Die auftretenden Ströme verhalten sich unter Lorentz-Transformationen wie ein Raumzeit-Vektor.
-Es zeigt sich, dass diese Kopplung nicht die einzige lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
+Es zeigt sich, dass diese Art der Kopplung nicht die einzig lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
 die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Axialvektorströme verhalten sich unter
 Paritätstransformationen genau gegensätzlich zu Vektorströmen. Aus den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
 der Hamiltonian (pseudo-)skalar sein muss, was die Kontrahierbarkeit beider Ströme erfordert. Eine dieser Kopplungen (VA) würde eine Paritätsverletzung erfordern,
@@ -423,8 +461,8 @@ konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung
 Der Helizitätsoperator für Fermionen $H$ als Skalarprodukt des Impulsoperators $\bar p$, der eine vektorielle Größe ist und dem Spinoperator $\vec \sigma$, 
 der seinerseits ein Axialvektor ist, zeigt ebenfalls für Neutrinos die Paritätsverletzung. Positive und negative Helizität wären unter
 Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
-Invarianz muss ein entsprechender Operator gefunden werden. Bei masselosen Teilchen ergibt sich ein Projektionsoperator, der aus Spinoren die linkshändige 
-Komponente ergibt.
+Invarianz muss ein entsprechender Operator gefunden werden. Bei masselosen, wie bei massiven Teilchen ergibt sich ein Projektionsoperator, der aus Spinoren 
+die linkshändige Komponente extrahiert:
 \begin{equation}
  \mathcal{P} = \frac12(1-\gamma_5),
 \end{equation}
@@ -446,13 +484,13 @@ Beide Ströme enthalten neben dem ursprünglich allein gedachten Vektoranteil nu
 niederschlägt.
 
 \subsubsection{CKM-Matrix}
-\vspace{-0.7cm}
-Durch die Paritätsverletzung zeigt sich, dass die geladenen, schwachen Ströme an linkshändige Teilchen und rechtshändige Antiteilchen koppelt \cite{DissForm}\cite{Sibold}. 
+%\vspace{-0cm}
+Durch die Paritätsverletzung zeigt sich, dass die geladenen, schwachen Ströme an linkshändige Teilchen und rechtshändige Antiteilchen koppeln \cite{DissForm}\cite{Sibold}. 
 So liegt der Schluss nahe, Dubletts von Teilchen zu erzeugen, die in gleicher Stärke koppeln. Diese werden aus den zwei Leptonen aus je einer Generation 
 ($e$ und $\nu_e$, sowie $\mu$ und $\nu_\mu$) und dem Up- und Down-Quark gebildet. Das zu Beginn der CKM-Matrix-Entwicklung (Cabibbo, Kobayashi, Maskawa) 
 bereits bekannte Strange-Quark
-mit einem damals noch hypothetischen Charme-Quark zu einem Dublett zusammenzufassen, birgt Schwierigkeiten, da Mesonen mit einem $s$ bei einem leptonischen
-Zerfall, beispielsweise $K^+(u\bar s) \rightarrow \mu^+ \nu_\mu$, dem derzeitigem Verständnis widersprechen. Mit der von Cabibbo entworfenen Idee, das $d$-
+mit einem damals noch hypothetischen Charm-Quark zu einem Dublett zusammenzufassen, birgt Schwierigkeiten, da Mesonen mit einem $s$ bei einem leptonischen
+Zerfall, beispielsweise $K^+(u\bar s) \rightarrow \mu^+ \nu_\mu$, dem damaligen Verständnis widersprechen. Mit der von Cabibbo entworfenen Idee, das $d$-
 und das $s$-Quark als gedrehte Quarkzustände 
 \begin{align}
  \begin{pmatrix}
@@ -475,11 +513,11 @@ zu betrachten, ist die Erklärung dieses Flavourwechsels möglich und lässt sic
      \end{pmatrix}.
 \end{align}
 Die Univeralität der Zerfallsamplitude $M$ aus \eqref{eq_fermiMG_F}, die bisher nur die Kopplungskontante $G_F$ besaß, hat nun noch den neuen Parameter
-$theta_c$, der Cabibbo-Winkel genannt wird. Dieser Winkel beschreibt die den zusätzlichen Kopplungsfaktor der $W^\pm$-Bosonen an die schwachen 
+$\theta_c$, der Cabibbo-Winkel genannt wird. Dieser Winkel beschreibt die den zusätzlichen Kopplungsfaktor der $W^\pm$-Bosonen an die schwachen 
 Wechselwirkungseigenzustände $u, d', c, s'$ des $u$-,$d$-,$s$-, bzw. $c$-Quarks. Aus der Betrachtung von Zerfällen $u\rightarrow d$ und $s\rightarrow d$ lässt
-sich $\theta_c \approx 13^\circ$ bestimmen. Die zwei dimensionale Matrix $U$ war zwar wegen Erhaltung der euklidischen Norm unitär, konnte jedoch nicht die 
+sich $\theta_c \approx 13^\circ$ bestimmen. Die zweidimensionale Matrix $U$ war zwar wegen Erhaltung der euklidischen Norm unitär, konnte jedoch nicht die 
 bald gefundene CP-Verletzung (Charge, Parity) erklären. Nach Kobayashi und Maskawa muss folglich eine dritte Fermionengeneration existieren,
-die $U$ in eine 3x3-Matrix erweitern würde, die zwar weiterhin unitär aber nun zusätzlich eine komplexe Phase $\e^{\text{i}\phi}$ enthalten müsse. $V_{CKM}$ ist
+die $U$ in eine 3$\times$3-Matrix erweitern würde, die zwar weiterhin unitär aber nun zusätzlich eine komplexe Phase $\e^{\text{i}\phi}$ enthalten müsse. $V_{CKM}$ ist
 ausdrückbar in der Standardparametrisierung, bei der die vier freien Parameter die eben genannte komplexe Phase und drei Eulerwinkel 
 $\theta_{12} = \theta_c,\, \theta_{13}$ und $\theta_{23}$ sind. Die Wolfenstein-Parametrisierung beschreibt die CKM-Matrix ihrerseits mit den vier Parametern
 $\lambda,\, A,\, \rho$ und $\eta$, welche die Verbindungen $\lambda = \sin\theta_{12},\, A\lambda^2 = \sin\theta_{23}$ und $A\lambda^3(\rho-\text{i}\eta) = \sin\theta_{13}\e^{-\text{i}\phi}$
@@ -500,19 +538,20 @@ Unitaritätsdreiecks sind. Es handelt sich hierbei um ein Dreieck in der komplex
 von $V_{CKM}$ repräsentiert.
 
 \section{Parametrisieren von Formfaktoren}
+\label{sec_paramForm}
 Der wie in Abschnitt \ref{sec_fermiWW} dargestellte hadronischen Strom $h_\mu^{c\dagger}$ lässt sich aufgrund von starken Wechselwirkungen zwischen den 
 Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermi} bereits vorweggenommen, durch einheitenlose Formfaktoren 
 ausgedrückt\cite{KimPham}. Der Sachverhalt wird am für den betrachteten Zerfall relevanten Feynmangraphen in Abbildung \ref{pic_Dfeyn} dargestellt.
 \begin{figure}[H]
 \includegraphics[width=0.8\textwidth]{Abbildungen/DFeyn.png}
-\caption{Feynmangraph zum $D^+\rightarrow \bar K_0 l^+ \nu_l$ Zerfall.}
+\caption{Feynmangraph zum $D\rightarrow \bar K l^+ \nu_l$ Zerfall.}
 \label{pic_Dfeyn}
 \end{figure}
 \noindent
 So ist die Betrachtung einer Vier-Fermionen-Wechselwirkung unzureichend, da die Austauschbosonen der QCD, die Gluonen $g$, einen störungstheoretisch nicht
-ermittelbaren Einfluss auf den schwachen Zerfall hat.
+ermittelbaren Einfluss auf den schwachen Zerfall haben.
 In einem Zweikörper-Zerfall $E\rightarrow PQ$ sind zwei Freiheitsgrade möglich, die den Prozess charakterisieren. Dies sind die Viererimpulse des Eduktteilchens
-$p_E$ und der des Produktteilchens $p_P$, da der Viererimpuls des verliebenen Produktteilchens $q^\mu$ von den vorigen determiniert wird. Da der vektorielle 
+$p_E$ und des Produktteilchens $p_P$, da der Viererimpuls des verliebenen Produktteilchens $q$ von den vorigen determiniert wird. Da der vektorielle 
 Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist, gibt es hierbei zwei Formfaktoren $f_\pm$, die der allgemeinsten Form
 dessen Beschreibung dienen
 \begin{align}
@@ -523,12 +562,12 @@ die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisie
 des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekte Schätzung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
 ist die sogenannte $z$-Reihenentwicklung
 \begin{align}
- f(q^2) = \frac{\mathcal{N}}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(t_0,\, q^2).
+ f(q^2) = \frac{1}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(t_0,\, q^2).
 \end{align}
-Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
-\begin{align}
- \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
-\end{align}
+% Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
+% \begin{align}
+%  \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
+% \end{align}
 mit der experimentell zugänglichen differentiellen Zerfallsbreite in Abhängigkeit des Impulsübertrags $\dx \Gamma/\dx q^2$. Die Koeffizienten $a_i$ sind
 aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch gesichert, dass $|z|<1$ im physikalischen Bereich. Sie wird dargestellt durch
 \begin{align}

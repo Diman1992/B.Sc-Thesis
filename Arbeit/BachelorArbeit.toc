@@ -1,23 +1,22 @@
-\contentsline {chapter}{Inhaltsverzeichnis}{V}{section*.2}
 \contentsline {chapter}{Abbildungsverzeichnis}{VII}{chapter*.3}
 \contentsline {chapter}{Tabellenverzeichnis}{VIII}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.6}
-\contentsline {chapter}{\numberline {2}Theorie}{3}{chapter.7}
-\contentsline {section}{\numberline {2.1}Voraussetzungen moderner Physik}{3}{section.8}
-\contentsline {subsection}{\numberline {2.1.1}Relativistische Kinematik}{3}{subsection.9}
-\contentsline {subsection}{\numberline {2.1.2}Dirac-Gleichung}{4}{subsection.13}
-\contentsline {subsection}{\numberline {2.1.3}Fermis Goldene Regel}{7}{subsection.23}
-\contentsline {section}{\numberline {2.2}Standardmodell der Elementarteilchenphysik}{9}{section.34}
-\contentsline {subsection}{\numberline {2.2.1}Teilcheninhalt}{10}{subsection.35}
-\contentsline {subsection}{\numberline {2.2.2}Schwache Wechselwirkung}{11}{subsection.38}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Parit\IeC {\"a}t}{11}{subsubsection.39}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Fermi-Wechselwirkung}{12}{subsubsection.40}
-\contentsline {subsubsection}{\numberline {2.2.2.3}CKM-Matrix}{14}{subsubsection.47}
-\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{16}{section.52}
-\contentsline {chapter}{\numberline {3}Ergebnisse}{19}{chapter.58}
-\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{19}{section.59}
-\contentsline {section}{\numberline {3.2}Ermittlung der Formfaktoren}{20}{section.63}
-\contentsline {subsection}{\numberline {3.2.1}Die Axialvektorformfaktoren und $f_-$}{20}{subsection.64}
-\contentsline {subsection}{\numberline {3.2.2}Fit des Formfaktors $f_+$}{21}{subsection.66}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{22}{chapter.67}
-\contentsline {chapter}{Literaturverzeichnis}{23}{chapter.67}
+\contentsline {chapter}{\numberline {2}Theorie}{2}{chapter.7}
+\contentsline {section}{\numberline {2.1}Voraussetzungen moderner Physik}{2}{section.8}
+\contentsline {subsection}{\numberline {2.1.1}Relativistische Kinematik}{2}{subsection.9}
+\contentsline {subsection}{\numberline {2.1.2}Dirac-Gleichung}{3}{subsection.13}
+\contentsline {subsection}{\numberline {2.1.3}Fermis Goldene Regel}{5}{subsection.23}
+\contentsline {section}{\numberline {2.2}Standardmodell der Elementarteilchenphysik}{7}{section.34}
+\contentsline {subsection}{\numberline {2.2.1}Teilcheninhalt}{8}{subsection.35}
+\contentsline {subsection}{\numberline {2.2.2}Schwache Wechselwirkung}{9}{subsection.38}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Parit\IeC {\"a}t}{9}{subsubsection.39}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Fermi-Wechselwirkung}{10}{subsubsection.40}
+\contentsline {subsubsection}{\numberline {2.2.2.3}CKM-Matrix}{12}{subsubsection.47}
+\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{13}{section.52}
+\contentsline {chapter}{\numberline {3}Ergebnisse}{15}{chapter.57}
+\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{15}{section.58}
+\contentsline {section}{\numberline {3.2}Ermittlung der Formfaktoren}{16}{section.62}
+\contentsline {subsection}{\numberline {3.2.1}Die Axialvektorformfaktoren und $f_-$}{16}{subsection.63}
+\contentsline {subsection}{\numberline {3.2.2}Fit des Formfaktors $f_+$}{17}{subsection.65}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{18}{chapter.66}
+\contentsline {chapter}{Literaturverzeichnis}{19}{chapter.66}
