@@ -23,7 +23,7 @@
 
 % >>> Titelseite <<<
 
-\newcommand{\thetitle}{Formfaktoren des semileptonischen $D \rightarrow  K l \nu$ Zerfalls}
+\newcommand{\thetitle}{Formfaktoren des semileptonischen $D \rightarrow  K l^+ \nu$ Zerfalls}
 
 \thispagestyle{empty}
 \begin{center}
@@ -193,7 +193,7 @@ Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lore
 \end{equation}
 was wieder die relativistische Energie-Impuls-Beziehung ist. Die Einsteinsche Summenkonvention wird hierbei angewandt.
 \subsection{Dirac-Gleichung}
-\vspace{-0.5cm}
+%\vspace{-0.5cm}
 Aus der nicht-relativistischen Schrödinger-Gleichung als quantenmechanische Wellengleichung ergibt sich durch erste Quantisierung \cite{TeilFortgeschr} eine Ersetzung von Energie 
 und Impuls durch partielle Differentialoperatoren
 \begin{align*}
@@ -260,11 +260,11 @@ mit $\dagger$ als komplexe Konjugation und Transposition. Lösungen dieser Bispi
 lauten nun
 \begin{equation}
  u(p,s)^{(1,2)} = \mathcal{N} \begin{pmatrix}
-                          \chi^{(1,2)}\\
+                          \chi_s^{(1,2)}\\
                           \frac{\vec \sigma \vec p}{E+m} \chi_s^{(1,2)}
                          \end{pmatrix} \qquad \text{und}\qquad v(p,s)^{(1,2)} = \mathcal{N} \begin{pmatrix}
                           \frac{\vec \sigma \vec p}{E+m} \chi_s^{(2,1)}\\
-                          \chi^{(2,1)}                          
+                          \chi_s^{(2,1)}                          
                          \end{pmatrix},
 \end{equation}
 mit einer Normierung $\mathcal{N}$, die für gewöhnlich $\sqrt{E + m}$ gewählt wird und dem nicht-relativistischen Spinor für Spin $\frac12$-Teilchen $\chi_s$.
@@ -367,11 +367,11 @@ aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs, denen jeweils
 Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache Wechselwirkung, die hier näher beleuchtet wird. 
 
 \subsection{Teilcheninhalt}
-Seit langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und den Atomkern, der seinerseits aus
+Seit Langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und den Atomkern, der seinerseits aus
 Protonen und Neutronen zusammengesetzt ist, die ihrerseits wiederum aus Quarks bestehen. Nach derzeitigem Stand gelten Elektronen und die anderen geladenen 
 Leptonen $l$ und Quarks als punktförmige
 Teilchen, die keine Substruktur aufweisen. Antiteilchen gibt es zu jedem Teilchen. Sie gleichen sich zwar in ihrer Masse, tragen jedoch in allen ladungsartigen Quantenzahlen, wie der Leptonenzahl oder
-elektrische Ladung und Parität ein entgegengesetztes Vorzeichen. Die stabilen, sehr leichten Neutrinos $\nu$ existieren zwar nicht in gebundenen Zuständen, gelten jedoch als elementar und sind daher 
+der elektrischen Ladung und Parität ein entgegengesetztes Vorzeichen. Die stabilen, sehr leichten Neutrinos $\nu$ existieren zwar nicht in gebundenen Zuständen, gelten jedoch als elementar und sind daher 
 ebenfalls im elementaren Teilchenzoo \cite{PDG} in Tabelle \ref{tab_particlezoo} aufgeführt.
 \begin{table}[H]
 \begin{tabular}{c|cccc|ccc} \toprule 
@@ -392,8 +392,8 @@ ebenfalls im elementaren Teilchenzoo \cite{PDG} in Tabelle \ref{tab_particlezoo}
 Aus Quarks $q$ und ihren Partnern, den Antiquarks $\bar q$ ist es nun möglich, verschiedenste Kombinationen zu bilden, die jedoch nach außen hin immer eine
 ganzzahlige Ladung tragen müssen. Diese Quarkkombinationen werden Hadronen genannt und werden durch die Anzahl an Valenzquarks in (Anti-)Baryonen ($\bar q\bar q\bar q$/$qqq$) und in 
 Mesonen ($q\bar q$) unterklassifiziert. Hier interessant sind die Mesonen, die je aus mindestens einem Quark der 2. Generation bestehen. Für diese Arbeit
-relevant sind das $D^+$-Meson, welches unter schwacher Wechselwirkung in ein $\bar K^0$-Meson übergeht. In Tabelle \ref{tab_DKMeson} sind ihre Attribute
-aufgeführt.
+relevant sind ein $D$-Meson, welches unter schwacher Wechselwirkung in ein $K$-Meson übergeht unter Abstrahlung eines $W$-Bosons, welches wiederum in ein 
+Leptonenpaar zerfällt. In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
 \begin{table}[H]
 \begin{tabular}{c|ccc|cccc} \toprule 
   & $q\bar q$ &  $m$ in MeV & $q$ in e & $I(J^P)$ & $I_z$ & $S$ & $C$\\
@@ -408,15 +408,15 @@ aufgeführt.
 \label{tab_DKMeson}
 \end{table}
 \noindent
-Die hier neu auftauchenden Größen sind im einzelnen der starke Isospin $I$, seine dritte Komponente $I_z$, der Gesamtdrehimpuls $J$, die Parität $P$, die
-Strangeness $S$, sowie die Charmeness $C$. Da es sich hierbei um ein 
-$\bar d$ handelt, ist $I_z$ $+\frac12$. Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks entgegengesetzt 
+Die hier neu auftauchenden Größen sind im Einzelnen der starke Isospin $I$, seine dritte Komponente $I_z$, der Gesamtdrehimpuls $J$, die Parität $P$, die
+Strangeness $S$, sowie die Charmeness $C$. Da es sich beim Spectatorquark um ein Teilchen der 1. Generation handelt ($\bar u, \bar d$), gilt $I = \frac12$. 
+Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks entgegengesetzt 
 ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihre Wellenfunktion das Vorzeichen ändern, 
 ergibt sich $P=-1$.
 
 \subsection{Schwache Wechselwirkung}
 \label{sec_schwacheWW}
-Die schwache Wechselwirkung gilt als die einzige der vier fundamentalen Kräfte, die beispielsweise Paritäts- und Flavoureigenschaften von Teilchen verändert.
+Die schwache Wechselwirkung gilt als die Einzige der vier fundamentalen Kräfte, die beispielsweise Paritäts- und Flavoureigenschaften von Teilchen verändert.
 Als niederenergetischen Grenzfall der modernen, quantenfeldtheoretischen Glashow-Weinberg-Salam Theorie (GWS) wird die klassische Theorie von Fermi 
 reproduziert. Diese beinhaltet die
 sogenannte Vier-Fermionen-Punkt-Wechselwirkung (oder Fermi-Wechselwirkung), die Zerfälle mit vier beteiligten Fermionen beschreiben kann. Bei solchen
@@ -452,12 +452,12 @@ ein hermitescher Hamiltonian konstruiert, der bereits in Abschnitt \ref{sec_ferm
 \end{equation}
 dessen Raumzeitstruktur als Vektor-Vektor-Kopplung (VV) bezeichnet wird. Die auftretenden Ströme verhalten sich unter Lorentz-Transformationen wie ein Raumzeit-Vektor.
 Es zeigt sich, dass diese Art der Kopplung nicht die einzig lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
-die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Axialvektorströme verhalten sich unter
-Paritätstransformationen genau gegensätzlich zu Vektorströmen. Aus den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
+die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Aus den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
 der Hamiltonian (pseudo-)skalar sein muss, was die Kontrahierbarkeit beider Ströme erfordert. Eine dieser Kopplungen (VA) würde eine Paritätsverletzung erfordern,
 da der Hamiltonian pseudoskalar ist und daher nicht mit dem Paritätsoperator vertauscht. Durch die Klärung des $\theta-\tau$-Rätsels und dem Experiment von Wu,
 konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung bestätigt werden.
 
+\noindent
 Der Helizitätsoperator für Fermionen $H$ als Skalarprodukt des Impulsoperators $\bar p$, der eine vektorielle Größe ist und dem Spinoperator $\vec \sigma$, 
 der seinerseits ein Axialvektor ist, zeigt ebenfalls für Neutrinos die Paritätsverletzung. Positive und negative Helizität wären unter
 Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
@@ -512,18 +512,18 @@ zu betrachten, ist die Erklärung dieses Flavourwechsels möglich und lässt sic
       -\sin \theta_c\quad \cos \theta_c
      \end{pmatrix}.
 \end{align}
-Die Univeralität der Zerfallsamplitude $M$ aus \eqref{eq_fermiMG_F}, die bisher nur die Kopplungskontante $G_F$ besaß, hat nun noch den neuen Parameter
-$\theta_c$, der Cabibbo-Winkel genannt wird. Dieser Winkel beschreibt die den zusätzlichen Kopplungsfaktor der $W^\pm$-Bosonen an die schwachen 
-Wechselwirkungseigenzustände $u, d', c, s'$ des $u$-,$d$-,$s$-, bzw. $c$-Quarks. Aus der Betrachtung von Zerfällen $u\rightarrow d$ und $s\rightarrow d$ lässt
-sich $\theta_c \approx 13^\circ$ bestimmen. Die zweidimensionale Matrix $U$ war zwar wegen Erhaltung der euklidischen Norm unitär, konnte jedoch nicht die 
-bald gefundene CP-Verletzung (Charge, Parity) erklären. Nach Kobayashi und Maskawa muss folglich eine dritte Fermionengeneration existieren,
-die $U$ in eine 3$\times$3-Matrix erweitern würde, die zwar weiterhin unitär aber nun zusätzlich eine komplexe Phase $\e^{\text{i}\phi}$ enthalten müsse. $V_{CKM}$ ist
+Die Univeralität der Zerfallsamplitude $M$ aus \eqref{eq_fermiMG_F}, die bisher nur die Kopplungskontante $G_F$ besessen hat, hat nun noch den neuen Parameter
+$\theta_c$, der Cabibbo-Winkel genannt wird. Dieser Winkel beschreibt den zusätzlichen Kopplungsfaktor der $W^\pm$-Bosonen an die schwachen 
+Wechselwirkungseigenzustände $u, d', c, s'$ des $u$-,$d$-,$s$-, bzw. $c$-Quarks. Aus der Betrachtung von Zerfällen $u\rightarrow d$ und $c\rightarrow d$ lässt
+sich $\theta_c \approx 13^\circ$ bestimmen. Die zweidimensionale Matrix $U$ ist zwar wegen Erhaltung der euklidischen Norm unitär, kann jedoch nicht die 
+gefundene CP-Verletzung (Charge, Parity) erklären. Nach Kobayashi und Maskawa muss folglich eine dritte Fermionengeneration existieren,
+die $U$ in eine 3$\times$3-Matrix erweitern würde, die zwar weiterhin unitär aber nun zusätzlich eine komplexe Phase $\e^{\text{i}\phi}$ enthalte. $V_{\text{CKM}}$ ist
 ausdrückbar in der Standardparametrisierung, bei der die vier freien Parameter die eben genannte komplexe Phase und drei Eulerwinkel 
 $\theta_{12} = \theta_c,\, \theta_{13}$ und $\theta_{23}$ sind. Die Wolfenstein-Parametrisierung beschreibt die CKM-Matrix ihrerseits mit den vier Parametern
 $\lambda,\, A,\, \rho$ und $\eta$, welche die Verbindungen $\lambda = \sin\theta_{12},\, A\lambda^2 = \sin\theta_{23}$ und $A\lambda^3(\rho-\text{i}\eta) = \sin\theta_{13}\e^{-\text{i}\phi}$
 haben.
 \begin{align}
- V_{CKM} = \begin{pmatrix}
+ V_{\text{CKM}} = \begin{pmatrix}
             V_{ud}\,V_{us}\,V_{ub}\\
             V_{cd}\,V_{cs}\,V_{cb}\\
             V_{td}\,V_{ts}\,V_{tb}\\
@@ -535,7 +535,7 @@ haben.
 \end{align}
 Sollte die CP-Verletzung einzig aus der komplexen Phase kommen, lässt sich zeigen, dass CP-verletzende Amplituden proportional zur Fläche des sogenannten
 Unitaritätsdreiecks sind. Es handelt sich hierbei um ein Dreieck in der komplexen Ebene mit $\rho$ und $\eta$ als Achsen. Die Seiten werden durch Komponenten
-von $V_{CKM}$ repräsentiert.
+von $V_{\text{CKM}}$ repräsentiert.
 
 \section{Parametrisieren von Formfaktoren}
 \label{sec_paramForm}
@@ -551,24 +551,24 @@ ausgedrückt\cite{KimPham}. Der Sachverhalt wird am für den betrachteten Zerfal
 So ist die Betrachtung einer Vier-Fermionen-Wechselwirkung unzureichend, da die Austauschbosonen der QCD, die Gluonen $g$, einen störungstheoretisch nicht
 ermittelbaren Einfluss auf den schwachen Zerfall haben.
 In einem Zweikörper-Zerfall $E\rightarrow PQ$ sind zwei Freiheitsgrade möglich, die den Prozess charakterisieren. Dies sind die Viererimpulse des Eduktteilchens
-$p_E$ und der des Produktteilchens $p_P$, da der Viererimpuls des verliebenen Produktteilchens $q^\mu$ von den vorigen determiniert wird. Da der vektorielle 
-Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist, gibt es hierbei zwei Formfaktoren $f_\pm$, die der allgemeinsten Form
+$p_E$ und des Produktteilchens $p_P$, da der Viererimpuls des verliebenen Produktteilchens $q$ von den vorigen determiniert wird. Da der vektorielle 
+Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist (WAS HEISST DAS GENAU?), gibt es hierbei zwei Formfaktoren $f_\pm$, die der allgemeinsten Form
 dessen Beschreibung dienen
 \begin{align}
  \big\langle K(p_K)\,\big|V^\mu\big|\, D(p_D)\big\rangle = f_+(q^2)(p_D+p_K)^\mu + f_-(q^2)(p_D-p_K)^\mu.
 \end{align}
 Es gibt viele Ansätze, diese Formfaktoren zu bestimmen. Neben dem theoretischen Weg über die Gitterquantenchromodynamik, existieren einige Parametrisierungen,
 die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisierungen weisen ein schlechtes Konvergenzverhalten nahe der semileptonischen Bereiche
-des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekte Schätzung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
+des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekten Berechnung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
 ist die sogenannte $z$-Reihenentwicklung
 \begin{align}
- f(q^2) = \frac{\mathcal{N}}{1-\frac{q^2}{m_D^2}} \sum\limits_{i=0}^N a_i\,z^i(t_0,\, q^2).
+ f(q^2) = \frac{1}{1-\frac{q^2}{m^{*2}_D}} \sum\limits_{i=0}^\infty a_i\,z^i(t_0,\, q^2).
 \end{align}
-Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
-\begin{align}
- \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
-\end{align}
-mit der experimentell zugänglichen differentiellen Zerfallsbreite in Abhängigkeit des Impulsübertrags $\dx \Gamma/\dx q^2$. Die Koeffizienten $a_i$ sind
+% Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
+% \begin{align}
+%  \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
+% \end{align}
+Die Koeffizienten $a_i$ sind
 aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch gesichert, dass $|z|<1$ im physikalischen Bereich. Sie wird dargestellt durch
 \begin{align}
  z(t_0,\, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}},
@@ -576,7 +576,8 @@ aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch ges
 worin $t_\pm$ bestimmt sind durch $t_\pm = (m_D \pm m_K)$ und $t_0$ als ein konstantes Optimum gewählt wird, was klassischerweise zu 
 $t_0 = t_+(1-(1-t_-/t_+)^{1/2})$ bestimmt wird, da es den Maximalwert von $z(t_0,\, q^2)$ minimiert.
 
-Bei Übergängen mit nicht verschiendendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren zu einem vektoriellen Teilchen, treten 
+\noindent
+Bei Übergängen mit nicht verschWindendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren zu einem vektoriellen Teilchen, treten 
 weitere Formfaktoren auf. Die Ausdrücke für diesen Strom und die Abhängigkeiten der Formfaktoren $A_i(q^2)$ sind teilweise sehr komplex, sodass wegen
 der hier nicht bestehenden Relevanz nicht näher darauf eingegangen wird.
 
@@ -614,30 +615,54 @@ $\chi^2$-Funktion ermittelt.
 
 \subsection{Die Axialvektorformfaktoren und $f_-$}
 Wie an manchen Stellen bereits erwähnt und vorausgesetzt, verschwinden die Formfaktoren des Axialvektorstroms. Formfaktoren beschreiben starke 
-Wechselwirkungen zwischen dem zerfallenden Quark (hier $c$) und dem Spectatorquark (hier $\bar d$), was heißt, dass auftretende Größen unter Parität
-ein invariantes Verhalten zeigen müssen. Folglich muss nach Abschnitt \ref{sec_parity} das Produkt der Paritätsquantenzahlen beteiligter Ströme gleich dem
-des zerfallenden $D^+$-Mesons sein
+Wechselwirkungen zwischen dem zerfallenden Quark (hier $c$) und dem Spectatorquark (hier $\bar d$, $\bar u$), was heißt, dass die Parametrisierung des 
+Vektor- und Axialvektorstroms dasselbe Paritätstransformationsverhalten haben müssen. Die Ströme besitzen ein Paritätsverhalten von
 \begin{align}
- \mathcal{P} \, \big\langle\bar K^0\,\big|V^\mu|\,D^+\big\rangle &= (-1)\cdot(-1)\cdot(-1) \stackrel{!}{=} \mathcal{P} \big|D^+\big\rangle = -1 \nonumber \\
- \mathcal{P} \, \big\langle\bar K^0\,\big|A^\mu|\,D^+\big\rangle &= (-1)\cdot(+1)\cdot(-1) \stackrel{!}{=} \mathcal{P} \big|D^+\big\rangle = -1. \nonumber
+ \mathcal{P} \, \big\langle\bar K^0\,\big|V^\mu|\,D^+\big\rangle &= (-1)\cdot(-1)\cdot(-1) = -1 \nonumber \\
+ \mathcal{P} \, \big\langle\bar K^0\,\big|A^\mu|\,D^+\big\rangle &= (-1)\cdot(+1)\cdot(-1) = +1. \nonumber
 \end{align}
-Da letzte Gleichung offensichtlich nicht erfüllt ist, existiert kein Axialvektorstrom. Damit einer existiere, müsse dieser dieselbe Eigenparität haben,
-wie die beiden Mesonen. Aufgrund seiner Eigenschaft $J^P = 1^+$, hätte er eine Struktur 
-$A^\mu = \epsilon^{\mu \alpha \beta \gamma}p_{D,\alpha}\,p_{K,\beta}\,p_{X,\gamma}$, wobei jedoch kein dritter Freiheitsgrad als Viererimpuls eines
-weiteren Teilchen $X$ vorhanden ist, um diesen Ausdruck zu konstruieren.
+Aus den beiden einzigen Freiheitsgraden des Zerfalls, den Impulsen $p$ und $p'$, und dem Levi-Civita-Symbol $\epsilon^{\mu\nu\alpha\beta}$ lassen sich alle möglichen
+Darstellungen von Strömen mit unbestimmten Vorfaktoren schreiben als
+\begin{align}
+ \underbrace{p^\mu}_{V} + \underbrace{p'^\mu}_{V}+ \underbrace{p^\mu p'_\mu }_{S} + \underbrace{\epsilon^{\mu\nu\alpha\beta}p_\alpha p'_\beta}_{T},
+\end{align}
+wobei die Größen unter den Klammern das entsprechende Transformationsverhalten angeben. Daraus ergibt sich, dass die einzigen vektoriellen Beiträge wie 
+Vektoren $V$ und keiner wie Axialvektoren $A$ transformieren. Damit ein solcher Beitrag existieren könne, müsse er aufgrund seiner Eigenschaft $J^P = 1^+$
+eine Struktur haben, wie $A^\mu = \epsilon^{\mu\alpha\beta\gamma}p_\alpha\,p'_\beta\,p''_\gamma$ mit einem weiteren Freiheitsgrad $p''$. Da dieser zur 
+Konstruktion jedoch nicht vorhanden ist, verschwindet der Axialvektoranteil.
 
-Um nachzuvollziehen, was mit $f_-$ geschieht, wird das Matrixelement aus \eqref{eq_fermiMG_F} ohne $f_+$ betrachtet. Der Impulsübertrag $q^\mu$ ist nicht
+\noindent
+Um nachzuvollziehen, was mit $f_-$ geschieht, wird das Matrixelement aus \eqref{eq_fermiMG_F} ohne $f_+$ betrachtet. Der Impulsübertrag $q$ ist nicht
 nur die Differenz der mesonischen Viererimpulse, sondern auch die Summe der leptonischen. Unter Einbezug des leptonischen Stroms ersetzt die Dirac-Gleichung
 \eqref{eq_dirac} die $k_i$ und ersetzt sie durch die zugehörigen Massen, die als vernachlässigbar gelten.
 \begin{align}
  M_- &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(p_D-p_K)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
  &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(k_\nu+k_l)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
  &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (\slashed{k}_\nu + \slashed{k}_l) (1-\gamma_5)v_l\nonumber\\
- &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (m_\nu + m_l) (1-\gamma_5)v_l\nonumber \\
+ &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu \underbrace{(m_\nu + m_l)}_{=0} (1-\gamma_5)v_l\nonumber \\
  &=0
  \end{align}
 
 \subsection{Fit des Formfaktors $f_+$}
+\begin{align}
+ \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(q^2))C^{-1}_{ij}(\Delta \Gamma_j - g_j(q^2))
+\end{align}
+
+\begin{align}
+ C = C^{\text{stat}} + C^{\text{sys}}
+\end{align}
+
+\begin{align}
+ C^{\text{stat}}_{ij}
+\end{align}
+
+
+
+\begin{align}
+ C_{ij} = \sigma_i \sigma_j \cdot \rho_{ij}
+\end{align}
+
+
 
 
 \chapter{Zusammenfassung und Ausblick}
