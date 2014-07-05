@@ -1,7 +1,8 @@
 \documentclass[11pt,a4paper,twoside]{report}
 \input{Tex/longheader.tex}
 \input{Tex/global}
- \setlength{\parskip}{1.5ex}
+
+ %\setlength{\parskip}{1.5ex}
 \begin{document}
 \begin{spacing}{1,2}
 \pagenumbering{Roman}
@@ -284,7 +285,7 @@ Der Wahrscheinlichkeitsstrom lautet somit
 
 
 \subsection{Fermis Goldene Regel}
-\label{sec_fermi}
+\label{sec_fermigoldenrule}
 In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, dessen Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
 bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsrate $\Gamma$ als bestimmbare Größe zu erheben
 \begin{equation}
@@ -446,7 +447,7 @@ Abbildung \ref{pic_4fermi} sind die Feynman-Diagramme beider Darstellungen gezei
 \label{pic_4fermi}
 \end{figure}
 Zum hadronischen Strom kommt natürlich auch ein leptonischer Strom $l_\mu^c$, der im Aussehen seinem Pendant gleicht. Aus ihnen wird über eine Kopplungskonstante
-ein hermitescher Hamiltonian konstruiert, der bereits in Abschnitt \ref{sec_fermi} vorweg genommen wurde
+ein hermitescher Hamiltonian konstruiert, der bereits in Abschnitt \ref{sec_fermigoldenrule} vorweg genommen wurde
 \begin{equation}
  \mathcal{H} = \frac{G_F}{\sqrt{2}}\big(V^{c,\mu}\,l_\mu^{c\,\dagger} + l^{c,\mu}\,V_\mu^{c\,\dagger}\big),
 \end{equation}
@@ -470,7 +471,7 @@ mit den Eigenschaften
 \begin{equation}
  \mathcal{P}u_- = -u_- \qquad \text{und}\qquad \mathcal{P}u_+ = 0.
 \end{equation}
-Hieraus ergibt sich eine Erweiterung des bisher benutzten Leptonenstroms um linkshändige Neutrinos, die sich, wie in Abschnitt \ref{sec_fermi}, schreiben lässt als
+Hieraus ergibt sich eine Erweiterung des bisher benutzten Leptonenstroms um linkshändige Neutrinos, die sich, wie in Abschnitt \ref{sec_fermigoldenrule}, schreiben lässt als
 \begin{equation}
  l_\mu^c = \bar \psi_l \gamma_\mu (1-\gamma_5) \psi_\nu.
 \end{equation}
@@ -540,7 +541,7 @@ von $V_{\text{CKM}}$ repräsentiert.
 \section{Parametrisieren von Formfaktoren}
 \label{sec_paramForm}
 Der wie in Abschnitt \ref{sec_fermiWW} dargestellte hadronischen Strom $h_\mu^{c\dagger}$ lässt sich aufgrund von starken Wechselwirkungen zwischen den 
-Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermi} bereits vorweggenommen, durch einheitenlose Formfaktoren 
+Hadronkonstituenten nicht so einfach schreiben, sondern wird wie in Abschnitt \ref{sec_fermigoldenrule} bereits vorweggenommen, durch einheitenlose Formfaktoren 
 ausgedrückt\cite{KimPham}. Der Sachverhalt wird am für den betrachteten Zerfall relevanten Feynmangraphen in Abbildung \ref{pic_Dfeyn} dargestellt.
 \begin{figure}[H]
 \includegraphics[width=0.8\textwidth]{Abbildungen/DFeyn.png}
@@ -560,30 +561,31 @@ dessen Beschreibung dienen
 Es gibt viele Ansätze, diese Formfaktoren zu bestimmen. Neben dem theoretischen Weg über die Gitterquantenchromodynamik, existieren einige Parametrisierungen,
 die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisierungen weisen ein schlechtes Konvergenzverhalten nahe der semileptonischen Bereiche
 des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekten Berechnung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
-ist die sogenannte $z$-Reihenentwicklung
+ist die sogenannte $z$-Reihenentwicklung \cite{formfactor_PhysRev}
 \begin{align}
  f(q^2) = \frac{1}{1-\frac{q^2}{m^{*2}_D}} \sum\limits_{i=0}^\infty a_i\,z^i(t_0,\, q^2).
+ \label{eq_formparam}
 \end{align}
-% Die Normierung $\mathcal{N}$ ist der umgestellte Ausdruck von \eqref{eq_fermidGammafinal}
-% \begin{align}
-%  \mathcal{N} = |f(q^2)||V| =  \sqrt{\frac{24\pi^3}{G_F^2|p_K|^3}\frac{\dx \Gamma}{\dx q^2}},
-% \end{align}
 Die Koeffizienten $a_i$ sind
 aus einem Fit zu bestimmende Größen. die Konvergenz der Reihe wird dadurch gesichert, dass $|z|<1$ im physikalischen Bereich. Sie wird dargestellt durch
 \begin{align}
  z(t_0,\, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}},
+ \label{eq_zexpansion}
 \end{align}
 worin $t_\pm$ bestimmt sind durch $t_\pm = (m_D \pm m_K)$ und $t_0$ als ein konstantes Optimum gewählt wird, was klassischerweise zu 
 $t_0 = t_+(1-(1-t_-/t_+)^{1/2})$ bestimmt wird, da es den Maximalwert von $z(t_0,\, q^2)$ minimiert.
 
 \noindent
-Bei Übergängen mit nicht verschWindendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren zu einem vektoriellen Teilchen, treten 
+Bei Übergängen mit nicht verschwindendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren zu einem vektoriellen Teilchen, treten 
 weitere Formfaktoren auf. Die Ausdrücke für diesen Strom und die Abhängigkeiten der Formfaktoren $A_i(q^2)$ sind teilweise sehr komplex, sodass wegen
 der hier nicht bestehenden Relevanz nicht näher darauf eingegangen wird.
 
 \chapter{Ergebnisse}
+Die zahlreichen, möglichen Formfaktoren des betrachteten Zerfalls werden im folgenden diskutiert, nachdem der physikalisch mögliche Bereich des Impulsübertrags
+berechnet worden ist. So werden die Axialvektorformfaktoren unter Paritätsbetrachtungen und $f_-$ aufgrund von vernachlässigbarer Leptonenmassen verschwinden.
+Schließlich wird der einzig verbliebene Formfaktor $f_+$ unter Minimierung einer $\chi^2$-Funktion bestimmt.
 \section{Kinematische Größen}
-\vspace{-0.5cm}
+%\vspace{-1.7cm}
 Die Formfaktoren werden allgemein in Abhängigkeit des Impulsübertrags $q^2$ angegeben. Da dieser nicht beliebige Werte annehmen kann, ist es sinnvoll, den 
 möglichen Wertebereich zu ermitteln.  In Abbildung \ref{pic_DZerfall} sind die beiden Randbereiche dargestellt. Im linken Teil des Bildes befindet sich das 
 entstehende Kaon wieder in Ruhe und im rechten Teil nimmt es die gleiche Menge an Impuls auf, wie das Leptonenpaar.
@@ -600,7 +602,7 @@ Zur Berechnung wird entsprechend den Regeln der Vierer-Impuls-Algebra die Vierer
  \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 =  (p_l^\mu + p_\nu^\mu )^2\nonumber\\
  m_D^2 + m_K^2 - 2m_DE_K &= q^2 = m_l^2 + m_\nu^2 + E_lE_\nu - |\vec p_l||\vec p_\nu|\cos(\xi).
 \end{align}
-An diesem Ausdruck lässt sich der in Abschnitt \ref{sec_fermi} verwandte Zusammenhang $\dx E = \dx q^2/2m_D$ erkennen.
+An diesem Ausdruck lässt sich der in Abschnitt \ref{sec_fermigoldenrule} verwandte Zusammenhang $\dx E = \dx q^2/2m_D$ erkennen.
 Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Für vernachlässigbare Leptonmassen 
 ($m_l=m_\nu=0$), gilt $E=|\vec p|$ und $q^2$ verschwindet , falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen, also der Zwischenwinkel
 $\xi = 0$. Es resultiert ein Wertebereich von
@@ -608,12 +610,7 @@ $\xi = 0$. Es resultiert ein Wertebereich von
  0 \leq q^2 \leq (m_D - m_K)^2.
 \end{equation}
 
-\section{Ermittlung der Formfaktoren}
-Von den möglichen Formfaktoren werden alle bis auf einen im Folgenden verschwinden. Das betrifft die Axialvektorformfaktoren $A_i$ aus 
-Paritätserhaltungsgründen und den Formfaktor $f_-$ durch vernachlässigbare Leptonmassen. Der verbleibende $f_+$ wird über die Minimierung einer
-$\chi^2$-Funktion ermittelt.
-
-\subsection{Die Axialvektorformfaktoren und $f_-$}
+\section{Die Axialvektorformfaktoren und $f_-$}
 Wie an manchen Stellen bereits erwähnt und vorausgesetzt, verschwinden die Formfaktoren des Axialvektorstroms. Formfaktoren beschreiben starke 
 Wechselwirkungen zwischen dem zerfallenden Quark (hier $c$) und dem Spectatorquark (hier $\bar d$, $\bar u$), was heißt, dass die Parametrisierung des 
 Vektor- und Axialvektorstroms dasselbe Paritätstransformationsverhalten haben müssen. Die Ströme besitzen ein Paritätsverhalten von
@@ -633,35 +630,75 @@ Konstruktion jedoch nicht vorhanden ist, verschwindet der Axialvektoranteil.
 
 \noindent
 Um nachzuvollziehen, was mit $f_-$ geschieht, wird das Matrixelement aus \eqref{eq_fermiMG_F} ohne $f_+$ betrachtet. Der Impulsübertrag $q$ ist nicht
-nur die Differenz der mesonischen Viererimpulse, sondern auch die Summe der leptonischen. Unter Einbezug des leptonischen Stroms ersetzt die Dirac-Gleichung
-\eqref{eq_dirac} die $k_i$ und ersetzt sie durch die zugehörigen Massen, die als vernachlässigbar gelten.
+nur die Differenz der mesonischen Viererimpulse, sondern auch die Summe der leptonischen
 \begin{align}
  M_- &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(p_D-p_K)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
- &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(k_\nu+k_l)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
+ &= \frac{G_F V}{\sqrt{2}} f_-(q^2)(k_\nu+k_l)^\mu u_\nu \gamma_\mu(1-\gamma_5)v_l.\nonumber
+\end{align}
+Unter Einbezug des leptonischen Stroms ersetzt die Dirac-Gleichung \eqref{eq_dirac} die $k_i$ durch die zugehörigen Massen
+\begin{align}
  &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (\slashed{k}_\nu + \slashed{k}_l) (1-\gamma_5)v_l\nonumber\\
- &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu \underbrace{(m_\nu + m_l)}_{=0} (1-\gamma_5)v_l\nonumber \\
- &=0
+ &=\frac{G_F V}{\sqrt{2}} f_-(q^2)u_\nu (m_\nu + m_l) (1-\gamma_5)v_l,\nonumber 
  \end{align}
+die im Verhältnis zur $D$-Mesonmasse für $l=\mu$ oder $l=e$ vernachlässigbar sind, woraufhin $M_-$ verschwindet.
 
-\subsection{Fit des Formfaktors $f_+$}
+\section{Fit des Formfaktors $f_+$}
+In Abschnitt \ref{sec_fermigoldenrule} ist ein kompakter Ausdruck für den Zusammenhang der differentiellen Zerfallsrate und dem 
+Formfaktor $f_+$ hergeleitet worden. Da der Formfaktor nicht leicht analytisch berechenbar ist, wird er entsprechend der Parametrisierung \eqref{eq_formparam}
+nach der Methode der kleinsten Quadrate an den experimentell erhobenen Daten für die partiellen Zerfallsraten gefittet. Im Rahmen der Messmethoden, ist es
+nicht möglich, eine genaue Zuordnung eines gemessenen Zerfalls zum entsprechenden Impulsübertrag zu erreichen, weshalb die Zerfallsraten für diskrete Bereiche
+angegeben werden. 
+
+\subsection{Methode der kleinsten Quadrate}
+Die Aufgabe des Fits liegt darin, die Funktion zu finden, die am geringsten von den Messwerten abweicht. Dies geschieht über die Minimierung einer
+Funktion $\chi^2$, die durch die Summe über die Anzahl diskreter Intervalle $m$ vom Produkt aus Differenzen experimenteller Daten $\Delta \Gamma$ und 
+zugehörigen, theoretischen Vorhersagen $g$, verknüpft über die Inverse einer Kovarianzmatrix $C$ gegeben ist.
 \begin{align}
- \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(q^2))C^{-1}_{ij}(\Delta \Gamma_j - g_j(q^2))
+ \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(f_+))C^{-1}_{ij}(\Delta \Gamma_j - g_j(f_+)).
 \end{align}
-
+Von der nie ganz abschirmbaren Hintergrundstörung, Strahlungen der Endteilchen (FSR) oder Monte Carlo Simulationen (MC), die zur Rekonstruktion von 
+Teilchenpfaden in Detektoren genutzt werden, entstehen Fehlerquellen $\sigma$ für die individuellen Zerfallsraten, die ebenso, wie die Messwerte 
+\cite{PhysRev_Data} $\Delta \Gamma$ in Tabelle \ref{tab_GammaSigma} mit den zugehörigen $q^2$-Intervallen angegeben sind. Die 
+Zuordnung der Zerfallsraten zu den $q^2_i$ erfolgt leider ebenfalls nicht fehlerfrei. Die dadurch entstehenden Korrelationen zwischen diesen Intervallen 
+sind teils statistischer und teils systematischer Natur, deren Matrixdarstellungen in den Tabellen \ref{tab_corStatDplus} bis \ref{tab_corSysD0} zu finden 
+sind. Die zu invertierende Kovarianzmatrix setzt sich additiv aus den Kovarianzmatrizen mit den statistischen bzw. den systematischen Beiträgen zusammen
 \begin{align}
- C = C^{\text{stat}} + C^{\text{sys}}
+ C = C^{\text{stat}} + C^{\text{sys}}.
 \end{align}
-
+Ihre jeweiligen Einträge ergeben sich aus den kennzeichnenden Korrelationsmatrixeinträgen und den entsprechenden Kovarianzen
 \begin{align}
- C^{\text{stat}}_{ij}
+ C^{\alpha}_{ij} = \sigma^{\alpha}_i \sigma^{\alpha}_j \cdot \rho^{\alpha}_{ij}, \hspace{2cm}\alpha = \text{stat, sys}.
 \end{align}
-
-
-
+Die Funktion des hier verwandten, theoretischen Modells stellt das Integral der differentiellen Zerfallsbreite über $q^2$ dar und berechnet sich aus 
+\eqref{eq_fermidGammafinal} zu
 \begin{align}
- C_{ij} = \sigma_i \sigma_j \cdot \rho_{ij}
+ g_i(f_+) = \Gamma_{\text{theo},i} = \frac{G_F^2 |V_{cs}|^2}{24\pi^3}\int|p_K(q_i^2)|^3 \cdot |f_+(q^2_i)|^2\dx q_i^2,
 \end{align}
+das sich zwar nicht analytisch, jedoch aufgrund der guten Konvergenzeigenschaften der beitragenden Terme auf numerischem Weg lösen lässt. 
 
+\subsection{Resultate für die Koeffizienten und den Startwert}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[H]
+  \begin{tabular}{l|ccc|crc}
+  \toprule
+    \multirow{2}{*}{$q^2$ in GeV$^2$}& \multicolumn{3}{c|}{$D^+ \rightarrow \bar K_0 l^+ \nu$} & \multicolumn{3}{c}{$D^0 \rightarrow  K^- l^+ \nu$}\\
+    \cline{2-7}
+    & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$ & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$\\
+   \midrule
+  {[}0,0 - 0,4) & 	17,82(36)&	2,03&	1,26&	17,79(47)&	2,03&	2,52 \\
+  {[}0,2 - 0,4)& 	15,83(35)&	2,19&	1,10&	15,62(45)&	2,19&	2,42\\
+  {[}0,4 - 0,6) &	13,91(32)&	2,31&	1,12&	14,02(43)&	2,31&	2,36\\
+  {[}0,6 - 0,8) & 	11,69(29)&	2,47&	1,15&	12,28(40)&	3,23&	2,33\\
+  {[}0,8 - 1,0)  &	9,36(26)&	2,73&	1,20&	8,92(34)&	3,82&	2,47\\
+  {[}1,0 - 1,2)  &	7,08(22)&	3,14&	1,36&	8,17(32)&	3,98&	2,23\\
+  {[}1,2 - 1,4)  &	5,34(19)&	3,63&	1,35&	4,96(25)&	5,04&	2,08\\
+  {[}1,4 - 1,6)  &	3,09(15)&	4,90&	1,63&	2,67(18)&	6,88&	2,16\\
+  {[}1,6 - $\infty$)&	1,28(11)&	8,43&	2,55&	1,19(13)&	10,63&	3,03\\
+  \bottomrule\bottomrule
+  \end{tabular}
+\caption{Gemessene partielle Zerfallsraten bei entsprechenden Impulsüberträgen und zugehörigen systematischen und statistischen Kovarianzen für beide Zerfallskanäle}
+\label{tab_GammaSigma}
+\end{table}
 
 
 
@@ -678,8 +715,9 @@ mit anderen zerfällen ist Vcs extrahierbar
 \newpage
 % >>> Literaturverzeichnis <<<
 
-\addcontentsline{toc}{chapter}{\bibname}
+
 \renewcommand{\bibname}{Literaturverzeichnis}
+\addcontentsline{toc}{chapter}{\bibname}
 %\bibliographystyle{unsrt} 
 %\bibliography{BachelorArbeit}
 \begin{thebibliography}{xxx}
@@ -693,6 +731,7 @@ mit anderen zerfällen ist Vcs extrahierbar
  \bibitem[8]{Sibold}Sibold, K.: \textit{Theorie der Elementarteilchen}, 2001, 1st edition, \\ISBN-13: 978-3519032526
  \bibitem[9]{KimPham}Ho-Kim, Q., Pham, X.: \textit{Elementary Particles and Their Interactions}, 1998, \\ ISBN-13: 978-3540636670
  \bibitem[10]{PhysRev_Data}Besson, D., et al. (CLEO Collaboration), 2009, Phys. Rev. D 80, 032005 
+ \bibitem[11]{formfactor_PhysRev}Bourrely, C., Caprini, I., Lellouch, L., 2009, Phys. Rev. D 79, 013008
 \end{thebibliography}
 
 

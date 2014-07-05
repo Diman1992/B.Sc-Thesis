@@ -15,13 +15,19 @@
 \usepackage{caption}
 \usepackage{wrapfig}
 \usepackage{setspace}
+%\usepackage[onehalfspacing]{setspace}
 \usepackage{threeparttable}
 \usepackage{footnote}
 \usepackage{feynmf}
+\usepackage{bbm}
+\usepackage{slashed}
+\usepackage{textcomp}
 
 \newfloat{formel}{htbp}{for}
 \floatname{formel}{Formel}
 
+\onehalfspacing
+%\setstretch {1.433}
 
 \usepackage{longtable}
 
@@ -38,7 +44,7 @@
 %\usepackage{showkeys}
 
 % Abstand zwischen zwei Abs�zen nach DIN (1,5 Zeilen)
- \setlength{\parskip}{1.5ex}
+% \setlength{\parskip}{1.5ex}
 
 % Einrckung am Anfang eines neuen Absatzes nach DIN (keine)
 %\setlength{\parindent}{0pt}
@@ -88,6 +94,7 @@
 \newcommand {\Sp} {\; \mathrm{Sp} \,}
 \newcommand {\mbe} {\stackrel{\text{!}}{=}}     %Must Be Equal
 \newcommand{\qed} { \hfill $\square$\\}
+\newcommand{\midtilde}{\raisebox{-0,25\baselineskip}{\textasciitilde}}
 \renewcommand{\i} {\imath}
 \def\captionsngerman{\def\figurename{\textbf{Abb.}}}
 
