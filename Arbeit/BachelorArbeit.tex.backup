@@ -1,6 +1,8 @@
 \documentclass[11pt,a4paper,twoside]{report}
 \input{Tex/longheader.tex}
 \input{Tex/global}
+\usepackage{xfrac}
+\usepackage{xcolor}
 
  %\setlength{\parskip}{1.5ex}
 \begin{document}
@@ -81,8 +83,8 @@ Datum des Einreichens der Arbeit: 14. Juli, 2014
 \section*{Kurzfassung}
 Im Zuge dieser Arbeit sollen dimensionslose Formfaktoren ermittelt werden, die eine Darstellung eines zerfallrelevanten Matrixelements bilden. Sie werden
 durch eine $z$-Reihenentwicklung parametrisiert und anhand von Daten der CLEO Collaboration unter Minimierung einer $\chi^2$-Funktion bis zur 
-zweiten Ordnung gefittet. Die Fitparameter sind $a_0$ = X, $a_1$ = Y, $a_2$ = Z und der Wert für den verbleibenden Formfaktor ist $f_+(q^2=0)$ = V, wobei 
-$q^2$ der Impulsübertrag des Leptonpaares ist.
+zweiten Ordnung gefittet. Die Fitparameter für $D^0\rightarrow  K^- l \nu$ sind $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 und der Wert für den verbleibenden Formfaktor ist $|V_{cs}|f_+(q^2=0)$ = 0,762, wobei 
+$q^2$ der Impulsübertrag des Leptonpaares ist. Und für $D^+\rightarrow \bar K^0 l \nu$ sind $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95, sowie $|V_{cs}|f(0)$ = 0,708.
 
 % Anhand des Flächeninhalts des Unitaritätsdreiecks, das aus Elementen der CKM-Matrix gebildet wird, kann man die Stärke der CP-Verletzung bestimmen. Ihre
 % Einträge beschreiben die Wahrscheinlichkeit eines Übergangs zwischen schwach zerfallenden Quarks. Da diese Quarks nicht ungebunden existieren, muss der
@@ -96,8 +98,8 @@ $q^2$ der Impulsübertrag des Leptonpaares ist.
 \section*{Abstract}
 As part of this thesis form factors get ascertained, which build an exposition of a matrix element pertinent to the decay. They are parameterised by a
 series expansion of the $z$-expansion and fitted to the second order by data of the CLEO Collaboration under minimizing a $\chi^2$-function. The resulting
-fit parameters are $a_0$ = X, $a_1$ = Y, $a_2$ = Z and the value for the form factor is $f_+(q^2=0)$ = V, where $q^2$ is the momentum transfer carried by
-the lepton pair.
+fit parameters for $D^0\rightarrow  K^- l \nu$ are $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 and the value for the form factor is $|V_{cs}|f_+(q^2=0)$ = 0,762, where $q^2$ is the momentum transfer carried by
+the lepton pair. And for $D^+\rightarrow \bar K^0 l \nu$ are $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95 and $|V_{cs}|f(0)$ = 0,708.
 
 % It is possible to determine the magnitude of the CP-violation by calculating the area of the unitarity triangle, build by elements of the CKM-matrix. Her
 % entries characterise the propability of a transition between weak decaying quarks. They are never found in unbound states, so the simple view on the converting
@@ -155,7 +157,7 @@ werden die ermittelten Ergebnisse vorgestellt, was die Diskussion der meisten Fo
 % konkreten Zerfall bestimmt werden sollen.
 
 \chapter{Theorie}
-Um Kenntnis über die Formfaktoren zu erlangen, ist es erforderlich, zuvor beteilgte Zusammenhäge zu beleuchten. Ein Einblick in die historische Physik
+Um Kenntnis über die Formfaktoren zu erlangen, ist es erforderlich, zuvor beteiligte Zusammenhäge zu beleuchten. Ein Einblick in die historische Physik
 des 20. Jahrhunderts soll die Grundlage für die den Zerfall entscheidende Schwache Wechselwirkung schaffen. Zuletzt wird eine Parametrisierung von Formfaktoren
 vorgestellt.
 
@@ -168,13 +170,13 @@ vorgestellt.
 \section{Voraussetzungen moderner Physik}
 Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aus heutiger Sicht aufgrund ihrer Richtigkeit und Exaktheit die 
 Voraussetzungen an moderne 
-Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint. Davon sind im Rahmen dieser 
+Theorien, dass diese immer gelten müssen. Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint(*). Davon sind im Rahmen dieser 
 Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
 von Bedeutung.
 
 \subsection{Relativistische Kinematik}
 Die SRT stellt die fundamentale Forderung, dass die Form der Naturgesetze unabhängig vom Inertialsystem gleich ist. Die Lichtgeschwindigkeit $c$ als
-größte vorkommende Geschwindigkeit ist in allen Inertialsystemen gleich groß. Die relativistische Energie-Impuls Beziehung 
+größte vorkommende Geschwindigkeit ist in allen Inertialsystemen gleich groß(*). Die relativistische Energie-Impuls Beziehung 
 $E^2 = \left(mc^2\right)^2 + \left(\vec pc\right)^2$ beschreibt einen allgemeinen Zusammenhang zwischen der Energie $E$, der Masse $m$ und dem Impuls $\vec p$.
 In der Hochenergiephysik ($E_{\text{CMS}} \approx 10^4$ GeV) gilt der hochrelativistische Grenzfall, bei dem Energie hauptsächlich durch den Impuls bestimmt wird.
 In natürlichen Einheiten wird $c = 1$ gesetzt, was zu $E^2 = \left|p\right|^2$ führt.
@@ -190,7 +192,7 @@ Der Index $\mu$ kann ganzzahlige Werte zwischen 0 und 3 annehmen und steht für 
 kann ein Skalarprodukt zweier Vierer-Vektoren nur dann beschrieben werden, wenn einer kovariant (Index unten) und der andere kontravariant (Index oben) ist.
 Diese Überführung geschieht durch die Minkowskimetrik, die die Norm unter Lorentz-Transformationen invariant lässt
 \begin{equation}
-  p^2 = p^\mu \eta_{\mu \nu} p^\nu = p^\mu p_\mu = E^2 - \vec p^2 = m^2,
+  p^2 = p^\mu \eta_{\mu \nu} p^\nu = p^\mu p_\mu = E^2 - \vec{p}^{\,2} = m^2,
 \end{equation}
 was wieder die relativistische Energie-Impuls-Beziehung ist. Die Einsteinsche Summenkonvention wird hierbei angewandt.
 \subsection{Dirac-Gleichung}
@@ -202,7 +204,7 @@ und Impuls durch partielle Differentialoperatoren
 \end{align*}
 Da die Schrödinger-Gleichung nicht lorentzinvariant ist, sind andere Ansätze durchgeführt worden, die der zuvor genannten Energie-Impuls-Beziehung $p^\mu p_\mu = m^2$
 genügen. Die Klein-Gordon-Gleichung für spinlose Teilchen, die aus ihr direkt folgt, ist zwar relativistisch korrekt, weist jedoch keine positiv definite 
-Wahrscheinlichkeitsdichte auf. Die Dirac-Gleichung für Spin$\frac12$-Teilchen ist ebenfalls unter Lorentztransformationen invariant und besitzt nun
+Wahrscheinlichkeitsdichte auf. Die Dirac-Gleichung für Spin$\sfrac{1}{2}$-Teilchen ist ebenfalls unter Lorentztransformationen invariant und besitzt nun
 zusätzlich eine positiv definite Wahrscheinlichkeitsdichte, was eine Interpretation ihrer Lösungen als Wahrscheinlichkeitsamplitude zulässt. Daher muss diese
 Gleichung linear in der ersten Zeit- und Ortsableitung sein und der folgenden Schrödinger-Form genügen \cite{RelQuantMech}
 \begin{equation}
@@ -276,7 +278,7 @@ wird. Wie bereits erwähnt, existiert bei der Dirac-Gleichung ein Wahrscheinlich
 \end{equation}
 genügt. Zur Ermittlung wird \eqref{eq_diracSchroedinger} von links mit der komplex konjugierten Wellenfunktion und die komplex konjugierte
 Form von \eqref{eq_diracSchroedinger} von rechts mit der nicht komplex konjugierten Wellenfunktion multipliziert. Hierzu dient die Gleichheit 
-$(\gamma^\mu)^\dagger = \gamma^0\gamma^\mu\gamma^0$. Die daraus resultierenden Gleichungen voneinander abgezogen ergeben die eben genannte Kontinuitätsgleichung.
+$(\gamma^\mu)^\dagger = \gamma^0\gamma^\mu\gamma^0$. Die daraus resultierenden Gleichungen voneinander abgezogen ergeben die eben genannte Kontinuitätsgleichung(*)--explizit angeben??.
 Der Wahrscheinlichkeitsstrom lautet somit
 \begin{equation}
  j^\mu = \bar \psi \gamma^\mu \psi.
@@ -286,7 +288,7 @@ Der Wahrscheinlichkeitsstrom lautet somit
 
 \subsection{Fermis Goldene Regel}
 \label{sec_fermigoldenrule}
-In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, dessen Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
+In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, deren Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
 bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsrate $\Gamma$ als bestimmbare Größe zu erheben
 \begin{equation}
  \Gamma \tau = 1 \quad \leftrightarrow\quad  \Gamma = \frac{1}{\tau}.
@@ -306,7 +308,7 @@ mit $m_D$ der Masse des D-Mesons. Der Phasenraum lässt sich schreiben als
 \end{equation}
 wobei $k_i$ fortan Leptonimpulse, $p_i$ Hadronimpulse, $P$ kurz die Summe $p_D+p_K$ und $q$ die Differenz $p_D - p_K$ bezeichnet. 
 Dabei ist $\delta$ die diracsche Deltafunktion, deren Aufgabe die Erhaltung von Energie und Impuls ist. Ziel ist es nun einen Ausdruck zu finden,
-theoretisch die differentielle Zerfallsbreite zu berechnen. Das hierzu benötigte Matrixelement wird über den Erwartungswert eines Hamiltonians berechnet,
+theoretisch die differentielle Zerfallsbreite zu berechnen(*). Das hierzu benötigte Matrixelement wird über den Erwartungswert eines Hamiltonians berechnet,
 der sich in einen Quark- und einen Leptonenstrom aufteilen lässt. Deren Struktur wird durch \eqref{eq_diracstrom} und die V-A-Theorie aus Abschnitt 
 \ref{sec_fermiWW} vorgegeben. Da der leptonische Anteil nicht stark wechselwirkt, ist eine explizite Darstellung des Erwartungswert möglich. Anders hingegen
 verhält es sich beim Quarkstrom, der nach Abschnitt \ref{sec_paramForm} durch Formfaktoren $f_\pm$ ausgedrückt werden kann. (STIMMT DAS SO?)
@@ -323,7 +325,7 @@ verhält es sich beim Quarkstrom, der nach Abschnitt \ref{sec_paramForm} durch F
  \end{align}
 Im Vorfaktor gehen die Fermikonstante $G_F$ und ein ebenfalls in \ref{sec_schwacheWW} wiederkommendes Matrixelement $V$ ein. $\bar s$ und $c$ sind quantenfeldtheoretische 
 Vernichtungs- bzw. Erzeugungsoperatoren der jeweiligen Quarks. $V^\mu$ und $A^\mu$ sind der vektorielle und axialvektorielle Anteil des Quarkstroms, der 
-in Abschnitt \ref{sec_fermiWW} beschrieben wird. Weiterhin sind $f$ die noch zu
+in Abschnitt \ref{sec_fermiWW} beschrieben wird. Weiterhin sind $f$(*)(meinst du $f_\pm$) die noch zu
 diskutierenden Formfaktoren, von denen an dieser Stelle nur $f_+$ weiter betrachtet werden soll, da in Abschnitt \ref{sec_paramForm} gezeigt wird, dass dieser
 der einzig verbleibende ist. Nach der Quadratur von $M$ wird der leptonische Anteil über 
 Casimirs Trick \cite{Griffiths} umgeformt
@@ -368,8 +370,8 @@ aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs, denen jeweils
 Quantenelektrodynamik (QED), die Quantenchromodynamik (QCD) und die schwache Wechselwirkung, die hier näher beleuchtet wird. 
 
 \subsection{Teilcheninhalt}
-Seit Langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und den Atomkern, der seinerseits aus
-Protonen und Neutronen zusammengesetzt ist, die ihrerseits wiederum aus Quarks bestehen. Nach derzeitigem Stand gelten Elektronen und die anderen geladenen 
+Seit Langem ist bekannt, dass die als unteilbar angenommenen Atome aus Konstituenten bestehen. Die Elektronenhülle und der Atomkern, der seinerseits aus
+Protonen und Neutronen zusammengesetzt ist, die ihrerseits wiederum aus Quarks bestehen(*). Nach derzeitigem Stand gelten Elektronen und die anderen geladenen 
 Leptonen $l$ und Quarks als punktförmige
 Teilchen, die keine Substruktur aufweisen. Antiteilchen gibt es zu jedem Teilchen. Sie gleichen sich zwar in ihrer Masse, tragen jedoch in allen ladungsartigen Quantenzahlen, wie der Leptonenzahl oder
 der elektrischen Ladung und Parität ein entgegengesetztes Vorzeichen. Die stabilen, sehr leichten Neutrinos $\nu$ existieren zwar nicht in gebundenen Zuständen, gelten jedoch als elementar und sind daher 
@@ -394,7 +396,7 @@ Aus Quarks $q$ und ihren Partnern, den Antiquarks $\bar q$ ist es nun möglich, 
 ganzzahlige Ladung tragen müssen. Diese Quarkkombinationen werden Hadronen genannt und werden durch die Anzahl an Valenzquarks in (Anti-)Baryonen ($\bar q\bar q\bar q$/$qqq$) und in 
 Mesonen ($q\bar q$) unterklassifiziert. Hier interessant sind die Mesonen, die je aus mindestens einem Quark der 2. Generation bestehen. Für diese Arbeit
 relevant sind ein $D$-Meson, welches unter schwacher Wechselwirkung in ein $K$-Meson übergeht unter Abstrahlung eines $W$-Bosons, welches wiederum in ein 
-Leptonenpaar zerfällt. In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
+Leptonenpaar zerfällt(*). In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
 \begin{table}[H]
 \begin{tabular}{c|ccc|cccc} \toprule 
   & $q\bar q$ &  $m$ in MeV & $q$ in e & $I(J^P)$ & $I_z$ & $S$ & $C$\\
@@ -453,7 +455,7 @@ ein hermitescher Hamiltonian konstruiert, der bereits in Abschnitt \ref{sec_ferm
 \end{equation}
 dessen Raumzeitstruktur als Vektor-Vektor-Kopplung (VV) bezeichnet wird. Die auftretenden Ströme verhalten sich unter Lorentz-Transformationen wie ein Raumzeit-Vektor.
 Es zeigt sich, dass diese Art der Kopplung nicht die einzig lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
-die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Aus den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
+die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Bei den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
 der Hamiltonian (pseudo-)skalar sein muss, was die Kontrahierbarkeit beider Ströme erfordert. Eine dieser Kopplungen (VA) würde eine Paritätsverletzung erfordern,
 da der Hamiltonian pseudoskalar ist und daher nicht mit dem Paritätsoperator vertauscht. Durch die Klärung des $\theta-\tau$-Rätsels und dem Experiment von Wu,
 konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung bestätigt werden.
@@ -561,7 +563,7 @@ dessen Beschreibung dienen
 Es gibt viele Ansätze, diese Formfaktoren zu bestimmen. Neben dem theoretischen Weg über die Gitterquantenchromodynamik, existieren einige Parametrisierungen,
 die anhand experimenteller Daten einen Zugang ermöglichen. Die Pol-Parametrisierungen weisen ein schlechtes Konvergenzverhalten nahe der semileptonischen Bereiche
 des Impulsübertrags $q^2$ auf, was Zweifel an einer korrekten Berechnung des Formfaktors übrig lässt \cite{PhysRev_Data}. Eine Darstellung, die ein solches Problem nicht hat,
-ist die sogenannte $z$-Reihenentwicklung \cite{formfactor_PhysRev}
+ist eine sogenannte $z$-Reihenentwicklung \cite{formfactor_PhysRev}
 \begin{align}
  f(q^2) = \frac{1}{1-\frac{q^2}{m^{*2}_D}} \sum\limits_{i=0}^\infty a_i\,z^i(t_0,\, q^2).
  \label{eq_formparam}
@@ -604,7 +606,7 @@ Zur Berechnung wird entsprechend den Regeln der Vierer-Impuls-Algebra die Vierer
 \end{align}
 An diesem Ausdruck lässt sich der in Abschnitt \ref{sec_fermigoldenrule} verwandte Zusammenhang $\dx E = \dx q^2/2m_D$ erkennen.
 Sollte das Kaon sich nach dem Zerfall in Ruhe befinden, so ist $E_K = m_K$, woraufhin $q^2 = (m_D-m_K)^2$ wäre. Für vernachlässigbare Leptonmassen 
-($m_l=m_\nu=0$), gilt $E=|\vec p|$ und $q^2$ verschwindet , falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen, also der Zwischenwinkel
+($m_l=m_\nu=0$), gilt $E=|\vec p|$ und $q^2$ verschwindet, falls die Impulsrichtungen der Leptonen in die gleiche Richtung zeigen, also der Zwischenwinkel
 $\xi = 0$. Es resultiert ein Wertebereich von
 \begin{equation}
  0 \leq q^2 \leq (m_D - m_K)^2.
@@ -655,17 +657,18 @@ Funktion $\chi^2$, die durch die Summe über die Anzahl diskreter Intervalle $m$
 zugehörigen, theoretischen Vorhersagen $g$, verknüpft über die Inverse einer Kovarianzmatrix $C$ gegeben ist.
 \begin{align}
  \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(f_+))C^{-1}_{ij}(\Delta \Gamma_j - g_j(f_+)).
+ \label{eq_chi2}
 \end{align}
-Von der nie ganz abschirmbaren Hintergrundstörung, Strahlungen der Endteilchen (FSR) oder Monte Carlo Simulationen (MC), die zur Rekonstruktion von 
+Durch die nie ganz abschirmbare Hintergrundstörung, Strahlungen der Endteilchen (FSR) oder Monte Carlo Simulationen (MC), die zur Rekonstruktion von 
 Teilchenpfaden in Detektoren genutzt werden, entstehen Fehlerquellen $\sigma$ für die individuellen Zerfallsraten, die ebenso, wie die Messwerte 
-\cite{PhysRev_Data} $\Delta \Gamma$ in Tabelle \ref{tab_GammaSigma} mit den zugehörigen $q^2$-Intervallen angegeben sind. Die 
+ $\Delta \Gamma$ in \cite{PhysRev_Data} mit den zugehörigen $q^2$-Intervallen angegeben sind. Die 
 Zuordnung der Zerfallsraten zu den $q^2_i$ erfolgt leider ebenfalls nicht fehlerfrei. Die dadurch entstehenden Korrelationen zwischen diesen Intervallen 
-sind teils statistischer und teils systematischer Natur, deren Matrixdarstellungen in den Tabellen \ref{tab_corStatDplus} bis \ref{tab_corSysD0} zu finden 
+sind teils statistischer und teils systematischer Natur, deren Matrixdarstellungen ebenfalls in \cite{PhysRev_Data} zu finden 
 sind. Die zu invertierende Kovarianzmatrix setzt sich additiv aus den Kovarianzmatrizen mit den statistischen bzw. den systematischen Beiträgen zusammen
 \begin{align}
  C = C^{\text{stat}} + C^{\text{sys}}.
 \end{align}
-Ihre jeweiligen Einträge ergeben sich aus den kennzeichnenden Korrelationsmatrixeinträgen und den entsprechenden Kovarianzen
+Ihre jeweiligen Einträge ergeben sich aus den kennzeichnenden Korrelationsmatrixeinträgen $\rho_{ij}$ und den entsprechenden Kovarianzen
 \begin{align}
  C^{\alpha}_{ij} = \sigma^{\alpha}_i \sigma^{\alpha}_j \cdot \rho^{\alpha}_{ij}, \hspace{2cm}\alpha = \text{stat, sys}.
 \end{align}
@@ -673,40 +676,62 @@ Die Funktion des hier verwandten, theoretischen Modells stellt das Integral der 
 \eqref{eq_fermidGammafinal} zu
 \begin{align}
  g_i(f_+) = \Gamma_{\text{theo},i} = \frac{G_F^2 |V_{cs}|^2}{24\pi^3}\int|p_K(q_i^2)|^3 \cdot |f_+(q^2_i)|^2\dx q_i^2,
+ \label{eq_qformTheo}
 \end{align}
 das sich zwar nicht analytisch, jedoch aufgrund der guten Konvergenzeigenschaften der beitragenden Terme auf numerischem Weg lösen lässt. 
 
+\subsection{Der Minimierungsprozess durch \texttt{Minuit}}
+Nun da alle Größen zur Bestimmung der $\chi^2$-Funktion bekannt sind, wird ein Algorithmus benötigt, der unter der Minimierung die Reihenkoeffizienten
+des in \eqref{eq_qformTheo} auftauchenden und in \eqref{eq_formparam} definierten Formfaktors berechnet. Wegen der komplizierten Zusammenhänge, die hier
+exisiteren, wird der Computer diesen Prozess durchführen, welcher in einem \texttt{Python}-Skript unter Zuhilfenahme des am CERN erstellten 
+Minimierungswerkzeug \texttt{Minuit} dargestellt ist. Für das Skript die folgend genannten Module importiert.
+Vom Modul \texttt{scipy} wird die Integrationsmethode benötigt, um das Integral von \eqref{eq_qformTheo} zu berechnen. Das Modul \texttt{numpy} stellt hier
+mathematische Operationen, wie die Quadratwurzel oder die Erstellung und Manipulation von Matrizen. Das im Formfaktor auftauchende Polynom in $z$ wird
+ebenfalls hierdurch erstellt. \texttt{iminuit} ist das Modul zur Minimierung von Funktionen, welches zwei Funktionen \texttt{migrad()}, als tatsächlichen
+Minimierungsalgorithmus und \texttt{hesse()} zur Erstellung der Kovarianzmatrix der Reihenkoeffizienten zur Verfügung hat. 
+
+\noindent
+Im Quellcode selbst werden Funktionen implementiert, die teils eben genannte anwenden. Das Ergebnis des Integrals von $g$ wird in einer Funktion aufgerufen,
+die $\chi^2$ nach der Defintion \eqref{eq_chi2} bestimmt. Da $\chi^2$ für sich gesehen nur eine Zahl ist, wird eine Funktion mit ihr als zu minimierenden
+Parameter, den $\Delta \Gamma$, den $q^2$-Bins und einigen anderen Argumenten generiert. Die Fitroutine erstellt einen Konstruktor des \texttt{Minuit}-Moduls mit 
+der generierten $\chi^2$-Funktion, woraufhin die beiden oben genannte Funktionen aufgerufen und aus ihnen die Reihenkoeffizienten und ihre Fehler 
+extrahiert werden. Schließlich erstellt eine Plotfunktion einen Graphen für $f_+$ in Abhängigkeit von $q^2$ mit den eben gefundenen $a_i$. 
+
 \subsection{Resultate für die Koeffizienten und den Startwert}
-\renewcommand{\arraystretch}{1.2}
-\begin{table}[H]
-  \begin{tabular}{l|ccc|crc}
-  \toprule
-    \multirow{2}{*}{$q^2$ in GeV$^2$}& \multicolumn{3}{c|}{$D^+ \rightarrow \bar K_0 l^+ \nu$} & \multicolumn{3}{c}{$D^0 \rightarrow  K^- l^+ \nu$}\\
-    \cline{2-7}
-    & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$ & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$\\
-   \midrule
-  {[}0,0 - 0,4) & 	17,82(36)&	2,03&	1,26&	17,79(47)&	2,03&	2,52 \\
-  {[}0,2 - 0,4)& 	15,83(35)&	2,19&	1,10&	15,62(45)&	2,19&	2,42\\
-  {[}0,4 - 0,6) &	13,91(32)&	2,31&	1,12&	14,02(43)&	2,31&	2,36\\
-  {[}0,6 - 0,8) & 	11,69(29)&	2,47&	1,15&	12,28(40)&	3,23&	2,33\\
-  {[}0,8 - 1,0)  &	9,36(26)&	2,73&	1,20&	8,92(34)&	3,82&	2,47\\
-  {[}1,0 - 1,2)  &	7,08(22)&	3,14&	1,36&	8,17(32)&	3,98&	2,23\\
-  {[}1,2 - 1,4)  &	5,34(19)&	3,63&	1,35&	4,96(25)&	5,04&	2,08\\
-  {[}1,4 - 1,6)  &	3,09(15)&	4,90&	1,63&	2,67(18)&	6,88&	2,16\\
-  {[}1,6 - $\infty$)&	1,28(11)&	8,43&	2,55&	1,19(13)&	10,63&	3,03\\
-  \bottomrule\bottomrule
-  \end{tabular}
-\caption{Gemessene partielle Zerfallsraten bei entsprechenden Impulsüberträgen und zugehörigen systematischen und statistischen Kovarianzen für beide Zerfallskanäle}
-\label{tab_GammaSigma}
-\end{table}
+tabellen und werte hier
+% \renewcommand{\arraystretch}{1.2}
+% \begin{table}[H]
+%   \begin{tabular}{l|rrr|rrr}
+%   \toprule
+%     \multirow{2}{*}{$q^2$ in GeV$^2$}& \multicolumn{3}{c|}{$D^+ \rightarrow \bar K_0 l^+ \nu$} & \multicolumn{3}{c}{$D^0 \rightarrow  K^- l^+ \nu$}\\
+%     \cline{2-7}
+%     & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$ & $\Delta \Gamma$ in ns$^{-1}$ & $\sigma^\text{sys}$ & $\sigma^\text{stat}$\\
+%    \midrule
+%   {[}0,0 - 0,4) & 	17,82(36)&	2,03&	1,26&	17,79(47)&	2,03&	2,52 \\
+%   {[}0,2 - 0,4)& 	15,83(35)&	2,19&	1,10&	15,62(45)&	2,19&	2,42\\
+%   {[}0,4 - 0,6) &	13,91(32)&	2,31&	1,12&	14,02(43)&	2,31&	2,36\\
+%   {[}0,6 - 0,8) & 	11,69(29)&	2,47&	1,15&	12,28(40)&	3,23&	2,33\\
+%   {[}0,8 - 1,0)  &	9,36(26)&	2,73&	1,20&	8,92(34)&	3,82&	2,47\\
+%   {[}1,0 - 1,2)  &	7,08(22)&	3,14&	1,36&	8,17(32)&	3,98&	2,23\\
+%   {[}1,2 - 1,4)  &	5,34(19)&	3,63&	1,35&	4,96(25)&	5,04&	2,08\\
+%   {[}1,4 - 1,6)  &	3,09(15)&	4,90&	1,63&	2,67(18)&	6,88&	2,16\\
+%   {[}1,6 - $\infty$)&	1,28(11)&	8,43&	2,55&	1,19(13)&	10,63&	3,03\\
+%   \bottomrule\bottomrule
+%   \end{tabular}
+% \caption{Gemessene partielle Zerfallsraten bei entsprechenden Impulsüberträgen und zugehörigen systematischen und statistischen Kovarianzen für beide Zerfallskanäle}
+% \label{tab_GammaSigma}
+% \end{table}
+% \renewcommand{\arraystretch}{1.0}
 
-
+blabla
 
 \chapter{Zusammenfassung und Ausblick}
 
 Hier sollen die Ergebnisse zusammengefasst und weiterf\"uhrende Untersuchungen diskutiert werden. 
 
-mit anderen zerfällen ist Vcs extrahierbar
+vergleich mit anderen parametrisierungen
+formfaktor aus LQCD nehmen und Vcs mit PDG vergleichen
+B-meson-physik
 % >>> Anhang <<<
 
 \begin{appendix}

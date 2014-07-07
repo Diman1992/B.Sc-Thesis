@@ -23,6 +23,31 @@
 \usepackage{slashed}
 \usepackage{textcomp}
 \usepackage{multirow}
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+ 
+ \definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+ \definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+ \definecolor{orange}{rgb}{0.8,0.3,0.3}
+ \definecolor{yac}{rgb}{0.6,0.6,0.1}
+ \definecolor{puple}{rgb}{0.62,0.12,0.94}
+ \lstset{language=Python,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{red}\ttfamily,
+                stringstyle=\color{magenta}\ttfamily,
+                commentstyle=\color{blue}\ttfamily,
+                morecomment=[l][\color{blue}]{\#},
+		%stepnumber=1,
+		%numberstyle=\color{magenta}\ttfamily,
+		%    numbers=left,
+		%    numberstyle={},
+		%    numberblanklines=false,
+		%    stepnumber=1,
+		%    numbersep=10pt,
+		    xleftmargin=15pt,
+ 		moredelim=[is][\color{purple}]{|}{|}
+}
 
 \newfloat{formel}{htbp}{for}
 \floatname{formel}{Formel}

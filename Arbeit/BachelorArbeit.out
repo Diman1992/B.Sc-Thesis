@@ -18,6 +18,7 @@
 \BOOKMARK [1][-]{section.62}{3.2 Die Axialvektorformfaktoren und f-}{chapter.57}% 18
 \BOOKMARK [1][-]{section.64}{3.3 Fit des Formfaktors f+}{chapter.57}% 19
 \BOOKMARK [2][-]{subsection.65}{3.3.1 Methode der kleinsten Quadrate}{section.64}% 20
-\BOOKMARK [2][-]{subsection.70}{3.3.2 Resultate f\374r die Koeffizienten und den Startwert}{section.64}% 21
-\BOOKMARK [0][-]{chapter.72}{4 Zusammenfassung und Ausblick}{}% 22
-\BOOKMARK [0][-]{chapter.72}{Literaturverzeichnis}{}% 23
+\BOOKMARK [2][-]{subsection.70}{3.3.2 Der Minimierungsprozess durch Minuit}{section.64}% 21
+\BOOKMARK [2][-]{subsection.71}{3.3.3 Resultate unter Variation von t0 und der Polynomordnung}{section.64}% 22
+\BOOKMARK [0][-]{chapter.72}{4 Zusammenfassung und Ausblick}{}% 23
+\BOOKMARK [0][-]{chapter.72}{Literaturverzeichnis}{}% 24

@@ -1,5 +1,5 @@
-\contentsline {chapter}{Abbildungsverzeichnis}{VI}{chapter*.3}
-\contentsline {chapter}{Tabellenverzeichnis}{VII}{chapter*.4}
+\contentsline {chapter}{Abbildungsverzeichnis}{VII}{chapter*.3}
+\contentsline {chapter}{Tabellenverzeichnis}{VIII}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Theorie}{2}{chapter.7}
 \contentsline {section}{\numberline {2.1}Voraussetzungen moderner Physik}{2}{section.8}
@@ -18,6 +18,7 @@
 \contentsline {section}{\numberline {3.2}Die Axialvektorformfaktoren und $f_-$}{16}{section.62}
 \contentsline {section}{\numberline {3.3}Fit des Formfaktors $f_+$}{18}{section.64}
 \contentsline {subsection}{\numberline {3.3.1}Methode der kleinsten Quadrate}{18}{subsection.65}
-\contentsline {subsection}{\numberline {3.3.2}Resultate f\IeC {\"u}r die Koeffizienten und den Startwert}{19}{subsection.70}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{20}{chapter.72}
-\contentsline {chapter}{Literaturverzeichnis}{21}{chapter.72}
+\contentsline {subsection}{\numberline {3.3.2}Der Minimierungsprozess durch \texttt {Minuit}}{19}{subsection.70}
+\contentsline {subsection}{\numberline {3.3.3}Resultate unter Variation von $t_0$ und der Polynomordnung}{20}{subsection.71}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{21}{chapter.72}
+\contentsline {chapter}{Literaturverzeichnis}{22}{chapter.72}
