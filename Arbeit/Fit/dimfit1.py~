@@ -5,7 +5,7 @@
 # ==================================================
 
 import inspect
-import sys
+#import sys
 
 #import evaluation as ev
 #import evaluation.simpleplot as sp
@@ -165,7 +165,41 @@ def z(q, m_P, m_D, t0):
 
     return (a - b) / (a + b)
 
+
+def phi(q, m_P, m_D, t0):
+    m_c = 1.275 # 0.025
+    t_minus = (m_P - m_D)**2
+    t_plus = (m_P + m_D)**2
+
+    # Ausnahmebehandlung für q = 0!
+    if isinstance(q, np.ndarray):
+        critical_val = np.zeros(len(q))
+        for i in range(len(q)):
+            if q[i] == 0.0:
+                critical_val[i] = 1.0 / (4.0 * t_plus)
+            else:
+                critical_val[i] = z(q[i], m_P, m_D, 0.0) / (-q[i])
+    else:
+        if q == 0.0:
+            critical_val = 1.0 / (4.0 * t_plus)
+        else:
+            critical_val = z(q, m_P, m_D, 0.0) / (-q)
+
+    a = critical_val**(5.0/2.0)
+    b = (z(q, m_P, m_D, t0) / (t0 - q))**(-1.0/2.0)
+    c = (z(q, m_P, m_D, t_minus) / (t_minus - q))**(-3.0/4.0)
+    d = (t_plus - q) / (t_plus - t0)**(1.0/4.0)
+
+    return np.sqrt(np.pi * m_c**2 / 3.0) * a * b * c * d
+
+
+def P(q, m_P, m_D, m_Pr):
+    return z(q, m_P, m_D, m_Pr**2)
+    # return 1.0
+
+
 def formfactor(q, a, m_P, m_D, m_Pr, t0):
+    #prefactor = 1.0 / (P(q, m_P, m_D, m_Pr) * phi(q, m_P, m_D, t0))
     prefactor = 1.0 / (1 - q / m_Pr**2)
     return prefactor * np.polynomial.polynomial.polyval(z(q, m_P, m_D, t0), a)
 
@@ -182,28 +216,6 @@ def diff_gamma_theo(q, a, m_P, m_D, m_Pr, t0):
 ###########################################################################
 #                                   Fit                                   #
 ###########################################################################
-
-def experimental_form2(q_bin, dG, m, m_P, m_D, m_Pr, t0):
-    Return = []
-    Q = np.array([np.mean(i) for i in q_bin])
-
-    for i in range(len(q_bin)):
-        dq = q_bin[i][1] - q_bin[i][0]
-        q = q_bin[i][0] + dq/2.0
-
-        P = p(q, m_P, m_D)**3
-
-        Return.append(
-            1.0 * unp.sqrt( dG[i] / dq * (24.0*np.pi**3) / (fermi**2 * P))
-        )
-
-    return Q, unp.nominal_values(Return), unp.std_devs(Return)
-
-def get_uc_array(dG):
-    dG_m = np.array([uc.ufloat_fromstr(s) for s in dG])
-    dG_m = invsec_to_nat * dG_m
-
-    return dG_m
 
 
 def integrate_gamma(q_bin, *args):
@@ -261,10 +273,6 @@ class generic_chi2:
                 *arg
             )
 
-def get_err(q, a, err, m_P, m_D, m_Pr, t0):
-    a_uc = unp.uarray(a, err)
-    return unp.std_devs(formfactor(q, a_uc, m_P, m_D, m_Pr, t0))
-
 
 def fit_form(chi2, q_bins, dG, m_P, m_D, m_Pr, t0, **kwds):
     num_var = len(
@@ -281,8 +289,7 @@ def fit_form(chi2, q_bins, dG, m_P, m_D, m_Pr, t0, **kwds):
     return m
 
 
-def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
-    t_minus = (m_P - m_D)**2
+def plot_fittedform(m, m_P, m_D, m_Pr, t0):
     a_keys = m.values.keys()
     a_keys.sort()
     a = np.array([m.values[a_keys[i]] for i in range(len(a_keys))])
@@ -294,29 +301,25 @@ def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
     # a = np.array([m.values["a0"], m.values["a1"], m.values["a2"]])
     # err = np.array([m.errors["a0"], m.errors["a1"], m.errors["a2"]])
 
-    q = np.linspace(0.0, t_minus, 100)
+    q = np.linspace(0.0, 2.0, 100)
     form = formfactor(q, a, m_P, m_D, m_Pr, t0)
-    err = get_err(q, a, err, m_P, m_D, m_Pr, t0)
-
-    exp = experimental_form2(q_bin, dG, m, m_P, m_D, m_Pr, t0)
 
     fig1 = plt.figure()
     ax1 = fig1.add_subplot(111)
 
-    #err_min = formfactor(q, a - err, m_P, m_D, m_Pr, t0)
-    #err_max = formfactor(q, a + err, m_P, m_D, m_Pr, t0)
+    err_min = formfactor(q, a - err, m_P, m_D, m_Pr, t0)
+    err_max = formfactor(q, a + err, m_P, m_D, m_Pr, t0)
 
-    ax1.plot(q, form, "-", label="Fitted form factor")
-    ax1.errorbar(exp[0], exp[1], yerr=exp[2], linestyle="none", marker="o", markersize=3.0)
+    ax1.plot(q, form, "-", label="Fit")
     ax1.fill_between(
         q,
-        form + err,
-        form - err,
+        err_min,
+        err_max,
         alpha=0.2
     )
 
-    ax1.set_xlabel(r'$q^2 $ in GeV')
-    ax1.set_ylabel(r'$f_+(q^2)|V_{cs}|$')
+    ax1.set_xlabel(r'$q^2 $')
+    ax1.set_ylabel(r'$f_+(q^2)$')
 
     ax1.legend(loc = 'best')
 
@@ -326,7 +329,7 @@ def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
 
 def plot_form(a, m_P, m_D, m_Pr, t0, err=None):
 
-    q = np.linspace(0.0, 1.87, 100)
+    q = np.linspace(0.0, 2.0, 100)
     form = formfactor(q, a, m_P, m_D, m_Pr, t0)
 
     fig1 = plt.figure()
@@ -375,22 +378,6 @@ m_Ds = MeV2GeV(1968.49) # 0.32 MeV
 m_K0 = MeV2GeV(497.614) # 0.024 MeV
 m_Km = MeV2GeV(493.677) # 0.016 MeV
 
-q_max_DpK0 = (m_D-m_K0)**2
-q_max_D0Km = (m_D0-m_Km)**2
-
-
-# Parameter für z-Entwicklung
-t_minus = (m_D0 - m_Km)**2
-t_plus = (m_D0 + m_Km)**2
-t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
-t0 = 0
-
-
-
-
-# ==================================================
-#	D0 -> K-
-# ==================================================
 
 # Einheit GeV**2 / c**4
 q_bins = [
@@ -402,11 +389,22 @@ q_bins = [
         [1.0, 1.2],
         [1.2, 1.4],
 	[1.4, 1.6],
-	[1.6, q_max_D0Km]
+	[1.6, 1.8]
 ]
 
+# Parameter für z-Entwicklung
+t_minus = (m_D0 - m_Km)**2
+t_plus = (m_D0 + m_Km)**2
+t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
+t0 = 0
+
+# ==================================================
+#	D0 -> K-
+# ==================================================
+
+
 # Einheit 1/ns
-dG_0_uc = [
+dG = [
     "17.82(36)",
     "15.83(35)",
     "13.91(32)",
@@ -444,13 +442,12 @@ sys_cor_dG_m = [
 stat_cor_dG_m =  get_full_matrix(stat_cor_dG_m)
 sys_cor_dG_m =  get_full_matrix(sys_cor_dG_m)
 
-
-sys_sigma = [1.26, 1.10, 1.12, 1.15, 1.20, 1.36, 1.35, 1.63, 2.55]
 stat_sigma = [2.03, 2.19, 2.31, 2.47, 2.73, 3.14, 3.63, 4.90, 8.43]
+sys_sigma = [1.26, 1.10, 1.12, 1.15, 1.20, 1.36, 1.35, 1.63, 2.55]
 
 
 
-dG = get_nom(dG_0_uc)
+dG = get_nom(dG)
 
 cov_inv = get_invcov(
     dG,
@@ -476,9 +473,8 @@ m = fit_form(
     # error_a2=0.01,
     # errordef=0.01
 )
-dG_0_uc_arr = get_uc_array(dG_0_uc)
 
-plot_fittedform(m, q_bins, dG_0_uc_arr, m_D0, m_Km, m_Dr, t0)
+plot_fittedform(m, m_D0, m_Km, m_Dr, t0)
 
 f0 = formfactor(
     0.0,
@@ -492,7 +488,6 @@ f0 = formfactor(
 # plot_form([0.01, -0.1, 0.1], m_D, m_Pm, m_Dr, t0)
 
 print "f(0)|V_cd| = {:0.4f}".format(f0)
-print t0
 
 
 
@@ -506,20 +501,8 @@ t_plus = (m_D0 + m_Km)**2
 t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
 t0 = 0
 
-# Einheit GeV**2 / c**4
-q_bins = [
-        [0.0, 0.2],
-        [0.2, 0.4],
-        [0.4, 0.6],
-        [0.6, 0.8],
-        [0.8, 1.0],
-        [1.0, 1.2],
-        [1.2, 1.4],
-	[1.4, 1.6],
-	[1.6, q_max_DpK0]
-]
 # Einheit 1/ns
-dG_0_uc = [
+dG = [
     "17.79(47)",
     "15.62(45)",
     "14.02(43)",
@@ -557,10 +540,10 @@ sys_cor_dG_m = [
 stat_cor_dG_m =  get_full_matrix(stat_cor_dG_m)
 sys_cor_dG_m =  get_full_matrix(sys_cor_dG_m)
 
-stat_sigma = [2.63, 2.90, 3.04, 3.23, 3.82,3.98, 5.04, 6.88, 10.63] # übernommene werte
+stat_sigma = [2.03, 2.19, 2.31, 3.23, 3.82,3.98, 5.04, 6.88, 10.63] # übernommene werte
 sys_sigma = [2.52, 2.42, 2.36, 2.33, 2.47, 2.23, 2.08, 2.16, 3.03]
 
-dG = get_nom(dG_0_uc)
+dG = get_nom(dG)
 
 cov_inv = get_invcov(
     dG,
@@ -587,9 +570,7 @@ m = fit_form(
     # errordef=0.01
 )
 
-dG_0_uc_arr = get_uc_array(dG_0_uc)
-
-plot_fittedform(m, q_bins, dG_0_uc_arr, m_D0, m_Km, m_Dr, t0)
+plot_fittedform(m, m_D, m_K0, m_Dr, t0)
 
 f0 = formfactor(
     0.0,
@@ -603,7 +584,6 @@ f0 = formfactor(
 # plot_form([0.01, -0.1, 0.1], m_D, m_Pm, m_Dr, t0)
 
 print "f(0)|V_cd| = {:0.4f}".format(f0)
-print t0
 
 # # Einheit 1 / ns
 # dG_0 = [

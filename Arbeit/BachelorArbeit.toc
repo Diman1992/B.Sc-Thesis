@@ -5,20 +5,20 @@
 \contentsline {section}{\numberline {2.1}Voraussetzungen moderner Physik}{2}{section.8}
 \contentsline {subsection}{\numberline {2.1.1}Relativistische Kinematik}{2}{subsection.9}
 \contentsline {subsection}{\numberline {2.1.2}Dirac-Gleichung}{3}{subsection.13}
-\contentsline {subsection}{\numberline {2.1.3}Fermis Goldene Regel}{5}{subsection.23}
-\contentsline {section}{\numberline {2.2}Standardmodell der Elementarteilchenphysik}{7}{section.34}
-\contentsline {subsection}{\numberline {2.2.1}Teilcheninhalt}{7}{subsection.35}
-\contentsline {subsection}{\numberline {2.2.2}Schwache Wechselwirkung}{9}{subsection.38}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Parit\IeC {\"a}t}{9}{subsubsection.39}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Fermi-Wechselwirkung}{9}{subsubsection.40}
-\contentsline {subsubsection}{\numberline {2.2.2.3}CKM-Matrix}{11}{subsubsection.47}
-\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{12}{section.52}
-\contentsline {chapter}{\numberline {3}Ergebnisse}{15}{chapter.57}
-\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{15}{section.58}
+\contentsline {subsection}{\numberline {2.1.3}Fermis Goldene Regel}{5}{subsection.22}
+\contentsline {section}{\numberline {2.2}Standardmodell der Elementarteilchenphysik}{7}{section.33}
+\contentsline {subsection}{\numberline {2.2.1}Teilcheninhalt}{7}{subsection.34}
+\contentsline {subsection}{\numberline {2.2.2}Schwache Wechselwirkung}{9}{subsection.37}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Parit\IeC {\"a}t}{9}{subsubsection.38}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Fermi-Wechselwirkung}{9}{subsubsection.39}
+\contentsline {subsubsection}{\numberline {2.2.2.3}CKM-Matrix}{11}{subsubsection.46}
+\contentsline {section}{\numberline {2.3}Parametrisieren von Formfaktoren}{12}{section.51}
+\contentsline {chapter}{\numberline {3}Ergebnisse}{15}{chapter.56}
+\contentsline {section}{\numberline {3.1}Kinematische Gr\IeC {\"o}\IeC {\ss }en}{15}{section.57}
 \contentsline {section}{\numberline {3.2}Die Axialvektorformfaktoren und $f_-$}{16}{section.62}
 \contentsline {section}{\numberline {3.3}Fit des Formfaktors $f_+$}{18}{section.64}
 \contentsline {subsection}{\numberline {3.3.1}Methode der kleinsten Quadrate}{18}{subsection.65}
 \contentsline {subsection}{\numberline {3.3.2}Der Minimierungsprozess durch \texttt {Minuit}}{19}{subsection.70}
 \contentsline {subsection}{\numberline {3.3.3}Resultate unter Variation von $t_0$ und der Polynomordnung}{20}{subsection.71}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{21}{chapter.72}
-\contentsline {chapter}{Literaturverzeichnis}{22}{chapter.72}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{24}{chapter.87}
+\contentsline {chapter}{Literaturverzeichnis}{25}{chapter.87}
