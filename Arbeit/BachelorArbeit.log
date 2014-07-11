@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  11 JUL 2014 13:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  11 JUL 2014 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,7 +791,6 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `draft' set `true' on input line 4319.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4319
 .
@@ -1213,26 +1212,26 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (./BachelorArbeit.aux)
 \openout1 = `BachelorArbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatflt package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1264,12 +1263,8 @@ Option `amssymb' provided!
 \everyMPtoPDFconversion=\toks35
 )
 \AtBeginShipoutBox=\box61
-
-
-Package hyperref Warning: Draft mode on.
-
-Package hyperref Info: Link coloring OFF on input line 9.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 10.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1278,47 +1273,52 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count185
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
-LaTeX Info: Redefining \Ref on input line 9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
+
+(./BachelorArbeit.out) (./BachelorArbeit.out)
+\@outlinefile=\write6
+\openout6 = `BachelorArbeit.out'.
+
+LaTeX Info: Redefining \Ref on input line 10.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./BachelorArbeit.
+toc
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 86.
- [4] (./BachelorArbeit.toc
+(Font)              <6> on input line 5.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [5
+) [4
 
 ])
-\tf@toc=\write6
-\openout6 = `BachelorArbeit.toc'.
+\tf@toc=\write7
+\openout7 = `BachelorArbeit.toc'.
 
- [6]
+ [5]
 (./BachelorArbeit.lof)
-\tf@lof=\write7
-\openout7 = `BachelorArbeit.lof'.
+\tf@lof=\write8
+\openout8 = `BachelorArbeit.lof'.
 
- [7
+ [6
 
 ] (./BachelorArbeit.lot)
-\tf@lot=\write8
-\openout8 = `BachelorArbeit.lot'.
+\tf@lot=\write9
+\openout9 = `BachelorArbeit.lot'.
 
- [8
+ [7
 
 ]
 Kapitel 1.
@@ -1329,40 +1329,40 @@ Kapitel 2.
 [2
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 220
+LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 221
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 220.
+(Font)              size <5> substituted on input line 221.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83247> not available
-(Font)              size <5> substituted on input line 220.
+(Font)              size <5> substituted on input line 221.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 220.
+(Font)              size <5> substituted on input line 221.
 
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7.66495> on input line 220.
+(Font)              <7.66495> on input line 221.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5.36543> on input line 220.
+(Font)              <5.36543> on input line 221.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <3.83247> on input line 220.
+(Font)              <3.83247> on input line 221.
 
 LaTeX Font Warning: Font shape `OML/eur/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 220.
+(Font)              size <5> substituted on input line 221.
 
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 245.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 246.
 
-LaTeX Font Info:    No file TS1aer.fd. on input line 245.
+LaTeX Font Info:    No file TS1aer.fd. on input line 246.
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 245.
+(Font)              for symbol `textperiodcentered' on input line 246.
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 251.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 252.
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
@@ -1381,31 +1381,81 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2865) has occurred while \output is active []
 
  [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 437.
+
+Underfull \vbox (badness 4492) has occurred while \output is active []
 
  [8]
-<Abbildungen/4fermi.jpg, id=72, 1516.66624pt x 451.6875pt>
-Underfull \vbox (badness 4144) has occurred while \output is active []
+<Abbildungen/4fermi.jpg, id=297, 1516.66624pt x 451.6875pt>
+File: Abbildungen/4fermi.jpg Graphic file (type jpg)
+
+<use Abbildungen/4fermi.jpg>
+Package pdftex.def Info: Abbildungen/4fermi.jpg used on input line 475.
+(pdftex.def)             Requested size: 330.05322pt x 98.28947pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4819) has occurred while \output is active []
 
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [10 <./Abbildungen/4fermi.jpg>]
+Underfull \vbox (badness 5175) has occurred while \output is active []
 
  [11]
-<Abbildungen/DFeyn.png, id=83, 582.0144pt x 272.4579pt>
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 575.
- [12] [13] [14]
+<Abbildungen/DFeyn.png, id=330, 582.0144pt x 272.4579pt>
+File: Abbildungen/DFeyn.png Graphic file (type png)
+
+<use Abbildungen/DFeyn.png>
+Package pdftex.def Info: Abbildungen/DFeyn.png used on input line 573.
+(pdftex.def)             Requested size: 330.05322pt x 154.50854pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./Abbildungen/DFeyn.png>] [14]
 Kapitel 3.
-<Abbildungen/DZerfall.png, id=98, 626.5809pt x 286.4301pt>
+<Abbildungen/DZerfall.png, id=360, 626.5809pt x 286.4301pt>
+File: Abbildungen/DZerfall.png Graphic file (type png)
+
+<use Abbildungen/DZerfall.png>
+Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 619.
+(pdftex.def)             Requested size: 412.56496pt x 188.59863pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15
 
-] [16]
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 650.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 650.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 650.
+
+[16 <./Abbildungen/DZerfall.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 681.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
@@ -1414,64 +1464,162 @@ Underfull \vbox (badness 5533) has occurred while \output is active []
  [18]
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 724.
+(Font)              using `T1/aett/m/n' instead on input line 722.
 
-[19] <Fit/D0-1Ord-0.pdf, id=116, 587.19376pt x 442.65375pt>
-<Fit/D0-2Ord-0.pdf, id=117, 587.19376pt x 442.65375pt>
-<Fit/D0-1Ord-t0.pdf, id=118, 587.19376pt x 442.65375pt>
-<Fit/D0-2Ord-t0.pdf, id=119, 587.19376pt x 442.65375pt> [20]
-<Fit/D+-1Ord-0.pdf, id=124, 587.19376pt x 442.65375pt>
-<Fit/D+-2Ord-0.pdf, id=125, 587.19376pt x 442.65375pt>
-<Fit/D+-1Ord-t0.pdf, id=126, 587.19376pt x 442.65375pt>
-<Fit/D+-2Ord-t0.pdf, id=127, 587.19376pt x 442.65375pt> [21] [22] [23]
+[19]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 743.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 743.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 743.
+
+<Fit/D0-1Ord-0.pdf, id=405, 587.19376pt x 442.65375pt>
+File: Fit/D0-1Ord-0.pdf Graphic file (type pdf)
+ <use Fit/D0-1Ord-0.pdf>
+Package pdftex.def Info: Fit/D0-1Ord-0.pdf used on input line 826.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D0-2Ord-0.pdf, id=406, 587.19376pt x 442.65375pt>
+File: Fit/D0-2Ord-0.pdf Graphic file (type pdf)
+ <use Fit/D0-2Ord-0.pdf>
+Package pdftex.def Info: Fit/D0-2Ord-0.pdf used on input line 834.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+<Fit/D0-1Ord-t0.pdf, id=411, 587.19376pt x 442.65375pt>
+File: Fit/D0-1Ord-t0.pdf Graphic file (type pdf)
+
+<use Fit/D0-1Ord-t0.pdf>
+Package pdftex.def Info: Fit/D0-1Ord-t0.pdf used on input line 842.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D0-2Ord-t0.pdf, id=412, 587.19376pt x 442.65375pt>
+File: Fit/D0-2Ord-t0.pdf Graphic file (type pdf)
+
+<use Fit/D0-2Ord-t0.pdf>
+Package pdftex.def Info: Fit/D0-2Ord-t0.pdf used on input line 850.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D+-1Ord-0.pdf, id=413, 587.19376pt x 442.65375pt>
+File: Fit/D+-1Ord-0.pdf Graphic file (type pdf)
+ <use Fit/D+-1Ord-0.pdf>
+Package pdftex.def Info: Fit/D+-1Ord-0.pdf used on input line 858.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D+-2Ord-0.pdf, id=414, 587.19376pt x 442.65375pt>
+File: Fit/D+-2Ord-0.pdf Graphic file (type pdf)
+ <use Fit/D+-2Ord-0.pdf>
+Package pdftex.def Info: Fit/D+-2Ord-0.pdf used on input line 866.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D+-1Ord-t0.pdf, id=415, 587.19376pt x 442.65375pt>
+File: Fit/D+-1Ord-t0.pdf Graphic file (type pdf)
+
+<use Fit/D+-1Ord-t0.pdf>
+Package pdftex.def Info: Fit/D+-1Ord-t0.pdf used on input line 874.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+<Fit/D+-2Ord-t0.pdf, id=416, 587.19376pt x 442.65375pt>
+File: Fit/D+-2Ord-t0.pdf Graphic file (type pdf)
+
+<use Fit/D+-2Ord-t0.pdf>
+Package pdftex.def Info: Fit/D+-2Ord-t0.pdf used on input line 883.
+(pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21 <./Fit/D0-1Ord-0.pdf> <./Fit/D0-2Ord-0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D0-2Ord-0.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Fit/D0-1Ord-t0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D0-1Ord-t0.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <./Fit/D0-2Ord-t0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D0-2Ord-t0.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <./Fit/D+-1Ord-0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D+-1Ord-0.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Fit/D+-2Ord-0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D+-2Ord-0.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./Fit/D+-1Ord-t0.pdf> <./Fit/D+-2Ord-t0.pdf
+
+pdfTeX warning: /usr/bin/latex (file ./Fit/D+-2Ord-t0.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 1052) has occurred while \output is active []
+
+ [23]
+[24]
 Kapitel 4.
-[24
+[25
 
 ]
 Overfull \hbox (12.66107pt too wide) in paragraph at lines 1012--1013
-\T1/aer/m/n/10.95 http://www-hera-b.desy.de/people/nedden/lectures/05_06/dettph
-/dettph_cont.pdf |
+[]\T1/aer/m/n/10.95 http://www-hera-b.desy.de/people/nedden/lectures/05_06/dett
+ph/dettph_cont.pdf[] 
  []
 
-[25
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
 
  []
 
-(./Kapitel/Erklaerung.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--16
+(./Kapitel/Erklaerung.tex [27]
+Underfull \hbox (badness 10000) in paragraph at lines 12--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--39
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--1034
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--1034
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--1034
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--1034
-
- []
-
-[26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1036.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1036.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1035.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1035.
  (./BachelorArbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1036.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1036.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1035.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1035.
+
+Package rerunfilecheck Info: File `BachelorArbeit.out' has not changed.
+(rerunfilecheck)             Checksum: D958FE1A805F4B4E562140B165656D8E;1753.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1480,16 +1628,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1036.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1035.
  ) 
 Here is how much of TeX's memory you used:
- 18345 strings out of 493305
- 304120 string characters out of 6139897
- 386020 words of memory out of 5000000
- 21334 multiletter control sequences out of 15000+600000
+ 18523 strings out of 493305
+ 306304 string characters out of 6139897
+ 386676 words of memory out of 5000000
+ 21373 multiletter control sequences out of 15000+600000
  77370 words of font info for 190 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,16n,40p,10469b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,16n,40p,10469b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eldimano/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk>{/usr/shar
 e/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/font
@@ -1515,10 +1663,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm1095.pfb>
-Output written on BachelorArbeit.pdf (35 pages, 367535 bytes).
+Output written on BachelorArbeit.pdf (35 pages, 746262 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1102 PDF objects out of 1200 (max. 8388607)
+ 644 compressed objects within 7 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

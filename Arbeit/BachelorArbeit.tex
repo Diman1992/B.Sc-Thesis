@@ -1,8 +1,9 @@
-\documentclass[11pt,a4paper,twoside,draft]{report}
+\documentclass[11pt,a4paper,twoside]{report}
 \input{Tex/longheader.tex}
 \input{Tex/global}
 \usepackage{xfrac}
 \usepackage{xcolor}
+\usepackage{setspace}\usepackage{threeparttable}
 
 
  %\setlength{\parskip}{1.5ex}
@@ -81,26 +82,26 @@ Datum des Einreichens der Arbeit: 14. Juli, 2014
 
 \thispagestyle{empty}
 %Kuzfassung
-\section*{Kurzfassung}
-Im Zuge dieser Arbeit sollen dimensionslose Formfaktoren ermittelt werden, die eine Darstellung eines zerfallrelevanten Matrixelements bilden. Sie werden
-durch eine $z$-Reihenentwicklung parametrisiert und anhand von Daten der CLEO Collaboration unter Minimierung einer $\chi^2$-Funktion bis zur 
-zweiten Ordnung gefittet. Die Fitparameter für $D^0\rightarrow  K^- l \nu$ sind $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 und der Wert für den verbleibenden Formfaktor ist $|V_{cs}|f_+(q^2=0)$ = 0,762, wobei 
-$q^2$ der Impulsübertrag des Leptonpaares ist. Und für $D^+\rightarrow \bar K^0 l \nu$ sind $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95, sowie $|V_{cs}|f(0)$ = 0,708.
-
-% Anhand des Flächeninhalts des Unitaritätsdreiecks, das aus Elementen der CKM-Matrix gebildet wird, kann man die Stärke der CP-Verletzung bestimmen. Ihre
-% Einträge beschreiben die Wahrscheinlichkeit eines Übergangs zwischen schwach zerfallenden Quarks. Da diese Quarks nicht ungebunden existieren, muss der
-% Einfluss der ``Spectatorquarks'' mitberücksichtigt werden, was durch den Ausdruck einheitenloser Formfaktoren geschieht in Abhängigkeit des Impulsübertrags.
-% Durch Minimierung eines $\chi^2$-Tests anhand von Daten der CLEO Collaboration werden geeignete Koeffizienten einer Reihenentwicklung mittels
-% eines Python-Scripts bestimmt.
-% Hieraus ergibt sich für den nicht verschwindenden Formfaktor $f_+$, multipliziert mit dem entsprechenden CKM-Element $V_{cs}$ bei nicht vorhandenem 
-% Impulsübertrag $q^2$ ein Wert von $f_+(0)|V_{cs}| = 0,707(10)$. Dies gilt für den angegebenen Zerfall. Übergänge mit anderen Spectatorquarks ergeben ähnliche
-% Ergebnisse mit einem Unterschied von bis zu 5\%.
-
-\section*{Abstract}
-As part of this thesis form factors get ascertained, which build an exposition of a matrix element pertinent to the decay. They are parameterised by a
-series expansion of the $z$-expansion and fitted to the second order by data of the CLEO Collaboration under minimizing a $\chi^2$-function. The resulting
-fit parameters for $D^0\rightarrow  K^- l \nu$ are $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 and the value for the form factor is $|V_{cs}|f_+(q^2=0)$ = 0,762, where $q^2$ is the momentum transfer carried by
-the lepton pair. And for $D^+\rightarrow \bar K^0 l \nu$ are $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95 and $|V_{cs}|f(0)$ = 0,708.
+% \section*{Kurzfassung}
+% Im Zuge dieser Arbeit sollen dimensionslose Formfaktoren ermittelt werden, die eine Darstellung eines zerfallrelevanten Matrixelements bilden. Sie werden
+% durch eine $z$-Reihenentwicklung parametrisiert und anhand von Daten der CLEO Collaboration unter Minimierung einer $\chi^2$-Funktion bis zur 
+% zweiten Ordnung gefittet. Die Fitparameter für $D^0\rightarrow  K^- l \nu$ sind $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 und der Wert für den verbleibenden Formfaktor ist $|V_{cs}|f_+(q^2=0)$ = 0,762, wobei 
+% $q^2$ der Impulsübertrag des Leptonpaares ist. Und für $D^+\rightarrow \bar K^0 l \nu$ sind $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95, sowie $|V_{cs}|f(0)$ = 0,708.
+% 
+% % Anhand des Flächeninhalts des Unitaritätsdreiecks, das aus Elementen der CKM-Matrix gebildet wird, kann man die Stärke der CP-Verletzung bestimmen. Ihre
+% % Einträge beschreiben die Wahrscheinlichkeit eines Übergangs zwischen schwach zerfallenden Quarks. Da diese Quarks nicht ungebunden existieren, muss der
+% % Einfluss der ``Spectatorquarks'' mitberücksichtigt werden, was durch den Ausdruck einheitenloser Formfaktoren geschieht in Abhängigkeit des Impulsübertrags.
+% % Durch Minimierung eines $\chi^2$-Tests anhand von Daten der CLEO Collaboration werden geeignete Koeffizienten einer Reihenentwicklung mittels
+% % eines Python-Scripts bestimmt.
+% % Hieraus ergibt sich für den nicht verschwindenden Formfaktor $f_+$, multipliziert mit dem entsprechenden CKM-Element $V_{cs}$ bei nicht vorhandenem 
+% % Impulsübertrag $q^2$ ein Wert von $f_+(0)|V_{cs}| = 0,707(10)$. Dies gilt für den angegebenen Zerfall. Übergänge mit anderen Spectatorquarks ergeben ähnliche
+% % Ergebnisse mit einem Unterschied von bis zu 5\%.
+% 
+% \section*{Abstract}
+% As part of this thesis form factors get ascertained, which build an exposition of a matrix element pertinent to the decay. They are parameterised by a
+% series expansion of the $z$-expansion and fitted to the second order by data of the CLEO Collaboration under minimizing a $\chi^2$-function. The resulting
+% fit parameters for $D^0\rightarrow  K^- l \nu$ are $a_0$ = 0,726, $a_1$ = 0,140, $a_2$ = 9,548 and the value for the form factor is $|V_{cs}|f_+(q^2=0)$ = 0,762, where $q^2$ is the momentum transfer carried by
+% the lepton pair. And for $D^+\rightarrow \bar K^0 l \nu$ are $a_0$ = 0,708, $a_1$ = -1,263, $a_2$ = -10,95 and $|V_{cs}|f(0)$ = 0,708.
 
 % It is possible to determine the magnitude of the CP-violation by calculating the area of the unitarity triangle, build by elements of the CKM-matrix. Her
 % entries characterise the propability of a transition between weak decaying quarks. They are never found in unbound states, so the simple view on the converting
@@ -187,7 +188,7 @@ vorgestellt.
 \section{Voraussetzungen moderner Physik}
 Die physikalischen Errungenschaften aus der ersten Hälfte des 20. Jahrhunderts stellen aus heutiger Sicht aufgrund ihrer Richtigkeit und Exaktheit die 
 Bedingung ihrer Gültigkeit an moderne Theorien.
-Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint(*). Davon sind im Rahmen dieser 
+Hiermit sind die spezielle Relativitätstheorie und die Quantenmechanik gemeint. Davon sind im Rahmen dieser 
 Arbeit die relativistische Kinematik, die Dirac-Gleichung sowie die störungstheoretische ``Goldene Regel'' von Fermi
 von Bedeutung.
 
@@ -311,8 +312,9 @@ Der Wahrscheinlichkeitsstrom lautet somit
 
 \subsection{Fermis Goldene Regel}
 \label{sec_fermigoldenrule}
-In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, deren Edukte sehr kurze Lebenszeiten $\tau$ haben und diese sich daher nicht sehr präzise
-bestimmen lassen. Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsrate $\Gamma$ als bestimmbare Größe zu erheben
+In der Elementarteilchenphysik werden unter anderem Zerfälle untersucht, deren Edukte sehr kurze Lebenszeiten $\tau$ , wie hier (vgl. Tabelle \ref{tab_DKMeson}) und diese sich daher nicht sehr präzise
+bestimmen lassen. Die Relation zwischen der mittleren Lebensdauer und der Zerfallsrate, einer experimentell bestimmbaren Größe lautet
+%Mit der Heisenbergschen Unschärferelation gelingt es, eine sogenannte Zerfallsrate $\Gamma$ als bestimmbare Größe zu erheben
 \begin{align}
  \Gamma \tau = 1 \quad \leftrightarrow\quad  \Gamma = \frac{1}{\tau}.
 \end{align} 
@@ -387,8 +389,6 @@ nun abschließend ausgedrückt als
 Da im weiteren Verlauf $|f_+(q^2)|V$ berechnet werden soll, jedoch die komplette von $q^2$ abhängige Zerfallsbreite gemessen wird, ist dieser eben hergeleitete
 Zusammenhang dieser Größen von Bedeutung.
 
-
-
 \section{Standardmodell der Elementarteilchenphysik}
 Das SM setzt sich aus zwei definierenden Eigenschaften zusammen, den Teilchen und den Eichtheorien, die diese beschreiben. Die sichtbare Materie wird 
 aus Fermionen zusammengesetzt. Zu den Quantenfeldtheorien des SMs, denen jeweils Bosonen als Austauschteilchen zugeordnet werden, gehören die 
@@ -423,24 +423,29 @@ Mesonen ($q\bar q$) unterklassifiziert. Hier interessant sind die Mesonen, die j
 relevant sind ein $D$-Meson, welches unter schwacher Wechselwirkung in ein $K$-Meson übergeht unter Abstrahlung eines $W$-Bosons, welches wiederum in ein 
 Leptonenpaar zerfällt(*). In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
 \begin{table}[H]
+\begin{threeparttable}[H]
 \begin{tabular}{c|ccc|cccc} \toprule 
   & $q\bar q$ &  $m$ in MeV & $\tau$ in s & $I(J^P)$ & $I_z$ & $S$ & $C$\\
  \midrule
   $D^+$ & $c\bar d$ & 1869 & $1,0\cdot10^{-12}$ & $\frac12(0^-)$ & $+\frac12$ & 0 & $+1$\\
-  $D^0$ & $c\bar u$ & 1865 & $1,0\cdot10^{-12}$  & $\frac12(0^-)$ & $-\frac12$ & 0 & $+1$\\
-  $\bar K^0$ & $s\bar d$ & 497 & $1,0\cdot10^{-12}$ & $\frac12(0^-)$ & $+\frac12$ & $-1$& 0\\
-  $K^-$ & $s\bar u $ & 493 & $1,0\cdot10^{-12}$ & $\frac12(0^-)$ & $-\frac12$ & $-1$ & 0
+  $D^0$ & $c\bar u$ & 1865 & $4,1\cdot10^{-13}$  & $\frac12(0^-)$ & $-\frac12$ & 0 & $+1$\\
+  $\bar K^0$ & $s\bar d$ & 497 & -\tnote{1} & $\frac12(0^-)$ & $+\frac12$ & $-1$& 0\\
+  $K^-$ & $s\bar u $ & 493 & $1,2\cdot10^{-8}$ & $\frac12(0^-)$ & $-\frac12$ & $-1$ & 0
 \\\bottomrule \bottomrule
  \end{tabular}
+ \begin{tablenotes}
+ \item[1] \small{Das $K^0$ hat keine eindeutige, mittlere Lebensdauer}
+  \end{tablenotes}
 \caption{Kenndaten der im Zerfall beteiligten Mesonen}
 \label{tab_DKMeson}
+\end{threeparttable}
 \end{table}
 \noindent
 Die hier neu auftauchenden Größen sind im Einzelnen der starke Isospin $I$, seine dritte Komponente $I_z$, der Gesamtdrehimpuls $J$, die Parität $P$, die
-Strangeness $S$, sowie die Charmeness $C$. Da es sich beim Spectatorquark um ein Teilchen der 1. Generation handelt ($\bar u, \bar d$), gilt $I = \frac12$. 
-Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks entgegengesetzt 
-ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihre Wellenfunktion das Vorzeichen ändern, 
-ergibt sich $P=-1$.
+Strangeness $S$, sowie die Charmeness $C$. Da es sich beim Spectatorquark, dem am schwachen Zerfall unbeteilgten Quark, um ein Teilchen der 1. Generation 
+handelt ($\bar u, \bar d$), gilt $I = \frac12$.  Mesonen tragen ganzzahligen Gesamtdrehimpuls und da hier die Spinrichtungen ihrer Valenzquarks 
+entgegengesetzt ausgerichtet sind, verschwindet dieser. Weil $D^+$ und $\bar K^0$ pseudoskalar sind, also unter Raumspiegelung ihre Wellenfunktion das 
+Vorzeichen ändern, ergibt sich $P=-1$.
 
 \subsection{Schwache Wechselwirkung}
 \label{sec_schwacheWW}
@@ -452,9 +457,7 @@ flavourändernden Übergängen gibt die unitäre 3$\times$3-CKM-Matrix die Wahrs
 
 \subsubsection{Parität}
 \label{sec_parity}
-Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt dieser als invariant. Mathematisch zeigt sich
-dies, indem der zugehörige, quantenmechanische Operator mit dem den Prozess charakterisierenden Hamiltonoperator vertauscht. Das bedeutet, dass beide eine
-gemeinsame Basis aus Eigenzuständen mit zugehörien Eigenwerten, auch Quantenzahlen genannt, haben. Die Parität, als diskrete Symmetrie, wechselt bezüglich 
+Wenn ein Prozess vor und nach einer Symmetrieoperation dieselben physikalischen Eigenschaften zeigt, gilt dieser als invariant. Die Parität, als diskrete Symmetrie, wechselt bezüglich 
 eines beliebigen Ursprungs das Vorzeichen vektorieller oder pseudoskalarer Größen eines physikalischen Zustands \cite{Klapdor}. Axialvektorielle oder skalare Größen bleiben
 hingegen unberührt. Somit ergeben sich als Quantenzahlen für den Paritätsoperator $\mathcal{P}$ die Werte $\pi = \pm1$. Bei zweifacher Ausführung entsteht 
 der ursprüngliche Zustand, da Eigenwerte diskreter Symmetrien multiplikativ sind. Unter Berücksichtigung einer sogenannten Eigenparität, die eine feste
@@ -482,21 +485,17 @@ dessen Raumzeitstruktur als Vektor-Vektor-Kopplung (VV) bezeichnet wird. Die auf
 Es zeigt sich, dass diese Art der Kopplung nicht die einzig lorentzinvariante ist. Aus bilinearen Kombinationen 4-komponentiger Spinoren ergeben sich 16 Freiheitsgrade,
 die sich auf vektorielle (V), skalare (S), tensorielle(T), pseudoskalare (P) und axialvektorielle (A) Ströme verteilen. Bei den möglichen Kombinationen, Strom-Strom-Kopplungen zu erzeugen, gilt zu beachten, dass
 der Hamiltonian (pseudo-)skalar sein muss, was die Kontrahierbarkeit beider Ströme erfordert. Eine dieser Kopplungen (VA) würde eine Paritätsverletzung erfordern,
-da der Hamiltonian pseudoskalar ist und daher nicht mit dem Paritätsoperator vertauscht. Durch die Klärung des $\theta-\tau$-Rätsels und dem Experiment von Wu,
-konnte die lang auf wissenschaftlichen Widerstand gestoßene Paritätsverletzung bestätigt werden.
+da der Hamiltonian pseudoskalar ist und daher nicht mit dem Paritätsoperator vertauscht, was nach langem wissenschaftlichen Widerstand jedoch bestätigt worden
+ist
 
 \noindent
 Der Helizitätsoperator für Fermionen $H$ als Skalarprodukt des Impulsoperators $\bar p$, der eine vektorielle Größe ist und dem Spinoperator $\vec \sigma$, 
 der seinerseits ein Axialvektor ist, zeigt ebenfalls für Neutrinos die Paritätsverletzung. Positive und negative Helizität wären unter
-Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich aus dem Goldhaber-Experiment stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
+Paritätsinvarianz gleich wahrscheinlich, jedoch ergibt sich stets eine Helizität von $\langle H_\nu \rangle= -1$. Für relativistische
 Invarianz muss ein entsprechender Operator gefunden werden. Bei masselosen, wie bei massiven Teilchen ergibt sich ein Projektionsoperator, der aus Spinoren 
 die linkshändige Komponente extrahiert:
 \begin{equation}
- \mathcal{P} = \frac12(1-\gamma_5),
-\end{equation}
-mit den Eigenschaften
-\begin{equation}
- \mathcal{P}u_- = -u_- \qquad \text{und}\qquad \mathcal{P}u_+ = 0.
+ \mathcal{P} = \frac12(1-\gamma_5)
 \end{equation}
 Hieraus ergibt sich eine Erweiterung des bisher benutzten Leptonenstroms um linkshändige Neutrinos, die sich, wie in Abschnitt \ref{sec_fermigoldenrule}, schreiben lässt als
 \begin{equation}
@@ -559,7 +558,7 @@ haben.
 			    1-\frac12\lambda^2 & \lambda & \lambda^3A(\rho-\text{i}\eta)\\
 			    -\lambda & 1-\frac12 \lambda^2 &\lambda^2A\\
 			    \lambda^3A(1-\rho-\text{i}\eta) &-\lambda^2A & 1
-			    \end{pmatrix}
+			    \end{pmatrix} \, +  \, \mathcal{O}(\lambda^4)
 \end{align}
 Sollte die CP-Verletzung einzig aus der komplexen Phase kommen, lässt sich zeigen, dass CP-verletzende Amplituden proportional zur Fläche des sogenannten
 Unitaritätsdreiecks sind. Es handelt sich hierbei um ein Dreieck in der komplexen Ebene mit $\rho$ und $\eta$ als Achsen. Die Seiten werden durch Komponenten
@@ -580,7 +579,7 @@ So ist die Betrachtung einer Vier-Fermionen-Wechselwirkung unzureichend, da die 
 ermittelbaren Einfluss auf den schwachen Zerfall haben.
 In einem Zweikörper-Zerfall $E\rightarrow PQ$ sind zwei Freiheitsgrade möglich, die den Prozess charakterisieren. Dies sind die Viererimpulse des Eduktteilchens
 $p_E$ und des Produktteilchens $p_P$, da der Viererimpuls des verbliebenen Produktteilchens $q$ von den vorigen determiniert wird. Da der vektorielle 
-Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist (WAS HEISST DAS GENAU?), gibt es hierbei zwei Formfaktoren $f_\pm$, die der 
+Anteil des schwachen Stroms $V^\mu$ aus \eqref{eq_fermiMG_F} nicht erhalten ist, gibt es hierbei zwei Formfaktoren $f_\pm$, die der 
 Beschreibung der allgemeinsten Form dienen
 \begin{align}
  \big\langle K(p_K)\,\big|V^\mu\big|\, D(p_D)\big\rangle = f_+(q^2)(p_D+p_K)^\mu + f_-(q^2)(p_D-p_K)^\mu.
@@ -614,7 +613,7 @@ Schließlich wird der einzig verbliebene Formfaktor $f_+$ unter Minimierung eine
 \section{Kinematische Größen}
 %\vspace{-1.7cm}
 Die Formfaktoren werden allgemein in Abhängigkeit des Impulsübertrags $q^2$ angegeben. Da dieser nicht beliebige Werte annehmen kann, ist es sinnvoll, den 
-möglichen Wertebereich zu ermitteln.  In Abbildung \ref{pic_DZerfall} sind die beiden Randbereiche dargestellt. Im linken Teil des Bildes ($q^2=q^2_\text{max}$
+möglichen Wertebereich zu ermitteln.  In Abbildung \ref{pic_DZerfall} sind die beiden Randbereiche dargestellt. Im linken Teil des Bildes ($q^2=q^2_\text{min}$)
 befindet sich das entstehende Kaon wieder in Ruhe und im rechten Teil ($q^2=q^2_\text{max}$) nimmt es die gleiche Menge an Impuls auf, wie das Leptonenpaar.
 \begin{figure}[h]
 \includegraphics[width=1\textwidth]{Abbildungen/DZerfall.png}
@@ -659,13 +658,12 @@ Vektor- bzw. des Axialvektorstroms dasselbe Paritätstransformationsverhalten ha
 Aus den beiden einzigen Freiheitsgraden des Zerfalls, den Impulsen $p$ und $p'$, und dem Levi-Civita-Symbol $\epsilon^{\mu\nu\alpha\beta}$ lassen sich alle möglichen
 Darstellungen von Strömen mit unbestimmten Vorfaktoren schreiben als
 \begin{align}
- \underbrace{p^\mu}_{V} ; \underbrace{p'^\mu}_{V}; \underbrace{p^\mu p'_\mu }_{S} ; \underbrace{\epsilon^{\mu\nu\alpha\beta}p_\alpha p'_\beta}_{T},
+ \underbrace{p^\mu}_{V} ;\quad \underbrace{p'^\mu}_{V};\quad \,\underbrace{p^\mu p'_\mu }_{S} ; \quad\,\underbrace{\epsilon^{\mu\nu\alpha\beta}p_\alpha p'_\beta}_{T},
 \end{align}
 wobei die Größen unter den Klammern das entsprechende Transformationsverhalten angeben. Daraus ergibt sich, dass die einzigen vektoriellen Beiträge wie 
 Vektoren $V$ und keiner wie Axialvektoren $A$ transformieren. Damit ein solcher Beitrag existieren könne, müsse er aufgrund seiner Eigenschaft $J^P = 1^+$
 eine Struktur haben, wie $A^\mu = \epsilon^{\mu\alpha\beta\gamma}p_\alpha\,p'_\beta\,p''_\gamma$ mit einem weiteren Freiheitsgrad $p''$. Da dieser zur 
-Konstruktion jedoch nicht vorhanden ist, verschwindet der Axialvektoranteil.
-
+Konstruktion jedoch nicht vorhanden ist, verschwindet der Axialvektoranteil.\\
 \noindent
 Um nachzuvollziehen, was mit $f_-$ geschieht, wird das Matrixelement aus \eqref{eq_fermiMG_F} ohne $f_+$ betrachtet. Der Impulsübertrag $q$ ist nicht
 nur die Differenz der mesonischen Viererimpulse, sondern auch die Summe der leptonischen
@@ -682,7 +680,7 @@ die im Verhältnis zur $D$-Mesonmasse für $l=\mu$ oder $l=e$ vernachlässigbar 
 
 \section{Fit des Formfaktors $f_+$}
 In Abschnitt \ref{sec_fermigoldenrule} ist ein kompakter Ausdruck für den Zusammenhang der differentiellen Zerfallsrate und dem 
-Formfaktor $f_+$ hergeleitet worden. Da der Formfaktor nicht leicht analytisch berechenbar ist, wird er entsprechend der Parametrisierung \eqref{eq_formparam}
+Formfaktor $f_+$ hergeleitet worden. Da der Formfaktor nicht analytisch berechenbar ist, wird er entsprechend der Parametrisierung \eqref{eq_formparam}
 nach der Methode der kleinsten Quadrate an den experimentell erhobenen Daten für die partiellen Zerfallsraten gefittet. Im Rahmen der Messmethoden, ist es
 nicht möglich, eine genaue Zuordnung eines gemessenen Zerfalls zum entsprechenden Impulsübertrag zu erreichen, weshalb die Zerfallsraten für diskrete Bereiche
 angegeben werden. 
@@ -725,7 +723,9 @@ das sich zwar nicht analytisch, jedoch aufgrund der guten Konvergenzeigenschafte
 Nun da alle Größen zur Bestimmung der $\chi^2$-Funktion bekannt sind, wird ein Algorithmus benötigt, der unter der Minimierung die Reihenkoeffizienten
 des in \eqref{eq_qformTheo} auftauchenden und in \eqref{eq_formparam} definierten Formfaktors berechnet. Wegen der komplizierten Zusammenhänge, die hier
 existiteren, wird der Computer diesen Prozess durchführen, welcher in einem \texttt{Python}-Skript unter Zuhilfenahme des am CERN erstellten 
-Minimierungswerkzeug \texttt{Minuit} dargestellt ist. Für das Skript die folgend genannten Module importiert.
+Minimierungswerkzeug \texttt{Minuit} dargestellt ist. 
+
+Für das Skript werden die folgend genannten Module importiert.
 Vom Modul \texttt{scipy} wird die Integrationsmethode benötigt, um das Integral von \eqref{eq_qformTheo} zu berechnen. 
 Das Modul \texttt{numpy} stellt hier
 mathematische Operationen, wie die Quadratwurzel oder die Erstellung und Manipulation von Matrizen. Das im Formfaktor auftauchende Polynom in $z$ wird
@@ -737,7 +737,7 @@ Minimierungsalgorithmus zur Verfügung hat.
 Im Quellcode selbst werden Funktionen implementiert, die teils eben genannte anwenden. Das Ergebnis des Integrals von $g$ wird in einer Funktion aufgerufen,
 die $\chi^2$ nach der Defintion \eqref{eq_chi2} bestimmt. Da $\chi^2$ für sich gesehen nur eine Zahl ist, wird eine Funktion mit ihr als zu minimierenden
 Parameter, den $\Delta \Gamma$, den $q^2$-Bins und einigen anderen Argumenten generiert. Die Fitroutine erstellt einen Konstruktor des \texttt{Minuit}-Moduls mit 
-der generierten $\chi^2$-Funktion, woraufhin die beiden oben genannte Funktionen aufgerufen und aus ihnen die Reihenkoeffizienten und ihre Fehler 
+der generierten $\chi^2$-Funktion, woraufhin die oben genannte Funktion aufgerufen und aus ihnen die Reihenkoeffizienten und ihre Fehler 
 extrahiert werden. Schließlich erstellt eine Plotfunktion einen Graphen für $f_+$ in Abhängigkeit von $q^2$ mit den eben gefundenen $a_i$. 
 
 \subsection{Resultate unter Variation von $t_0$ und der Polynomordnung}
@@ -1029,7 +1029,6 @@ ausgereicht hat, das Materie-Antimaterie-Ungleichgewicht zu Beginn des Universum
 \ \\
 
 % >>> Erklaerung <<<
-
 \input{Kapitel/Erklaerung}
 \end{spacing}
 
