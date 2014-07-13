@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  13 JUL 2014 17:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.28)  13 JUL 2014 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,19 +1287,20 @@ LaTeX Info: Redefining \nameref on input line 10.
 \openout6 = `BachelorArbeit.out'.
 
 LaTeX Info: Redefining \Ref on input line 10.
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./BachelorArbeit.
-toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] [3] [4] (./BachelorArbeit.toc
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 5.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 21.
@@ -1310,47 +1311,48 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 \tf@toc=\write7
 \openout7 = `BachelorArbeit.toc'.
 
- [4
+ [5
 
 ]
 (./BachelorArbeit.lof)
 \tf@lof=\write8
 \openout8 = `BachelorArbeit.lof'.
 
- [5
+ [6
 
 ] (./BachelorArbeit.lot)
 \tf@lot=\write9
 \openout9 = `BachelorArbeit.lot'.
 
- [6
+ [7
+
+] [8
 
 ]
 Kapitel 1.
 [1
 
+] [2
+
 ]
 Kapitel 2.
-[2
+[3
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 255.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 262.
 
-LaTeX Font Info:    No file TS1aer.fd. on input line 255.
+LaTeX Font Info:    No file TS1aer.fd. on input line 262.
 
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 255.
+(Font)              for symbol `textperiodcentered' on input line 262.
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 262.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 269.
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 Underfull \vbox (badness 6842) has occurred while \output is active []
-
- [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1359,155 +1361,160 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8]
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 452.
+(Font)              <7> on input line 459.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 452.
- [8] <Abbildungen/4fermi.jpg, id=294, 1516.66624pt x 451.6875pt>
+(Font)              <5> on input line 459.
+ [9] <Abbildungen/4fermi.jpg, id=307, 1516.66624pt x 451.6875pt>
 File: Abbildungen/4fermi.jpg Graphic file (type jpg)
 
 <use Abbildungen/4fermi.jpg>
-Package pdftex.def Info: Abbildungen/4fermi.jpg used on input line 491.
+Package pdftex.def Info: Abbildungen/4fermi.jpg used on input line 498.
 (pdftex.def)             Requested size: 330.05322pt x 98.28947pt.
- [9]
+ [10]
 Underfull \vbox (badness 1852) has occurred while \output is active []
 
- [10 <./Abbildungen/4fermi.jpg>] [11]
-<Abbildungen/DFeyn.png, id=327, 582.0144pt x 272.4579pt>
+ [11 <./Abbildungen/4fermi.jpg>] [12]
+<Abbildungen/DFeyn.png, id=340, 582.0144pt x 272.4579pt>
 File: Abbildungen/DFeyn.png Graphic file (type png)
 
 <use Abbildungen/DFeyn.png>
-Package pdftex.def Info: Abbildungen/DFeyn.png used on input line 592.
+Package pdftex.def Info: Abbildungen/DFeyn.png used on input line 599.
 (pdftex.def)             Requested size: 330.05322pt x 154.50854pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
+[13]
 Underfull \vbox (badness 1259) has occurred while \output is active []
 
- [13 <./Abbildungen/DFeyn.png>] [14]
+ [14 <./Abbildungen/DFeyn.png>] [15] [16
+
+]
 Kapitel 3.
-<Abbildungen/DZerfall.png, id=357, 626.5809pt x 286.4301pt>
+<Abbildungen/DZerfall.png, id=373, 626.5809pt x 286.4301pt>
 File: Abbildungen/DZerfall.png Graphic file (type png)
 
 <use Abbildungen/DZerfall.png>
-Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 638.
+Package pdftex.def Info: Abbildungen/DZerfall.png used on input line 647.
 (pdftex.def)             Requested size: 412.56496pt x 188.59863pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15
+[17
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 676.
+(hyperref)                removing `math shift' on input line 685.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 676.
+(hyperref)                removing `subscript' on input line 685.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 676.
+(hyperref)                removing `math shift' on input line 685.
 
-[16 <./Abbildungen/DZerfall.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 708.
-
+[18 <./Abbildungen/DZerfall.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 708.
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 708.
+(hyperref)                removing `subscript' on input line 717.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 717.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [19]
 Underfull \vbox (badness 5533) has occurred while \output is active []
 
- [18]
+ [20]
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 749.
+(Font)              using `T1/aett/m/n' instead on input line 758.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 774.
+(hyperref)                removing `math shift' on input line 783.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 774.
+(hyperref)                removing `subscript' on input line 783.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 774.
+(hyperref)                removing `math shift' on input line 783.
 
-<Fit/D0-1Ord-0.pdf, id=394, 587.19376pt x 442.65375pt>
+<Fit/D0-1Ord-0.pdf, id=411, 587.19376pt x 442.65375pt>
 File: Fit/D0-1Ord-0.pdf Graphic file (type pdf)
  <use Fit/D0-1Ord-0.pdf>
-Package pdftex.def Info: Fit/D0-1Ord-0.pdf used on input line 858.
+Package pdftex.def Info: Fit/D0-1Ord-0.pdf used on input line 867.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D0-2Ord-0.pdf, id=395, 587.19376pt x 442.65375pt>
+<Fit/D0-2Ord-0.pdf, id=412, 587.19376pt x 442.65375pt>
 File: Fit/D0-2Ord-0.pdf Graphic file (type pdf)
  <use Fit/D0-2Ord-0.pdf>
-Package pdftex.def Info: Fit/D0-2Ord-0.pdf used on input line 866.
+Package pdftex.def Info: Fit/D0-2Ord-0.pdf used on input line 875.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
 Underfull \vbox (badness 1466) has occurred while \output is active []
 
- [19]
-<Fit/D0-1Ord-t0.pdf, id=405, 587.19376pt x 442.65375pt>
+ [21]
+<Fit/D0-1Ord-t0.pdf, id=422, 587.19376pt x 442.65375pt>
 File: Fit/D0-1Ord-t0.pdf Graphic file (type pdf)
 
 <use Fit/D0-1Ord-t0.pdf>
-Package pdftex.def Info: Fit/D0-1Ord-t0.pdf used on input line 874.
+Package pdftex.def Info: Fit/D0-1Ord-t0.pdf used on input line 883.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D0-2Ord-t0.pdf, id=406, 587.19376pt x 442.65375pt>
+<Fit/D0-2Ord-t0.pdf, id=423, 587.19376pt x 442.65375pt>
 File: Fit/D0-2Ord-t0.pdf Graphic file (type pdf)
 
 <use Fit/D0-2Ord-t0.pdf>
-Package pdftex.def Info: Fit/D0-2Ord-t0.pdf used on input line 882.
+Package pdftex.def Info: Fit/D0-2Ord-t0.pdf used on input line 891.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D+-1Ord-0.pdf, id=407, 587.19376pt x 442.65375pt>
+<Fit/D+-1Ord-0.pdf, id=424, 587.19376pt x 442.65375pt>
 File: Fit/D+-1Ord-0.pdf Graphic file (type pdf)
  <use Fit/D+-1Ord-0.pdf>
-Package pdftex.def Info: Fit/D+-1Ord-0.pdf used on input line 890.
+Package pdftex.def Info: Fit/D+-1Ord-0.pdf used on input line 899.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D+-2Ord-0.pdf, id=408, 587.19376pt x 442.65375pt>
+<Fit/D+-2Ord-0.pdf, id=425, 587.19376pt x 442.65375pt>
 File: Fit/D+-2Ord-0.pdf Graphic file (type pdf)
  <use Fit/D+-2Ord-0.pdf>
-Package pdftex.def Info: Fit/D+-2Ord-0.pdf used on input line 898.
+Package pdftex.def Info: Fit/D+-2Ord-0.pdf used on input line 907.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D+-1Ord-t0.pdf, id=409, 587.19376pt x 442.65375pt>
+<Fit/D+-1Ord-t0.pdf, id=426, 587.19376pt x 442.65375pt>
 File: Fit/D+-1Ord-t0.pdf Graphic file (type pdf)
 
 <use Fit/D+-1Ord-t0.pdf>
-Package pdftex.def Info: Fit/D+-1Ord-t0.pdf used on input line 906.
+Package pdftex.def Info: Fit/D+-1Ord-t0.pdf used on input line 915.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
-<Fit/D+-2Ord-t0.pdf, id=410, 587.19376pt x 442.65375pt>
+<Fit/D+-2Ord-t0.pdf, id=427, 587.19376pt x 442.65375pt>
 File: Fit/D+-2Ord-t0.pdf Graphic file (type pdf)
 
 <use Fit/D+-2Ord-t0.pdf>
-Package pdftex.def Info: Fit/D+-2Ord-t0.pdf used on input line 915.
+Package pdftex.def Info: Fit/D+-2Ord-t0.pdf used on input line 924.
 (pdftex.def)             Requested size: 185.65297pt x 139.94998pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./Fit/D0-1Ord-0.pdf> <./Fit/D0-2Ord-0.pdf
+ [22 <./Fit/D0-1Ord-0.pdf> <./Fit/D0-2Ord-0.pdf
 
 pdfTeX warning: /usr/bin/latex (file ./Fit/D0-2Ord-0.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
@@ -1531,23 +1538,25 @@ ple pdfs with page group included in a single page
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./Fit/D+-1Ord-t0.pdf> <./Fit/D+-2Ord-t0.pdf
+[23 <./Fit/D+-1Ord-t0.pdf> <./Fit/D+-2Ord-t0.pdf
 
 pdfTeX warning: /usr/bin/latex (file ./Fit/D+-2Ord-t0.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] [22] [23]
-Kapitel 4.
-[24
+>] [24] [25] [26
 
 ]
-Overfull \hbox (12.66107pt too wide) in paragraph at lines 1047--1048
+Kapitel 4.
+[27
+
+]
+Overfull \hbox (12.66107pt too wide) in paragraph at lines 1059--1060
 []\T1/aer/m/n/10.95 http://www-hera-b.desy.de/people/nedden/lectures/05_06/dett
 ph/dettph_cont.pdf[] 
  []
 
-[25
+[28
 
-] (./Kapitel/Erklaerung.tex [26]
+] (./Kapitel/Erklaerung.tex [29]
 Underfull \hbox (badness 10000) in paragraph at lines 12--22
 
  []
@@ -1573,12 +1582,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--39
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1071.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1071.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1083.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1083.
  (./BachelorArbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1071.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1071.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1083.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1083.
 
 Package rerunfilecheck Info: File `BachelorArbeit.out' has not changed.
 (rerunfilecheck)             Checksum: 42EF9EAF8F3CA5D09C565D6D472236A9;1753.
@@ -1589,12 +1598,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1071.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1083.
  ) 
 Here is how much of TeX's memory you used:
- 18448 strings out of 493305
- 304920 string characters out of 6139897
- 385886 words of memory out of 5000000
+ 18453 strings out of 493305
+ 304955 string characters out of 6139897
+ 386889 words of memory out of 5000000
  21299 multiletter control sequences out of 15000+600000
  66577 words of font info for 160 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1624,10 +1633,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfrm1095.pfb>
-Output written on BachelorArbeit.pdf (33 pages, 772960 bytes).
+Output written on BachelorArbeit.pdf (38 pages, 773545 bytes).
 PDF statistics:
- 1180 PDF objects out of 1200 (max. 8388607)
- 645 compressed objects within 7 object streams
- 135 named destinations out of 1000 (max. 500000)
+ 1204 PDF objects out of 1440 (max. 8388607)
+ 664 compressed objects within 7 object streams
+ 140 named destinations out of 1000 (max. 500000)
  248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
