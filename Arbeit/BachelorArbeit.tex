@@ -51,10 +51,10 @@ Lehrstuhl für Theoretische Physik IV \\ Fakultät Physik \\
 Technische Universität Dortmund \\ 2014
 \end{center}
 \newpage
-% >>> Gutachterseite <<<
-\thispagestyle{empty}
-\newpage
-\cleardoublepage
+% % >>> Gutachterseite <<<
+% \thispagestyle{empty}
+% \newpage
+% \cleardoublepage
 
 \thispagestyle{empty}
 \vspace*{\fill}
@@ -130,7 +130,7 @@ Datum des Einreichens der Arbeit: 14. Juli, 2014
 \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables\newpage
 \thispagestyle{empty}
-\cleardoublepage
+% \cleardoublepage
 
 \setcounter{page}{0}
 \pagenumbering{arabic}
@@ -184,9 +184,9 @@ daraus resultierenden Größen der Formfaktoren.
 % Quarks nicht einzeln, sondern nur gebunden auftauchen, fließt bei der Übergangsbeschreibung der Einfluss der starken Wechselwirkung mit ein. Dieser ist nicht
 % leicht zu quantifizieren, weshalb ein Näherungsmodell genutzt wird, um Abhilfe zu schaffen. Dies geschieht durch sogenannte Formfaktoren, die für diesen
 % konkreten Zerfall bestimmt werden sollen.
-\newpage
-\thispagestyle{empty}
-\cleardoublepage
+% \newpage
+% \thispagestyle{empty}
+% \cleardoublepage
 \chapter{Theorie}
 Um Kenntnis über die Formfaktoren zu erlangen, ist es zuvor erforderlich, beteiligte Zusammenhäge zu beleuchten. Ein Einblick in die historische Physik
 des 20. Jahrhunderts soll die Grundlage für die den Zerfall entscheidende schwache Wechselwirkung schaffen. Zuletzt wird eine Parametrisierung von Formfaktoren
@@ -443,7 +443,7 @@ Aus Quarks und ihren Partnern, den Antiquarks $\bar q$, ist es nun möglich, ver
 ganzzahlige Ladung tragen müssen. Diese Quarkkombinationen, Hadronen genannt, werden durch die Anzahl an Valenzquarks in (Anti-)Baryonen ($\bar q\bar q\bar q$/$qqq$) und 
 Mesonen ($q\bar q$) unterklassifiziert. Hier sind die Mesonen interessant, die je aus mindestens einem Quark der 2. Generation bestehen. Speziell für diese
 Arbeit das $D$-Meson und das $K$-Meson, das aus einem schwachen Zerfall des $D$-Mesons unter Abstrahlung eines $W$-Bosons entsteht. Das $W$ zerstrahlt 
-anschließend in ein Leptonpaar. In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
+anschließend in ein Leptonenpaar. In Tabelle \ref{tab_DKMeson} sind ihre Attribute \cite{PDG} aufgeführt.
 \begin{table}[H]
 \begin{threeparttable}[H]
 \begin{tabular}{c|ccc|cccc} \toprule 
@@ -631,9 +631,9 @@ $t_0 = t_+(1-(1-t_-/t_+)^{1/2})=:t_{\text{opt}}$ bestimmt wird, da es den Maxima
 Bei Übergängen mit nicht verschwindendem Axialvektorstrom $A^\mu$, wie zum Beispiel von einem pseudoskalaren zu einem vektoriellen Teilchen, treten 
 weitere Formfaktoren auf. Die Ausdrücke für diesen Strom und die Abhängigkeiten der Formfaktoren $A_i(q^2)$ sind teilweise sehr komplex, sodass, wegen
 der hier nicht bestehenden Relevanz, nicht näher darauf eingegangen wird.
-\newpage
-\thispagestyle{empty}
-\cleardoublepage
+% \newpage
+% \thispagestyle{empty}
+% \cleardoublepage
 \chapter{Ergebnisse}
 Die möglichen Formfaktoren des betrachteten Zerfalls werden im Folgenden diskutiert, nachdem der physikalisch mögliche Bereich des Impulsübertrags
 berechnet worden ist. So werden die Axialvektorformfaktoren unter Paritätsbetrachtungen und $f_-$ aufgrund von vernachlässigbarer Leptonenmassen verschwinden.
@@ -1019,9 +1019,9 @@ ergibt, was gemittelt für den Zerfall verglichen mit dem Wert des PDG \cite{PDG
 % 
 % D0-1ord-t0: f=0.726 , a0 = 0.744pm0.007, a1 = -0.842pm0.261, a2 = 9.507pm6.784
 % D+-1ord-t0: f=0.708 , a0 = 0.744pm0.010, a1 = -0.144pm0.318, a2 = -10,940pm8.156
-\newpage
-\thispagestyle{empty}
-\cleardoublepage
+% \newpage
+% \thispagestyle{empty}
+% \cleardoublepage
 
 \chapter{Zusammenfassung und Ausblick}
 Nach einer Einführung in die Relativistik und die Quantenmechanik ist die differentielle Zerfallsrate für den betrachteten Zerfall als Ausdruck der 
@@ -1032,7 +1032,7 @@ gute Konvergenzeigenschaften aufweist. Im physikalischen Bereich dieser Variable
 Nach der Ermittlung dieses Bereichs sind die meisten, allgemein auftauchenden Formfaktoren nicht weiter betrachtet worden, da sie für die vorliegende
 Struktur keinen Beitrag liefern, sodass ein einzielner übrig bleibt. Dieser wird durch ein \texttt{Python}-Skript durch Minimierung einer 
 $\chi^2$-Funktion mithilfe des Moduls \texttt{Minuit} vom CERN an Messwerten der CLEO-Collaboration gefittet und ergibt einen Wert von $f_+(q^2=0) |V_{cs}|$ = 0,707 für den Zerfall des $D^+$-Mesons
-und einen Wert von $f_+(0)|V_{cs}$ = 0,725 für ein zerfallendes $D^0$-Meson. Das hierbei auftauchende Matrixelement $|V_{cs}|$ lässt sich hierbei
+und einen Wert von $f_+(0)|V_{cs}|$ = 0,725 für ein zerfallendes $D^0$-Meson. Das hierbei auftauchende Matrixelement $|V_{cs}|$ lässt sich hierbei
 durch Division eines Formfaktors ermitteln, der durch ein Verfahren der Gitterquantenchromodynamik bestimmt wird. 
 
 \noindent

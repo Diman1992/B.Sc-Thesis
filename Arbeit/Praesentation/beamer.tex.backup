@@ -1,0 +1,504 @@
+
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+% Die Hyperref Option hyperref={pdfpagelabels=false} verhindert die Warnung:
+% Package hyperref Warning: Option `pdfpagelabels' is turned off
+% (hyperref)                because \thepage is undefined. 
+% Hyperref stopped early 
+%
+% \input{longheader.tex}
+% \input{global.tex}
+
+\usepackage{lmodern}
+% Das Paket lmodern erspart die folgenden Warnungen:
+% LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+% (Font)              size <5> substituted on input line 22.
+% LaTeX Font Warning: Size substitutions with differences
+% (Font)              up to 1.0pt have occurred.
+%
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\usepackage{siunitx}
+\sisetup{load-configurations=abbreviations}
+\sisetup{
+	%locale=DE,
+	seperr=true,                    % Fehler anzeigen
+	tightpm,                        % Abstand zwischen Fehler verringern
+	tophrase={{\text{ bis }}},
+	fraction=nice,
+	per-mode=fraction,
+	free-standing-units=true,
+	space-before-unit=true,
+	use-xspace=true,
+	group-separator={{\text{~}}},
+	list-final-separator={{\text{ und }}}
+}
+\usepackage{natbib}
+\usepackage[labelformat=empty]{caption}
+\usepackage{movie15}
+\usepackage{xcolor,colortbl}
+\usepackage{slashed}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amstext}
+\usepackage[ngerman,german]{babel, varioref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xfrac}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Wenn \titel{\ldots} \author{\ldots} erst nach \begin{document} kommen,
+% kommt folgende Warnung:
+% Package hyperref Warning: Option `pdfauthor' has already been used,
+% (hyperref) ... 
+% Daher steht es hier vor \begin{document}
+
+\title[Formfaktoren von $D\rightarrow K l \nu$]{Formfaktoren des semileptonischen $D\rightarrow K l \nu$ Zerfalls}  
+\institute{Lehrstuhl f\"ur Theoretische Physik IV\\
+Technische Universit\"at Dortmund}
+\author{Dimitrios Skodras} 
+\date{03.09.2014} 
+
+% zusaetzlich ist das usepackage{beamerthemeshadow} eingebunden 
+\usepackage{beamerthemeshadow}
+
+
+%  \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+%  sorgt dafuer das die Elemente die erst noch (zukuenftig) kommen 
+%  nur schwach angedeutet erscheinen 
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+% klappt auch bei Tabellen, wenn teTeX verwendet wird\ldots
+
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+ \begin{beamercolorbox}%
+    [wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm]%
+    {author in head/foot}%
+    \usebeamerfont{author in head/foot}%
+    \hfill\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}%
+    [wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm ,rightskip=.3cm]%
+    {title in head/foot}%
+    \usebeamerfont{title in head/foot}%
+    \insertshorttitle\hfill\insertframenumber{}
+  \end{beamercolorbox}%
+}%
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\captionsetup[figure]{font=small,skip=0pt}
+\begin{frame}
+\titlepage
+\end{frame} 
+
+\begin{frame}
+\frametitle{Gliederung}
+\tableofcontents
+\end{frame} 
+
+\newcommand{\tmotiv}{Der Zerfall}
+\section{\tmotiv}
+\begin{frame}
+- standardmodell kurz aufführen
+- feynmangraphen stückweise aufbauen
+- hinweis auf ströme, schwache WW, formfaktoren
+\end{frame}
+
+\begin{frame}
+ \frametitle{Standardmodell}
+ \begin{minipage}[h]{0.48\textwidth}
+  \begin{itemize} 
+  \item Teilcheninhalt:
+  \begin{itemize}
+   \item Leptonen: $e^+$, $\mu^+$, $\nu$
+   \item Quarks: $\bar u$, $\bar d$, $s$, $c$
+   \item Bosonen: $W^+$, $g$
+  \end{itemize}  
+  \item Fundamentale Wechselwirkungen: 
+  \begin{itemize}
+   \item starke Wechselwirkung (QCD)
+   \item elektroschwache Wechselwirkung (GSW-Theorie)
+  \end{itemize}  
+ \end{itemize}
+ \end{minipage}
+ \begin{minipage}[h]{0.48\textwidth}
+ \begin{figure}[h]
+  \includegraphics[width = 2\textwidth]{../Abbildungen/Teilchen.png}
+ \end{figure}
+ \end{minipage}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Feynmangraph}
+  \setcounter{framenumber}{5}
+\begin{minipage}[h]{0.38\textwidth}
+ \begin{enumerate}
+  \item ruhendes $D$-Meson
+ \end{enumerate}
+\end{minipage}
+\begin{minipage}[h]{0.58\textwidth}
+  \begin{figure}[h]
+  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn1.png}
+   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+ \end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Feynmangraph}
+\setcounter{framenumber}{5}
+\begin{minipage}[h]{0.38\textwidth}
+ \begin{enumerate}
+  \item ruhendes $D$-Meson
+  \item propagiert in $t$
+ \end{enumerate}
+\end{minipage}
+\begin{minipage}[h]{0.58\textwidth}
+  \begin{figure}[h]
+  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn2.png}
+   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+ \end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Feynmangraph}
+ \setcounter{framenumber}{5}
+\begin{minipage}[h]{0.38\textwidth}
+ \begin{enumerate}
+  \item ruhendes $D$-Meson
+  \item propagiert in $t$.
+  \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$ 
+ \end{enumerate}
+\end{minipage}
+\begin{minipage}[h]{0.58\textwidth}
+  \begin{figure}[h]
+  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn3.png}
+   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+ \end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Feynmangraph}
+ \setcounter{framenumber}{5}
+\begin{minipage}[h]{0.38\textwidth}
+ \begin{enumerate}
+  \item ruhendes $D$-Meson
+  \item propagiert in $t$.
+  \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$
+  \item $W^+$ zerstrahlt in Leptonpaar $l^+$, $\nu_l$
+ \end{enumerate}
+\end{minipage}
+\begin{minipage}[h]{0.58\textwidth}
+  \begin{figure}[h]
+  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn4.png}
+   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+ \end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{\"Uberblick}
+ \begin{minipage}[h]{0.62\textwidth}
+ \begin{itemize}
+  \item Fermis Goldene Regel: $\underbrace{\Gamma}_{\text{Rate}} = 2\pi \underbrace{\delta(E_f-E_i)}_{\text{Phasenraum }\Phi}\, \cdot \,{\underbrace{|\langle f|V|i\rangle|}_{\text{Amplitude }M}}^2$
+  \item Teilchenstr\"ome
+  \begin{itemize}
+   \item [$\circ$] relativistischer Dirac-Strom
+   \item [$\circ$] kurze Reichweite von $W^+$ f\"ur geringe Energien
+   \item [$\rightarrow$] Beschreibung durch 4-Fermionen-Wechselwirkung
+  \end{itemize}
+
+  \item Starke WW zwischen $c$ und $\bar q_1$
+  \begin{itemize}
+   \item[$\circ$] erh\"alt Parit\"at $\mathcal{P}$
+   \item[$\circ$] st\"orungsrechnerisch nicht erfassbar
+   \item[$\rightarrow$] Darstellung durch \textbf{Formfaktoren} $f$
+  \end{itemize}
+ \end{itemize}
+\end{minipage}
+\begin{minipage}[h]{0.34\textwidth}
+  \begin{figure}[h]
+  \includegraphics[width = 1.3\textwidth]{../Abbildungen/DFeynSpez.png}
+%    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+ \end{figure}
+\end{minipage}
+\end{frame}
+
+
+\section{Fermis Goldene Regel}
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+\subsection{Differentielle Zerfallsbreite d$\Gamma$}
+\begin{frame}
+- was ist gamma (wie wird es bestimmt, was hat es mit D* auf sich)
+\end{frame}
+
+\begin{frame}
+\frametitle{Ergebnis der differentiellen Zerfallsbreite}
+Fermis Goldene Regel:\\
+\begin{align}
+\mathrm{d} \Gamma(D\rightarrow Kl\nu) &= \frac{|M|^2}{2m_D} \mathrm{d}\Phi(K,\,l,\,\nu) \nonumber\\
+&= \frac{G_F^2 |V_{cs}|^2}{24\pi^3}|f_+(q^2)|^2|p_K|^3\mathrm{d}q^2
+\label{eq_theoGamma}
+\end{align}
+wird im Folgenden hergeleitet.
+\vspace{0.5cm}
+
+\small{Fermikonstante $G_F$,\\ CKM-Element $V_{cs}$,\\ Formfaktor $f_+$,\\Kaonimpuls $p_K$,\\ Impuls\"ubertrag $q^2$}
+\end{frame}
+
+
+
+\subsection{Phasenraumvolumen d$\Phi$}
+\begin{frame}
+\frametitle{Phasenraumvolumen}
+-zweck
+\end{frame}
+
+\begin{frame}
+ \frametitle{Berechnung}
+ \begin{align}
+ \mathrm{d} \Phi & = (2\pi)^4\frac{\mathrm{d}^3p_K}{2(2\pi)^3E_K} \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(p_D-p_K-k_1-k_2)\nonumber\\
+ &=\frac{1}{(2\pi)^5}\frac{\mathrm{d}^3p_K}{2E_K}\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu}\nonumber
+ \end{align}
+Leptonimpulse $k_i$ integriert, da Verteilung der Zerfallsbreiten durch $\mathrm{d}q^2$ gemessen. Die Eintr\"age $k_{1,\mu}$ und $k_{2,\nu}$ stammen von $M$ (folgt im Anschluss)
+\end{frame}
+
+\begin{frame}
+ \frametitle{Berechnung}
+ F\"ur die weitere Berechnung werden folgende Gleichungen des $D$-Meson-Ruhesystems ben\"otigt:
+ \begin{itemize}
+ \item $ \frac{\mathrm{d}^3p_K}{2E_K} = 2\pi |p_K|\mathrm{d}E_K$
+   \item $|p_K| = \frac{\sqrt{\lambda(m_D^2, m_K^2, q^2)}}{2m_D}$
+   \item $\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu} = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)$
+ \end{itemize}
+ \vspace{0.7cm}
+ \small{$\lambda = a^2+b^2+c^2-2(ab+bc+ac)$ - K\"all\'en-Funktion,\\$g_{\mu,\nu} = \text{diag}(1,-1,-1,-1)$ - Minkowski-Metrik}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Berechnung}
+ Diese f\"uhren zu einem Ausdruck f\"ur das Phasenraumvolumen:
+ \begin{align}
+  \mathrm{d}\Phi = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)\frac{|p_K|}{(2\pi)^4}\mathrm{d}E_K
+  \label{eq_theoPhase}
+ \end{align}
+\end{frame}
+
+\subsection{Matrixelement $M$}
+\begin{frame}
+\frametitle{Matrixelement}
+- zweck
+- berechnung an der tafel (grob)
+- detaillierter auf folie
+\end{frame}
+
+\begin{frame}
+ \frametitle{Berechnung I}
+ hiernach verlinkung zu teilchenstroeme
+\end{frame}
+
+\begin{frame}
+ \frametitle{Berechnung II}
+ Abschliessend kann das quadrierte Matrixelement nach Umformung des leptonischen Anteils durch Casimirs Trick wie folgt geschrieben werden als
+ \begin{align}
+  |M|^2 & = \frac{G_F^2|V_{cs}|^2}{2}|f_+(q^2)|^2 P^\mu P^\nu \cdot 8\big(k_{l,\mu} k_{\nu,\nu} - g_{\mu\nu}k_lk_\nu + k_{l,\nu}k_{\nu,\mu}\big)\nonumber\\
+  & = 4G_F^2|V|^2 |f_+(q^2)|^2 \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big) k_{l,\nu}k_{\nu,\mu}
+  \label{eq_theoAmplitude}
+ \end{align}
+\end{frame}
+
+\begin{frame}
+\frametitle{Berechnung II}
+ Nun k\"onnen \eqref{eq_theoPhase} und \eqref{eq_theoAmplitude} unter Verwendung von
+ \begin{align*}
+ \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big)\big(2q_\mu q_\nu + q^2g_{\mu\nu}) = 4 \lambda(m_D^2,m_K^2,q^2) = 16 m_D^2 |p_K|^2
+ \end{align*}
+ miteinander verkn\"upft und zu \eqref{eq_theoGamma} zusammengefasst werden
+ ++Verlinkung auf f++
+
+\end{frame}
+
+
+
+
+\section{Teilchenstr\"ome}
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+\begin{frame}
+struktur hinschreiben
+\end{frame}
+\subsection{Dirac-Gleichung}
+\begin{frame}
+\frametitle{Dirac-Gleichung}
+\begin{itemize}
+ \item Lorentzinvariant
+ \item Für Spin $\sfrac12$ -Teilchen
+ \item Besitzt positiv definite Wahrscheinlichkeitsdichte $j^0$
+\end{itemize}
+Dirac-Gleichung:
+\begin{align}
+ (i\gamma_\mu\partial^\mu-m)\psi = (i\slashed{\partial}-m)\psi=(\slashed{p}-m)\psi = 0
+ \label{eq_dirac}
+\end{align}
+\vspace{0.5cm}
+
+Dirac-Matrix $\gamma^\mu$,\\
+Dirac-Wellenfunktion $\psi$,\\
+Dirac-Spinoren $u$, $v$
+\end{frame}
+
+\begin{frame}
+ \frametitle{Dirac-Strom $j^\mu$}
+ \begin{itemize}
+  \item Beschreibt Wahrscheinlichkeitsstrom eines propagierenden Teilchens
+  \item Strom genügt Kontinuitätsgleichung $\partial_\mu j^\mu = 0$
+ \end{itemize}
+
+ \begin{align*}
+  j^\mu = \bar \psi \gamma^\mu \psi. 
+ \end{align*}
+
+\end{frame}
+
+
+\subsection{4-Fermionen-Wechselwirkung}
+\begin{frame}
+\frametitle{Rechtfertigung}
+ \begin{minipage}[h]{0.58\textwidth}
+\begin{itemize}
+ \item Am $W^+$ koppeln hier ein hadronischer  und ein leptonischer Strom
+ \item Hohe Masse des $W^+$ ($\approx$ 82 GeV) heißt kurze Lebensdauer
+ \begin{itemize}
+ \item[$\rightarrow$] Vier Fermionen(-ströme) wechselwirken in einem Punkt
+ \end{itemize}
+ \item Niederenergetischer Grenzfall ($q^2<2\GeV^2$) der GSW-Theorie
+\end{itemize}
+ \end{minipage}
+ \begin{minipage}[h]{0.38\textwidth}
+ \begin{figure}[h]
+  \includegraphics[width = 3\textwidth]{../Abbildungen/4FermiPraes.png}
+ \end{figure}
+ \end{minipage}
+ \end{frame}
+
+ \begin{frame}
+  \frametitle{Strom-Strom-Kopplung}
+  \begin{itemize}
+   \item Das Verhalten unter Lorentz-Transformationen ist für Ströme vielfältig (S, P, V, A, T)
+   \item Aus Strömen konstruierter Hamiltonian muss (pseudo-)skalar sein (z.B. bei V-A-Kopplung)
+   \item Diese erfordert \textbf{Paritätsverletzung} (Schwache WW koppelt an linkshändige Teilchen und rechtshändige Antiteilchen)
+   \item Projektionsoperator $P=(1-\gamma_5)$ extrahiert linkshändige Komponente der Spinoren
+   \begin{itemize}
+    \item [$\rightarrow$] Dirac-Ströme wird um Axialstromanteil erweitert:
+   \end{itemize}
+  \end{itemize}
+  \begin{align}
+   j^\mu = \bar \psi \gamma^\mu (1-\gamma_5) \psi
+  \end{align}
+ \end{frame}
+
+\section{Formfaktoren}
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+\begin{frame}
+ \frametitle{Motivation}
+ \begin{itemize}
+  \item Fermi-Wechselwirkung berücksichtigt die starke WW zwischen $c$ und $\bar q_1$ nicht
+  \begin{itemize}
+   \item [$\rightarrow$] gilt aber für Leptonenstrom
+   \item [$\rightarrow$] Hadronenstrom durch Formfaktoren darstellen
+  \end{itemize}
+  \item Formfaktoren sind einheitenlose Größen, die theoretisch unzugängliche Einflüsse enthalten (sollen berechnet werden)
+  \item Viererimpulse $p_D$ und $p_K$ sind einzige Freiheitsgrade und müssen zur Darstellung ausreichen
+  \item Da QCD Parität erhält, müssen Formfaktorausdrücke dasselbe Transformationsverhalten unter Parität haben, wie $V$ bzw. $A$.
+ \end{itemize}
+\end{frame}
+
+\subsection{Axialvektorformfaktoren und $f_-$}
+\begin{frame}
+\frametitle{Axialvektorformfaktoren}
+\begin{itemize}
+ \item Eigenwerte der Parität $\mathcal{P}$ sind $\pi = \pm1$ und multiplikativ, da diskrete Symmetrie
+ \item Vektoren und Pseudoskalare transformieren mit $\pi = -1$, Axialvektoren mit $\pi = +1$
+\end{itemize}
+\begin{align}
+ \mathcal{P} \, \big\langle\bar K^0\,\big|V^\mu|\,D^+\big\rangle &= (-1)\cdot(-1)\cdot(-1) = -1 \nonumber \\
+ \mathcal{P} \, \big\langle\bar K^0\,\big|A^\mu|\,D^+\big\rangle &= (-1)\cdot(+1)\cdot(-1) = +1. \nonumber
+\end{align}
+\begin{itemize}
+ \item Keine Kombination aus $p_D^\mu$, $p_K^\mu$ und $\epsilon^{\mu\nu\alpha\beta}$ transformiert mit $\pi = +1$
+ \begin{itemize}
+  \item [$\rightarrow$] $\big\langle K(p_K)\,\big|A^\mu\big|\, D(p_D)\big\rangle = 0$
+  \item [$\rightarrow$] Keine Axialvektorformfaktoren!
+ \end{itemize}
+\end{itemize}
+\vspace{0.7cm}
+\small{Levi-Civita-Tensor $\epsilon^{\mu\nu\alpha\beta}$}
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Vektorformfaktoren}
+Viererimpulse selbst transformieren unter Parität wie Vektoren
+  \begin{itemize}
+   \item [$\rightarrow$] Allgemeine Darstellung durch zwei Formfaktoren $f_+$, $f_-$:
+  \end{itemize}
+
+\begin{align*}
+ \big\langle K(p_K)\,\big|V^\mu\big|\, D(p_D)\big\rangle = f_+(q^2)(p_D+p_K)^\mu + f_-(q^2)(p_D-p_K)^\mu.
+\end{align*}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Formfaktor $f_-$}
+ Betrachtung von $M_-$ nur mit $f_-$:
+ \begin{align}
+  M_- &= \frac{G_F V_{cs}}{\sqrt{2}} f_-(q^2)(p_D-p_K)^\mu\bar u_\nu \gamma_\mu(1-\gamma_5)v_l\nonumber\\
+ &= \frac{G_F V_{cs}}{\sqrt{2}} f_-(q^2)(k_\nu+k_l)^\mu \bar u_\nu \gamma_\mu(1-\gamma_5)v_l\,\nonumber\\
+  &=\frac{G_F V_{cs}}{\sqrt{2}} f_-(q^2)\bar u_\nu (\slashed{k}_\nu + \slashed{k}_l) (1-\gamma_5)v_l\nonumber\\
+ &\stackrel{\eqref{eq_dirac}}{=}\frac{G_F V_{cs}}{\sqrt{2}} f_-(q^2)\bar u_\nu (m_\nu + m_l) (1-\gamma_5)v_l\,.\nonumber 
+ \end{align}
+Die Leptonmassen sind für $l=e,\,\mu$ verglichen mit $m_D$ vernachlässigbar
+\begin{itemize}
+ \item [$\rightarrow$] $f_-$ liefert ebenfalls keinen Beitrag!
+\end{itemize}
+++link zu Matrixelement++
+
+\end{frame}
+
+
+\subsection{Formfaktor $f_+$}
+\begin{frame}
+parametrisierung
+fit
+resultate
+\end{frame}
+
+
+\section{Ausblick}
+\label{sec_ausblick}
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Bonus}
+\textbf{Bonusfolien}
+\end{frame}
+
+
+
+\end{document}

@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {german}
+\beamer@sectionintoc {1}{Der Zerfall}{3}{0}{1}
+\beamer@sectionintoc {2}{Fermis Goldene Regel}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Differentielle Zerfallsbreite d$\Gamma $}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Phasenraumvolumen d$\Phi $}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Matrixelement $M$}{16}{0}{2}
+\beamer@sectionintoc {3}{Teilchenstr\"ome}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{Dirac-Gleichung}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{4-Fermionen-Wechselwirkung}{23}{0}{3}
+\beamer@sectionintoc {4}{Formfaktoren}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Axialvektorformfaktoren und $f_-$}{27}{0}{4}
+\beamer@subsectionintoc {4}{2}{Formfaktor $f_+$}{30}{0}{4}
+\beamer@sectionintoc {5}{Resultate unter $t_0$- und $\mathcal {O}$-Variation}{33}{0}{5}
+\beamer@sectionintoc {6}{Ausblick}{34}{0}{6}

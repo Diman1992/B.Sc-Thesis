@@ -1,0 +1,216 @@
+
+% Deutsche Spracheinstellungen
+\usepackage[ngerman,german]{babel, varioref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%\usepackage{marvosym}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{amstext}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{setspace}
+%\usepackage[onehalfspacing]{setspace}
+\usepackage{threeparttable}
+% \usepackage{footnote}
+% \usepackage{feynmf}
+\usepackage{bbm}
+\usepackage{slashed}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+%\usepackage{minipage}
+ 
+ \definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+ \definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+ \definecolor{orange}{rgb}{0.8,0.3,0.3}
+ \definecolor{yac}{rgb}{0.6,0.6,0.1}
+ \definecolor{puple}{rgb}{0.62,0.12,0.94}
+ \lstset{language=Python,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{red}\ttfamily,
+                stringstyle=\color{magenta}\ttfamily,
+                commentstyle=\color{blue}\ttfamily,
+                morecomment=[l][\color{blue}]{\#},
+		%stepnumber=1,
+		%numberstyle=\color{magenta}\ttfamily,
+		%    numbers=left,
+		%    numberstyle={},
+		%    numberblanklines=false,
+		%    stepnumber=1,
+		%    numbersep=10pt,
+		    xleftmargin=15pt,
+ 		moredelim=[is][\color{purple}]{|}{|}
+}
+
+\newfloat{formel}{htbp}{for}
+\floatname{formel}{Formel}
+
+% \onehalfspacing
+%\setstretch {1.433}
+
+\usepackage{longtable}
+
+%\usepackage{bibgerm}
+
+\usepackage{footnpag}
+
+\usepackage{ifthen}                 %%% package for conditionals in TeX
+\usepackage[amssymb]{SIunits}
+%Fr textumflossene Bilder und Tablellen
+%\usepackage{floatflt} - veraltet
+
+%Fr Testzwecke aktivieren, zeigt labels und refs im Text an.
+%\usepackage{showkeys}
+
+% Abstand zwischen zwei Abs�zen nach DIN (1,5 Zeilen)
+% \setlength{\parskip}{1.5ex}
+
+% Einrckung am Anfang eines neuen Absatzes nach DIN (keine)
+%\setlength{\parindent}{0pt}
+
+% R�der definieren
+% \setlength{\oddsidemargin}{0.3cm}
+% \setlength{\textwidth}{15.6cm}
+
+% bessere Bildunterschriften
+%\usepackage[center]{caption2}
+
+
+% Probleml�ungen beim Umgang mit Gleitumgebungen
+\usepackage{float}
+
+% Nummeriert bis zur Strukturstufe 3 (also <section>, <subsection> und <subsubsection>)
+%\setcounter{secnumdepth}{3}
+
+% Fhrt das Inhaltsverzeichnis bis zur Strukturstufe 3
+%\setcounter{tocdepth}{3}
+
+\usepackage{exscale}
+
+\newenvironment{dsm} {\begin{displaymath}} {\end{displaymath}}
+\newenvironment{vars} {\begin{center}\scriptsize} {\normalsize \end{center}}
+
+
+\newcommand {\en} {\varepsilon_0}               % Epsilon-Null aus der Elektrodynamik
+\newcommand {\lap} {\; \mathbf{\Delta}}         % Laplace-Operator
+\newcommand {\R} { \mathbb{R} }                 % Menge der reellen Zahlen
+\newcommand {\e} { \ \mathbf{e} }               % Eulersche Zahl
+\renewcommand {\i} { \mathbf{i} }               % komplexe Zahl i
+\newcommand {\N} { \mathbb{N} }                 % Menge der nat. Zahlen
+\newcommand {\C} { \mathbb{C} }                 % Menge der kompl. Zahlen
+\newcommand {\Z} { \mathbb{Z} }                 % Menge der kompl. Zahlen
+\newcommand {\limi}[1]{\lim_{#1 \rightarrow \infty}} % Limes unendlich
+\newcommand {\sumi}[1]{\sum_{#1=0}^\infty}
+\newcommand {\rot} {\; \mathrm{rot} \,}         % Rotation
+\newcommand {\grad} {\; \mathrm{grad} \,}       % Gradient
+\newcommand {\dive} {\; \mathrm{div} \,}        % Divergenz
+\newcommand {\dx} {\; \mathrm{d} }              % Differential d
+\newcommand {\cotanh} {\; \mathrm{cotanh} \,}   %Cotangenshyperbolicus
+\newcommand {\asinh} {\; \mathrm{areasinh} \,}  %Area-Sinus-Hyp.
+\newcommand {\acosh} {\; \mathrm{areacosh} \,}  %Area-Cosinus-H.
+\newcommand {\atanh} {\; \mathrm{areatanh} \,}  %Area Tangens-H.
+\newcommand {\acoth} {\; \mathrm{areacoth} \,}  % Area-cotangens
+\newcommand {\Sp} {\; \mathrm{Sp} \,}
+\newcommand {\mbe} {\stackrel{\text{!}}{=}}     %Must Be Equal
+% \newcommand{\qed} { \hfill $\square$\\}
+\newcommand{\midtilde}{\raisebox{-0,25\baselineskip}{\textasciitilde}}
+\renewcommand{\i} {\imath}
+\def\captionsngerman{\def\figurename{\textbf{Abb.}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SWITCH FOR PDFLATEX or LATEX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+\ifx\pdfoutput\undefined %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LATEX %%%
+%%%
+\usepackage[dvips]{graphicx}       %%% graphics for dvips
+\DeclareGraphicsExtensions{.eps,.ps}   %%% standard extension for included graphics
+\usepackage[ps2pdf]{thumbpdf}      %%% thumbnails for ps2pdf
+\usepackage[ps2pdf,                %%% hyper-references for ps2pdf
+bookmarks=true,%                   %%% generate bookmarks ...
+bookmarksnumbered=true,%           %%% ... with numbers
+hypertexnames=false,%              %%% needed for correct links to figures !!!
+breaklinks=true,%                  %%% breaks lines, but links are very small
+linkbordercolor={0 0 1},%          %%% blue frames around links
+pdfborder={0 0 112.0}]{hyperref}%  %%% border-width of frames
+%                                      will be multiplied with 0.009 by ps2pdf
+%
+\hypersetup{ pdfauthor   = {Hannes Franke; Julius Tilly},
+pdftitle    = {V301 Innenwiderstand und Leistungsanpassung}, pdfsubject  = {Protokoll FP}, pdfkeywords = {V301, Innenwiderstand, Leistungsanpassung},
+pdfcreator  = {LaTeX with hyperref package}, pdfproducer = {dvips
++ ps2pdf} }
+%%%
+\else %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PDFLATEX %%%
+%%%
+\usepackage[pdftex]{graphicx}      %%% graphics for pdfLaTeX
+% \DeclareGraphicsExtensions{.pdf}   %%% standard extension for included graphics
+% \usepackage[pdftex]{thumbpdf}      %%% thumbnails for pdflatex
+\usepackage[pdftex,                %%% hyper-references for pdflatex
+bookmarks=true,%                   %%% generate bookmarks ...
+bookmarksnumbered=true,%           %%% ... with numbers
+hypertexnames=false,%              %%% needed for correct links to figures !!!
+breaklinks=true,%                  %%% break links if exceeding a single line
+linkbordercolor={0 0 1},
+linktocpage]{hyperref} %%% blue frames around links
+%                                  %%% pdfborder={0 0 1} is the default
+\hypersetup{
+pdftitle    = {V301 Innenwiderstand und Leistungsanpassung}, 
+pdfsubject  = {Protokoll AP}, 
+pdfkeywords = {V301, Innenwiderstand, Leistungsanpassung},
+pdfsubject  = {Protokoll AP},
+pdfkeywords = {V301, Innenwiderstand, Leistungsanpassung}}
+%                                  %%% pdfcreator, pdfproducer,
+%                                      and CreationDate are automatically set
+%                                      by pdflatex !!!
+\pdfadjustspacing=1                %%% force LaTeX-like character spacing
+\usepackage{epstopdf}
+%
+\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END OF CONDITION %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% seitliche Tabellen und Abbildungen
+%\usepackage{rotating}
+\usepackage{ae}
+\usepackage{
+  array,
+  booktabs,
+  dcolumn
+}
+\makeatletter 
+  \renewenvironment{figure}[1][] {% 
+    \ifthenelse{\equal{#1}{}}{% 
+      \@float{figure} 
+    }{% 
+      \@float{figure}[#1]% 
+    }% 
+    \centering 
+  }{% 
+    \end@float 
+  } 
+  \makeatother 
+
+
+  \makeatletter 
+  \renewenvironment{table}[1][] {% 
+    \ifthenelse{\equal{#1}{}}{% 
+      \@float{table} 
+    }{% 
+      \@float{table}[#1]% 
+    }% 
+    \centering 
+  }{% 
+    \end@float 
+  } 
+  \makeatother 
+%\usepackage{listings}
+%\lstloadlanguages{[Visual]Basic}
+%\allowdisplaybreaks[1]
+%\usepackage{hycap}
+%\usepackage{fancyunits}
