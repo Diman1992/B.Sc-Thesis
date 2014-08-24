@@ -104,128 +104,129 @@ Technische Universit\"at Dortmund}
 
 \newcommand{\tmotiv}{Der Zerfall}
 \section{\tmotiv}
-
-\begin{frame}
- \frametitle{Standardmodell}
- \begin{minipage}[h]{0.48\textwidth}
-  \begin{itemize} 
-  \item Teilcheninhalt:
-  \begin{itemize}
-   \item Leptonen: $e^+$, $\mu^+$, $\nu$
-   \item Quarks: $\bar u$, $\bar d$, $s$, $c$
-   \item Bosonen: $W^+$, $g$
-  \end{itemize}  
-  \item Fundamentale Wechselwirkungen: 
-  \begin{itemize}
-   \item starke Wechselwirkung (QCD)
-   \item elektroschwache Wechselwirkung (GSW-Theorie)
-  \end{itemize}  
- \end{itemize}
- \end{minipage}
- \begin{minipage}[h]{0.48\textwidth}
- \begin{figure}[h]
-  \includegraphics[width = 2\textwidth]{../Abbildungen/Teilchen.png}
- \end{figure}
- \end{minipage}
-\end{frame}
-
-\begin{frame}
- \frametitle{Feynmangraph}
-  \setcounter{framenumber}{5}
-\begin{minipage}[h]{0.38\textwidth}
- \begin{enumerate}
-  \item ruhendes $D$-Meson
- \end{enumerate}
-\end{minipage}
-\begin{minipage}[h]{0.58\textwidth}
-  \begin{figure}[h]
-  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn1.png}
-   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
- \end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}
- \frametitle{Feynmangraph}
-\setcounter{framenumber}{5}
-\begin{minipage}[h]{0.38\textwidth}
- \begin{enumerate}
-  \item ruhendes $D$-Meson
-  \item propagiert in $t$
- \end{enumerate}
-\end{minipage}
-\begin{minipage}[h]{0.58\textwidth}
-  \begin{figure}[h]
-  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn2.png}
-   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
- \end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}
- \frametitle{Feynmangraph}
- \setcounter{framenumber}{5}
-\begin{minipage}[h]{0.38\textwidth}
- \begin{enumerate}
-  \item ruhendes $D$-Meson
-  \item propagiert in $t$.
-  \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$ 
- \end{enumerate}
-\end{minipage}
-\begin{minipage}[h]{0.58\textwidth}
-  \begin{figure}[h]
-  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn3.png}
-   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
- \end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}
- \frametitle{Feynmangraph}
- \setcounter{framenumber}{5}
-\begin{minipage}[h]{0.38\textwidth}
- \begin{enumerate}
-  \item ruhendes $D$-Meson
-  \item propagiert in $t$.
-  \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$
-  \item $W^+$ zerstrahlt in Leptonpaar $l^+$, $\nu_l$
- \end{enumerate}
-\end{minipage}
-\begin{minipage}[h]{0.58\textwidth}
-  \begin{figure}[h]
-  \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn4.png}
-   \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
- \end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}
-\frametitle{\"Uberblick}
- \begin{minipage}[h]{0.62\textwidth}
- \begin{itemize}
-  \item Fermis Goldene Regel: $\underbrace{\Gamma}_{\text{Rate}} = 2\pi \underbrace{\delta(E_f-E_i)}_{\text{Phasenraum }\Phi}\, \cdot \,{\underbrace{|\langle f|V|i\rangle|}_{\text{Amplitude }M}}^2$
-  \item Teilchenstr\"ome
-  \begin{itemize}
-   \item [$\circ$] relativistischer Dirac-Strom
-   \item [$\circ$] kurze Reichweite von $W^+$ f\"ur geringe Energien
-   \item [$\rightarrow$] Beschreibung durch 4-Fermionen-Wechselwirkung
-  \end{itemize}
-
-  \item Starke WW zwischen $c$ und $\bar q_1$
-  \begin{itemize}
-   \item[$\circ$] erh\"alt Parit\"at $\mathcal{P}$
-   \item[$\circ$] st\"orungsrechnerisch nicht erfassbar
-   \item[$\rightarrow$] Darstellung durch \textbf{Formfaktoren} $f$
-  \end{itemize}
- \end{itemize}
-\end{minipage}
-\begin{minipage}[h]{0.34\textwidth}
-  \begin{figure}[h]
-  \includegraphics[width = 1.3\textwidth]{../Abbildungen/DFeynSpez.png}
+% 
+ \begin{frame}
+   \frametitle{Standardmodell}
+%   \pause
+%   \begin{minipage}[h]{0.48\textwidth}
+%    \begin{itemize}
+%    \visible<2->{\item Teilcheninhalt:}
+%    \begin{itemize}
+%     \visible<3->{\item Leptonen: $e^+$, $\mu^+$, $\nu$}
+%     \visible<4->{\item Quarks: $\bar u$, $\bar d$, $s$, $c$}
+%     \visible<5->{\item Vektorbosonen: $W^+$, $g$}
+%     \visible<6->{\item (Skalarbosonen: $H$, $\pi$)}
+%    \end{itemize}  
+%    \visible<2->{\item Fundamentale Wechselwirkungen:} 
+%    \begin{itemize}
+%     \visible<7->{\item starke Wechselwirkung (QCD)}
+%     \visible<8->{\item elektroschwache Wechselwirkung (GSW-Theorie)}
+%    \end{itemize}  
+%   \end{itemize}
+%   \end{minipage}
+%   \begin{minipage}[h]{0.48\textwidth}
+%   \begin{figure}[h]
+%    \includegraphics[width = 2\textwidth]{../Abbildungen/Teilchen.png}
+%   \end{figure}
+%   \end{minipage}
+ \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Feynmangraph}
+%   \setcounter{framenumber}{4}
+% \begin{minipage}[h]{0.38\textwidth}
+%  \begin{enumerate}
+%   \item ruhendes $D$-Meson
+%  \end{enumerate}
+% \end{minipage}
+% \begin{minipage}[h]{0.58\textwidth}
+%   \begin{figure}[h]
+%   \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn1.png}
 %    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
- \end{figure}
-\end{minipage}
-\end{frame}
+%  \end{figure}
+% \end{minipage}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Feynmangraph}
+% \setcounter{framenumber}{4}
+% \begin{minipage}[h]{0.38\textwidth}
+%  \begin{enumerate}
+%   \item ruhendes $D$-Meson
+%   \item propagiert in $t$
+%  \end{enumerate}
+% \end{minipage}
+% \begin{minipage}[h]{0.58\textwidth}
+%   \begin{figure}[h]
+%   \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn2.png}
+%    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+%  \end{figure}
+% \end{minipage}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Feynmangraph}
+%  \setcounter{framenumber}{4}
+% \begin{minipage}[h]{0.38\textwidth}
+%  \begin{enumerate}
+%   \item ruhendes $D$-Meson
+%   \item propagiert in $t$.
+%   \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$ 
+%  \end{enumerate}
+% \end{minipage}
+% \begin{minipage}[h]{0.58\textwidth}
+%   \begin{figure}[h]
+%   \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn3.png}
+%    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+%  \end{figure}
+% \end{minipage}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Feynmangraph}
+%  \setcounter{framenumber}{4}
+% \begin{minipage}[h]{0.38\textwidth}
+%  \begin{enumerate}
+%   \item ruhendes $D$-Meson
+%   \item propagiert in $t$.
+%   \item $c$ wandelt unter Abstrahlung von $W^+$ in $s$
+%   \item $W^+$ zerstrahlt in Leptonpaar $l^+$, $\nu_l$
+%  \end{enumerate}
+% \end{minipage}
+% \begin{minipage}[h]{0.58\textwidth}
+%   \begin{figure}[h]
+%   \includegraphics[width = 1.9\textwidth]{../Abbildungen/DFeyn4.png}
+%    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+%  \end{figure}
+% \end{minipage}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{\"Uberblick}
+% \pause
+%  \begin{minipage}[h]{0.62\textwidth}
+%  \begin{itemize}[<+->]
+%   \item Fermis Goldene Regel: $\underbrace{\Gamma}_{\text{Rate}} = 2\pi \underbrace{\delta(E_f-E_i)}_{\text{Phasenraum }\Phi}\, \cdot \,{\underbrace{|\langle f|V|i\rangle|}_{\text{Amplitude }M}}^2$
+%   \item Teilchenstr\"ome
+%   \begin{itemize}[<+->]
+%    \item [$\circ$] relativistischer Dirac-Strom
+%    \item [$\circ$] kurze Reichweite von $W^+$ f\"ur geringe Energien \\$\rightarrow$ Beschreibung durch 4-Fermionen-Wechselwirkung
+%   \end{itemize}
+% 
+%   \item Starke WW zwischen $c$ und $\bar q_1$
+%   \begin{itemize}[<+->]
+%    \item[$\circ$] erh\"alt Parit\"at $\mathcal{P}$
+%    \item[$\circ$] st\"orungsrechnerisch nicht erfassbar \\$\rightarrow$ Darstellung durch \textbf{Formfaktoren} $f$
+%   \end{itemize}
+%  \end{itemize}
+% \end{minipage}
+% \visible<1->{\begin{minipage}[h]{0.34\textwidth}
+%   \begin{figure}[h]
+%   \includegraphics[width = 1.3\textwidth]{../Abbildungen/DFeynSpez.png}
+% %    \caption{Feynmangraph des $D\rightarrow Kl\nu$ Zerfalls}
+%  \end{figure}
+% \end{minipage}}
+% \end{frame}
 
 
 \section{Fermis Goldene Regel}
@@ -233,22 +234,29 @@ Technische Universit\"at Dortmund}
 \tableofcontents[currentsection]
 \end{frame}
 \subsection{Differentielle Zerfallsbreite d$\Gamma$}
-\begin{frame}
-- was ist gamma (wie wird es bestimmt, was hat es mit D* auf sich)
-\end{frame}
+ \begin{frame}
+    \frametitle{Zerfallsbreite}
+%    \pause
+%    \begin{itemize}
+%     \visible<2->{\item Inverses der hier sehr kurzen Lebensdauer $\tau$}
+%     \visible<3->{\item Energiemessung führt wegen Energieunschärfe zu Verteilungen}
+%     \visible<4->{\item [$\rightarrow$] Breite der Verteilung $\Gamma$ kann gemessen werden}
+%     \end{itemize}
+ \end{frame}
 
 \begin{frame}
-\frametitle{Ergebnis der differentiellen Zerfallsbreite}
-Fermis Goldene Regel:\\
-\begin{align}
-\mathrm{d} \Gamma(D\rightarrow Kl\nu) &= \frac{|M|^2}{2m_D} \mathrm{d}\Phi(K,\,l,\,\nu) \nonumber\\
-&= \frac{G_F^2 |V_{cs}|^2}{24\pi^3}|f_+(q^2)|^2|p_K|^3\mathrm{d}q^2
-\label{eq_theoGamma}
-\end{align}
-wird im Folgenden hergeleitet.
-\vspace{0.5cm}
-
-\small{Fermikonstante $G_F$,\\ CKM-Element $V_{cs}$,\\ Formfaktor $f_+$,\\Kaonimpuls $p_K$,\\ Impuls\"ubertrag $q^2$}
+ \frametitle{Ergebnis der differentiellen Zerfallsbreite}
+% Fermis Goldene Regel:\\
+% \pause
+% \begin{align*}
+% \visible<2->{\mathrm{d} \Gamma(D\rightarrow Kl\nu) &= \frac{|M|^2}{2m_D} \mathrm{d}\Phi(K,\,l,\,\nu)} \nonumber\\
+% \visible<3->{&= \frac{G_F^2 |V_{cs}|^2}{24\pi^3}|f_+(q^2)|^2|p_K|^3\mathrm{d}q^2}
+% \label{eq_theoGamma}
+% \end{align*}
+% \vskip-1.5em
+% \vspace{0.5cm}
+% \visible<4->
+% {\small{Fermikonstante $G_F$,\\ CKM-Element $V_{cs}$,\\ Formfaktor $f_+$,\\Kaonimpuls $p_K$,\\ Impuls\"ubertrag $q^2$}}
 \end{frame}
 
 
@@ -256,74 +264,32 @@ wird im Folgenden hergeleitet.
 \subsection{Phasenraumvolumen d$\Phi$}
 \begin{frame}
 \frametitle{Phasenraumvolumen}
--zweck
-\end{frame}
+% \begin{itemize}
+%  \visible<2->{\item Enthält kinematische Informationen (Energien, Impulse)}
+%  \visible<3->{\item Je mehr Endzustände existieren, umso größer ist $\Phi$}
+%  \visible<4->{\item Nicht vom Matrixelement unabhängig ausdrückbar, da es Viererimpulse enthält}
+% \end{itemize}
+% \visible<5->{Ein erster Ausdruck:
+% \begin{align*}
+%  \mathrm{d} \Phi & = (2\pi)^4\frac{\mathrm{d}^3p_K}{2(2\pi)^3E_K} \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(p_D-p_K-k_1-k_2)\nonumber
+% \end{align*}}
 
-\begin{frame}
- \frametitle{Berechnung}
- \begin{align}
- \mathrm{d} \Phi & = (2\pi)^4\frac{\mathrm{d}^3p_K}{2(2\pi)^3E_K} \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(p_D-p_K-k_1-k_2)\nonumber\\
- &=\frac{1}{(2\pi)^5}\frac{\mathrm{d}^3p_K}{2E_K}\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu}\nonumber
- \end{align}
-Leptonimpulse $k_i$ integriert, da Verteilung der Zerfallsbreiten durch $\mathrm{d}q^2$ gemessen. Die Eintr\"age $k_{1,\mu}$ und $k_{2,\nu}$ stammen von $M$ (folgt im Anschluss)
-\end{frame}
-
-\begin{frame}
- \frametitle{Berechnung}
- F\"ur die weitere Berechnung werden folgende Gleichungen des $D$-Meson-Ruhesystems ben\"otigt:
- \begin{itemize}
- \item $ \frac{\mathrm{d}^3p_K}{2E_K} = 2\pi |p_K|\mathrm{d}E_K$
-   \item $|p_K| = \frac{\sqrt{\lambda(m_D^2, m_K^2, q^2)}}{2m_D}$
-   \item $\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu} = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)$
- \end{itemize}
- \vspace{0.7cm}
- \small{$\lambda = a^2+b^2+c^2-2(ab+bc+ac)$ - K\"all\'en-Funktion,\\$g_{\mu,\nu} = \text{diag}(1,-1,-1,-1)$ - Minkowski-Metrik}
-\end{frame}
-
-\begin{frame}
- \frametitle{Berechnung}
- Diese f\"uhren zu einem Ausdruck f\"ur das Phasenraumvolumen:
- \begin{align}
-  \mathrm{d}\Phi = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)\frac{|p_K|}{(2\pi)^4}\mathrm{d}E_K
-  \label{eq_theoPhase}
- \end{align}
 \end{frame}
 
 \subsection{Matrixelement $M$}
 \begin{frame}
 \frametitle{Matrixelement}
-- zweck
-- berechnung an der tafel (grob)
-- detaillierter auf folie
+% \pause
+% \begin{itemize}
+%  \visible<2->{\item Enthält dynamische Informationen (Wechselwirkungen)}
+%  \visible<3->{\item Beschreibt Übergang ähnlich Streuung von Startzustand $i$ zu Endzustand $f$}
+%  \visible<4->{\item Betragsquadrat $|M|^2$ kann als Wahrscheinlichkeit für Reaktion betrachtet werden}
+% \end{itemize}
+%  \visible<5->{Ein erster Ausdruck:
+%  \begin{align*}
+%   M = \langle Kl\nu\,|\mathcal{H}|\,D\rangle
+%  \end{align*}}
 \end{frame}
-
-\begin{frame}
- \frametitle{Berechnung I}
- hiernach verlinkung zu teilchenstroeme
-\end{frame}
-
-\begin{frame}
- \frametitle{Berechnung II}
- Abschliessend kann das quadrierte Matrixelement nach Umformung des leptonischen Anteils durch Casimirs Trick wie folgt geschrieben werden als
- \begin{align}
-  |M|^2 & = \frac{G_F^2|V_{cs}|^2}{2}|f_+(q^2)|^2 P^\mu P^\nu \cdot 8\big(k_{l,\mu} k_{\nu,\nu} - g_{\mu\nu}k_lk_\nu + k_{l,\nu}k_{\nu,\mu}\big)\nonumber\\
-  & = 4G_F^2|V|^2 |f_+(q^2)|^2 \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big) k_{l,\nu}k_{\nu,\mu}
-  \label{eq_theoAmplitude}
- \end{align}
-\end{frame}
-
-\begin{frame}
-\frametitle{Berechnung II}
- Nun k\"onnen \eqref{eq_theoPhase} und \eqref{eq_theoAmplitude} unter Verwendung von
- \begin{align*}
- \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big)\big(2q_\mu q_\nu + q^2g_{\mu\nu}) = 4 \lambda(m_D^2,m_K^2,q^2) = 16 m_D^2 |p_K|^2
- \end{align*}
- miteinander verkn\"upft und zu \eqref{eq_theoGamma} zusammengefasst werden
- ++Verlinkung auf f++
-
-\end{frame}
-
-
 
 
 \section{Teilchenstr\"ome}
@@ -334,72 +300,123 @@ Leptonimpulse $k_i$ integriert, da Verteilung der Zerfallsbreiten durch $\mathrm
 \subsection{Dirac-Gleichung}
 \begin{frame}
 \frametitle{Dirac-Gleichung}
+\pause
 \begin{itemize}
- \item Lorentzinvariant
- \item Für Spin $\sfrac12$ -Teilchen
- \item Besitzt positiv definite Wahrscheinlichkeitsdichte $j^0$
+ \visible<2->{\item Lorentzinvariant}
+ \visible<3->{\item Für Spin $\sfrac12$ -Teilchen}
+ \visible<4->{\item Besitzt positiv definite Wahrscheinlichkeitsdichte $j^0$}
 \end{itemize}
-Dirac-Gleichung:
-\begin{align}
+\visible<5-> {Dirac-Gleichung:
+\begin{align*}
  (i\gamma_\mu\partial^\mu-m)\psi = (i\slashed{\partial}-m)\psi=(\slashed{p}-m)\psi = 0
- \label{eq_dirac}
-\end{align}
+ %\label{eq_dirac}
+\end{align*}}
 \vspace{0.5cm}
 
-Dirac-Matrix $\gamma^\mu$,\\
+\visible<5->{\small{Dirac-Matrix $\gamma^\mu$,\\
 Dirac-Wellenfunktion $\psi$,\\
-Dirac-Spinoren $u$, $v$
+Dirac-Spinoren $u$, $v$}}
 \end{frame}
 
 \begin{frame}
  \frametitle{Dirac-Strom $j^\mu$}
+ \pause
  \begin{itemize}
-  \item Beschreibt Wahrscheinlichkeitsstrom eines propagierenden Teilchens
-  \item Strom genügt Kontinuitätsgleichung $\partial_\mu j^\mu = 0$
+  \visible<2->{\item Beschreibt Wahrscheinlichkeitsstrom eines propagierenden Teilchens}
+  \visible<3->{\item Strom genügt Kontinuitätsgleichung $\partial_\mu j^\mu = 0$}
  \end{itemize}
-
+\visible<4->{
  \begin{align*}
   j^\mu = \bar \psi \gamma^\mu \psi. 
- \end{align*}
-
+ \end{align*}}
 \end{frame}
 
 
 \subsection{4-Fermionen-Wechselwirkung}
 \begin{frame}
 \frametitle{Rechtfertigung}
- \begin{minipage}[h]{0.58\textwidth}
-\begin{itemize}
- \item Am $W^+$ koppeln hier ein hadronischer  und ein leptonischer Strom
- \item Hohe Masse des $W^+$ ($\approx$ 82 GeV) heißt kurze Lebensdauer
- \begin{itemize}
- \item[$\rightarrow$] Vier Fermionen(-ströme) wechselwirken in einem Punkt
- \end{itemize}
- \item Niederenergetischer Grenzfall ($q^2<2\GeV^2$) der GSW-Theorie
-\end{itemize}
- \end{minipage}
- \begin{minipage}[h]{0.38\textwidth}
- \begin{figure}[h]
-  \includegraphics[width = 3\textwidth]{../Abbildungen/4FermiPraes.png}
- \end{figure}
- \end{minipage}
+% \pause
+%  \begin{minipage}[h]{0.58\textwidth}
+% \begin{itemize}
+%  \visible<2->{\item Am $W^+$ koppeln hier ein hadronischer  und ein leptonischer Strom}
+%  \visible<3->{\item Hohe Masse des $W^+$ ($\approx$ 82 GeV) heißt kurze Lebensdauer
+%  \begin{itemize}
+%  \item[$\rightarrow$] Vier Fermionen(-ströme) wechselwirken in einem Punkt
+%  \end{itemize}}
+%  \visible<5->{\item Niederenergetischer Grenzfall ($q^2<2\GeV^2$) der GSW-Theorie}
+% \end{itemize}
+%  \end{minipage}
+%  \begin{minipage}[h]{0.38\textwidth}
+%  \visible<4->{\begin{figure}[h]
+%   \includegraphics[width = 3\textwidth]{../Abbildungen/4FermiPraes.png}
+%  \end{figure}}
+%  \end{minipage}
  \end{frame}
 
  \begin{frame}
   \frametitle{Strom-Strom-Kopplung}
   \begin{itemize}
-   \item Das Verhalten unter Lorentz-Transformationen ist für Ströme vielfältig (S, P, V, A, T)
-   \item Aus Strömen konstruierter Hamiltonian muss (pseudo-)skalar sein (z.B. bei V-A-Kopplung)
-   \item Diese erfordert \textbf{Paritätsverletzung} (Schwache WW koppelt an linkshändige Teilchen und rechtshändige Antiteilchen)
-   \item Projektionsoperator $P=(1-\gamma_5)$ extrahiert linkshändige Komponente der Spinoren
+   \visible<2->{\item Ströme haben diverses Verhalten unter Lorentz-Transformationen (S, P, V, A, T)}
+   \visible<3->{\item Experimente erfordern \textbf{Paritätsverletzung} (Schwache WW koppelt an linkshändige Teilchen und rechtshändige Antiteilchen)}
+   \visible<4->{\item Dies erfordert pseudoskalaren, also kontrahierten $\mathcal{H}$ \\$\rightarrow$ Vektorstrom-Axialvektorstrom-Kopplung (V-A) }
+   \visible<5->{\item Projektionsoperator $P=(1-\gamma_5)$ extrahiert linkshändige Komponente der Spinoren}
    \begin{itemize}
-    \item [$\rightarrow$] Dirac-Ströme wird um Axialstromanteil erweitert:
+    \visible<6->{\item [$\rightarrow$] Dirac-Strom wird um Axialvektorstromanteil erweitert:}
    \end{itemize}
   \end{itemize}
-  \begin{align}
+  \visible<6->{\begin{align*}
    j^\mu = \bar \psi \gamma^\mu (1-\gamma_5) \psi
-  \end{align}
+  \end{align*}}
  \end{frame}
+ 
+% \begin{frame}
+%  \frametitle{C-Matrix $V_\text{C}$}
+%  \begin{itemize}
+%   \item Schwache Wechselwirkung ändert Flavourquantenzahlen
+%   \item Schwierigkeiten, $s$ und $c$ zu Dublett zu formen, werden durch Cabibbo-Drehung erklärt
+%   \begin{itemize}
+%    \item [$\rightarrow$] Darstellung des hadronischen Stroms durch Drehmatrix $V_\text{C}$
+%   \end{itemize}
+%  \end{itemize}
+%  \begin{align*}
+%   j^\mu = (\bar u \bar c)\gamma^\mu(1-\gamma_5)\underbrace{\begin{pmatrix}
+% 						  \,\,\,\,\cos \theta_c\quad \sin \theta_c\\
+% 						  -\sin \theta_c\quad \cos \theta_c
+% 					       \end{pmatrix}}_{V_\text{C}} \begin{pmatrix}
+% 							      d\\
+% 							      s
+% 							      \end{pmatrix}
+% \end{align*}
+% 
+% \vspace{1cm}
+% Cabibbo-Winkel $\theta_c \approx 13^\circ$
+% \end{frame}
+
+\begin{frame}
+ \frametitle{CKM-Matrix $V_\text{CKM}$}
+ \pause
+ \begin{itemize}
+  \visible<2->{\item Schwache WW ändert Flavourquantenzahlen und \textbf{verletzt CP}}
+  \visible<3->{\item Ausdruck für Übergangswahrscheinlichkeit von Quarks in Form }
+ \end{itemize}
+ 
+ \begin{align*}
+ V_{\text{CKM}} = \begin{pmatrix}
+			    1-\frac12\lambda^2 & \lambda & \lambda^3A(\rho-\text{i}\eta)\\
+			    -\lambda & 1-\frac12 \lambda^2 &\lambda^2A\\
+			    \lambda^3A(1-\rho-\text{i}\eta) &-\lambda^2A & 1
+			    \end{pmatrix} \, +  \, \mathcal{O}(\lambda^4)
+\end{align*}
+\begin{itemize}
+ \item $V_{\text{CKM}}$ enthält nun komplexe Phase zur Erklärung der CP-Verletzung
+ \item und drei Eulerwinkel $\theta_{12} = \theta_c,\, \theta_{13}$ und $\theta_{23}$
+\end{itemize}
+
+\vspace{0.4cm}
+\small{$\lambda = \sin\theta_{12} \approx 0,2$ ,\\ $A\lambda^2 = \sin\theta_{23}$, \\ $A\lambda^3(\rho-\text{i}\eta) = \sin\theta_{13}\mathbf{e}^{-\text{i}\phi}$}
+\end{frame}
+
+
 
 \section{Formfaktoren}
 \begin{frame}
@@ -437,7 +454,7 @@ Dirac-Spinoren $u$, $v$
   \item [$\rightarrow$] Keine Axialvektorformfaktoren!
  \end{itemize}
 \end{itemize}
-\vspace{0.7cm}
+\vspace{0.5cm}
 \small{Levi-Civita-Tensor $\epsilon^{\mu\nu\alpha\beta}$}
 
 \end{frame}
@@ -475,37 +492,181 @@ Die Leptonmassen sind für $l=e,\,\mu$ verglichen mit $m_D$ vernachlässigbar
 \subsection{Formfaktor $f_+$}
 \begin{frame}
  \frametitle{Kinematische Grenzen}
+ Aus der Viererimpulserhaltung ergeben sich die Grenzen für $q^2$, die den Bereich für den Fit von $f_+$ angeben:
+ \begin{align*}
+ p_D^\mu &= p_K^\mu + p_l^\mu + p_\nu^\mu \nonumber\\
+ p_D^\mu - p_K^\mu &= q^\mu = p_l^\mu + p_\nu^\mu \nonumber\\
+ \left(p_D^\mu-p_K^\mu\right)^2 &= q^2 =  (p_l^\mu + p_\nu^\mu )^2\nonumber\\
+ m_D^2 + m_K^2 - 2m_DE_K &= q^2 = m_l^2 + m_\nu^2 + E_lE_\nu - |\vec p_l||\vec p_\nu|\cos(\xi).
+\end{align*}
+Hieraus ergeben sich bei abermals vernachlässigbaren Leptonenmassen ($E = |\vec p|$) die Bereichsgrenzen zu
+\begin{align*}
+ 0 \leq q^2 \leq (m_D-m_K)^2.
+\end{align*}
+
+\vspace{0.7cm}
+Leptonenzwischenwinkel $\xi$
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Parametrisierung}
-parametrisierung
-fit
-resultate
+\begin{itemize}
+ \item $\mathrm{d}\Gamma \propto |f_+(q^2)|^2\mathrm{d}q^2$
+ \item Bei bestimmten Energien divergiert $\Gamma$
+ \begin{itemize}
+  \item [$\rightarrow$] Pol-Verhalten um $q^2 = m_{D^*}^2$ (außerhalb des phys. rel. Bereichs)
+ \end{itemize}
+ \item Parametrisierung durch Pol und Polynomreihe in $z$ mit $|z|\stackrel{!}{<}1$
+ \begin{itemize}
+  \item [$\rightarrow$] Gutes Konvergenzverhalten
+ \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Parametrisierung}
+
+ \begin{minipage}[h]{0.48\textwidth}
+ Eine Parametrisierung für $f_+$ mit diesen Eigenschaften lautet:
+\begin{align*}
+ &f_+(q^2) = \frac{1}{1-\frac{q^2}{m_{D^*}^2}} \sum\limits_{i=0}^\infty a_i\,z^i(t_0,\, q^2)\\
+ &z(t_0,\, q^2)= \frac{\sqrt{t_+-q^2}-\sqrt{t_+-t_0}}{\sqrt{t_+-q^2}+\sqrt{t_+-t_0}}
+\end{align*}
+Wahl für $t_0 = \\t_\text{opt} = t_+(1-\sqrt{1-t_-/t_+})$ minimiert Maximalwert von $|z|$.
+
+\vspace{0.5cm}
+\small{$t_\pm$ = ($m_D \pm m_K$)$^2$,\\wählbares $t_0$: $0\leq t_0 < t_+$}
+ \end{minipage}
+ \begin{minipage}[h]{0.40\textwidth}
+ \begin{figure}
+  \includegraphics[width=2.7\textwidth]{../Abbildungen/formMuster.png}
+ \end{figure}
+ \end{minipage}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Methode der kleinsten Quadrate}
+ \begin{itemize}
+  \item Fitfunktionen weisen Abweichungen von Messwerten auf
+  \item Die quadrierten Abweichungen werden aufsummiert als $\chi^2$ bezeichnet
+  \begin{itemize}
+   \item [$\rightarrow$] Fitparameter werden variiert, bis $\chi^2$ minimal ist
+  \end{itemize}
+ \end{itemize}
+ Die hier verwandte $\chi^2$-Funktion lautet
+ \begin{align*}
+  \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(f_+))C^{-1}_{ij}(\Delta \Gamma_j - g_j(f_+))
+ \end{align*} 
+ und wird durch ein \texttt{Python}-Skript unter Verwendung des Minimierungsmoduls \texttt{Minuit} vom CERN minimiert.
 \end{frame}
 
 \begin{frame}
  \frametitle{Methode der kleinsten Quadrate}
+  \begin{align*}
+  \chi^2 = \sum\limits_{i,j=1}^m (\Delta \Gamma_i - g_i(f_+))C^{-1}_{ij}(\Delta \Gamma_j - g_j(f_+))
+ \end{align*}
+ \begin{itemize}
+  \item Anzahl diskreter Intervalle $m$
+  \item experimentell erfasste Daten $\Delta \Gamma$
+  \item theoretische Werte $g = \frac{G_F^2 |V_{cs}|^2}{24\pi^3}\int|p_K(q_i^2)|^3 \cdot |f_+(q^2_i)|^2 \mathrm{d} q_i^2$
+  \item Kovarianzmatrix $C = C^{\text{stat}} + C^{\text{sys}}$; $C^{\alpha}_{ij} = \sigma^{\alpha}_i \sigma^{\alpha}_j \cdot \rho^{\alpha}_{ij}$\\ 
+  $\alpha = \text{stat, sys}$; Varianzen $\sigma$; Korrelationsmatrix $\rho$  
+ \end{itemize}
 \end{frame}
 
-\section{Resultate unter $t_0$- und $\mathcal{O}$-Variation}
+
+
+
+
+\section{Resultate für $f_+$}
 \begin{frame}
 \tableofcontents[currentsection]
 \end{frame}
 
+\begin{frame}
+ \frametitle{Vorbereitung}
+ einleitung
+\end{frame}
 
+\begin{frame}
+ \frametitle{Variation in $t_0$}
+ fitresultate direkt mit angeben?
+\end{frame}
+
+\begin{frame}
+ \frametitle{Variation in $\mathcal{O}$}
+ fitresultate direkt mit angeben?
+\end{frame}
 
 \section{Ausblick}
-\label{sec_ausblick}
 \begin{frame}
 \tableofcontents[currentsection]
 \end{frame}
+
+\begin{frame}
+ \frametitle{Ausblick}
+\end{frame}
+
 
 
 \begin{frame}
 \frametitle{Bonus}
 \textbf{Bonusfolien}
 \end{frame}
+
+% \begin{frame}
+%  \frametitle{Berechnung der differentiellen Zerfallsbreite}
+%  
+%  \begin{align}
+%  \mathrm{d} \Phi & = (2\pi)^4\frac{\mathrm{d}^3p_K}{2(2\pi)^3E_K} \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(p_D-p_K-k_1-k_2)\nonumber\\
+%  &=\frac{1}{(2\pi)^5}\frac{\mathrm{d}^3p_K}{2E_K}\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu}\nonumber
+%  \end{align}
+% Leptonimpulse $k_i$ integriert, da Verteilung der Zerfallsbreiten durch $\mathrm{d}q^2$ gemessen. Die Eintr\"age $k_{1,\mu}$ und $k_{2,\nu}$ stammen von $M$ (folgt im Anschluss)
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Berechnung}
+%  F\"ur die weitere Berechnung werden folgende Gleichungen des $D$-Meson-Ruhesystems ben\"otigt:
+%  \begin{itemize}
+%  \item $ \frac{\mathrm{d}^3p_K}{2E_K} = 2\pi |p_K|\mathrm{d}E_K$
+%    \item $|p_K| = \frac{\sqrt{\lambda(m_D^2, m_K^2, q^2)}}{2m_D}$
+%    \item $\int \frac{\mathrm{d}^3k_1}{2(2\pi)^3E_1} \frac{\mathrm{d}^3k_2}{2(2\pi)^3E_2}\delta^4(q-k_1-k_2)k_{1,\mu} k_{2,\nu} = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)$
+%  \end{itemize}
+%  \vspace{0.7cm}
+%  \small{$\lambda = a^2+b^2+c^2-2(ab+bc+ac)$ - K\"all\'en-Funktion,\\$g_{\mu,\nu} = \text{diag}(1,-1,-1,-1)$ - Minkowski-Metrik}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Berechnung}
+%  Diese f\"uhren zu einem Ausdruck f\"ur das Phasenraumvolumen:
+%  \begin{align}
+%   \mathrm{d}\Phi = \frac{\pi}{24}(q^2g_{\mu\nu} + 2q_\mu q_\nu)\frac{|p_K|}{(2\pi)^4}\mathrm{d}E_K
+%  \end{align}
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{Berechnung II}
+%  Abschliessend kann das quadrierte Matrixelement nach Umformung des leptonischen Anteils durch Casimirs Trick wie folgt geschrieben werden als
+%  \begin{align}
+%   |M|^2 & = \frac{G_F^2|V_{cs}|^2}{2}|f_+(q^2)|^2 P^\mu P^\nu \cdot 8\big(k_{l,\mu} k_{\nu,\nu} - g_{\mu\nu}k_lk_\nu + k_{l,\nu}k_{\nu,\mu}\big)\nonumber\\
+%   & = 4G_F^2|V|^2 |f_+(q^2)|^2 \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big) k_{l,\nu}k_{\nu,\mu}
+%   \label{eq_theoAmplitude}
+%  \end{align}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Berechnung II}
+%  Nun k\"onnen \eqref{eq_theoPhase} und \eqref{eq_theoAmplitude} unter Verwendung von
+%  \begin{align*}
+%  \big(2P^\mu P^\nu - P^2 g^{\mu\nu}\big)\big(2q_\mu q_\nu + q^2g_{\mu\nu}) = 4 \lambda(m_D^2,m_K^2,q^2) = 16 m_D^2 |p_K|^2
+%  \end{align*}
+%  miteinander verkn\"upft und zu \eqref{eq_theoGamma} zusammengefasst werden
+%  ++Verlinkung auf f++
+% 
+% \end{frame}
+
 
 
 
