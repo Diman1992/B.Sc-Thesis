@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.28)  26 AUG 2014 17:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.28)  26 AUG 2014 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3096,9 +3096,246 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
 
 ] (./beamer.toc) [2
 
-] [3
+]
+<../Abbildungen/Teilchen.png, id=154, 466.8642pt x 212.7147pt>
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
 
-] (./beamer.toc) [4
+<use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[3
+
+ <../Abbildungen/Teilchen.png>]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[4
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[5
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[6
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[7
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[8
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[9
+
+]
+File: ../Abbildungen/Teilchen.png Graphic file (type png)
+ <use ../Abbildungen/Teilchen.png>
+Package pdftex.def Info: ../Abbildungen/Teilchen.png used on input line 133.
+(pdftex.def)             Requested size: 294.99564pt x 134.41019pt.
+
+Overfull \hbox (147.49782pt too wide) in paragraph at lines 133--133
+ [] 
+ []
+
+[10
+
+] <../Abbildungen/DFeyn1.png, id=259, 776.1798pt x 308.8338pt>
+File: ../Abbildungen/DFeyn1.png Graphic file (type png)
+
+<use ../Abbildungen/DFeyn1.png>
+Package pdftex.def Info: ../Abbildungen/DFeyn1.png used on input line 149.
+(pdftex.def)             Requested size: 338.6334pt x 134.74217pt.
+
+Overfull \hbox (160.40472pt too wide) in paragraph at lines 149--149
+ [] 
+ []
+
+[11
+
+ <../Abbildungen/DFeyn1.png>]
+<../Abbildungen/DFeyn2.png, id=273, 765.0984pt x 304.7385pt>
+File: ../Abbildungen/DFeyn2.png Graphic file (type png)
+
+<use ../Abbildungen/DFeyn2.png>
+Package pdftex.def Info: ../Abbildungen/DFeyn2.png used on input line 166.
+(pdftex.def)             Requested size: 338.6334pt x 134.87584pt.
+
+Overfull \hbox (160.40472pt too wide) in paragraph at lines 166--166
+ [] 
+ []
+
+[12
+
+ <../Abbildungen/DFeyn2.png>]
+<../Abbildungen/DFeyn3.png, id=287, 776.1798pt x 308.8338pt>
+File: ../Abbildungen/DFeyn3.png Graphic file (type png)
+
+<use ../Abbildungen/DFeyn3.png>
+Package pdftex.def Info: ../Abbildungen/DFeyn3.png used on input line 184.
+(pdftex.def)             Requested size: 338.6334pt x 134.74217pt.
+
+Overfull \hbox (160.40472pt too wide) in paragraph at lines 184--184
+ [] 
+ []
+
+[13
+
+ <../Abbildungen/DFeyn3.png>]
+<../Abbildungen/DFeyn4.png, id=302, 773.5299pt x 307.8702pt>
+File: ../Abbildungen/DFeyn4.png Graphic file (type png)
+
+<use ../Abbildungen/DFeyn4.png>
+Package pdftex.def Info: ../Abbildungen/DFeyn4.png used on input line 203.
+(pdftex.def)             Requested size: 338.6334pt x 134.78212pt.
+
+Overfull \hbox (160.40472pt too wide) in paragraph at lines 203--203
+ [] 
+ []
+
+[14
+
+ <../Abbildungen/DFeyn4.png>]
+<../Abbildungen/DFeynSpez.png, id=317, 109.3686pt x 85.0377pt>
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+
+<use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[15
+
+ <../Abbildungen/DFeynSpez.png>]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[16
+
+]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[17
+
+]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[18
+
+]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[19
+
+]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[20
+
+]
+File: ../Abbildungen/DFeynSpez.png Graphic file (type png)
+ <use ../Abbildungen/DFeynSpez.png>
+Package pdftex.def Info: ../Abbildungen/DFeynSpez.png used on input line 230.
+(pdftex.def)             Requested size: 135.82095pt x 105.61302pt.
+
+Overfull \hbox (31.34354pt too wide) in paragraph at lines 230--230
+ [] 
+ []
+
+[21
+
+] (./beamer.toc) [22
 
 ]
 
@@ -3113,25 +3350,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 237.
 
-[5
+[23
 
-] [6
+] [24
 
-] [7
+] [25
 
-] [8
+] [26
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 261.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [9
+) [27
 
-] [10
+] [28
 
-] [11
+] [29
 
-] [12
+]
+[30
 
 ]
 
@@ -3146,15 +3384,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 265.
 
-[13
+[31
 
-] [14
+] [32
 
-] [15
+] [33
 
-] [16
+] [34
 
-] [17
+] [35
 
 ]
 
@@ -3165,17 +3403,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 279.
 
-[18
+[36
 
-] [19
+] [37
 
-] [20
+] [38
 
-] [21
+] [39
 
-] [22
+] [40
 
-] (./beamer.toc) [23
+] (./beamer.toc) [41
 
 ]
 LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 319
@@ -3197,44 +3435,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.36543> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 319.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.83247> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 319.
-[24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-]
-[39
-
-] [40
-
-] [41
-
-] [42
+[42
 
 ] [43
 
@@ -3242,7 +3443,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.83247> not available
 
 ] [45
 
-] (./beamer.toc) [46
+] [46
 
 ] [47
 
@@ -3252,10 +3453,47 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.83247> not available
 
 ] [50
 
-]
-[51
+] [51
 
 ] [52
+
+] [53
+
+] [54
+
+] [55
+
+] [56
+
+]
+[57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] (./beamer.toc) [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+]
+[69
+
+] [70
 
 ]
 
@@ -3270,38 +3508,38 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 468.
 
-[53
+[71
 
-] [54
+] [72
 
-] [55
+] [73
 
-] [56
+] [74
 
-] [57
+] [75
 
-] [58
+] [76
 
-] [59
+] [77
 
-] [60
+] [78
 
-] [61
+] [79
 
-] [62
+] [80
 
-] [63
+] [81
 
-] [64
+] [82
 
-] [65
+] [83
 
-] [66
+] [84
 
-] [67
+] [85
 
 ]
-[68
+[86
 
 ]
 
@@ -3320,46 +3558,46 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Overfull \vbox (1.0027pt too high) detected at line 548
  []
 
-[69
+[87
 
 ]
 Overfull \vbox (1.0027pt too high) detected at line 548
  []
 
-[70
+[88
 
 ]
 Overfull \vbox (1.0027pt too high) detected at line 548
  []
 
-[71
+[89
 
 ]
 Overfull \vbox (1.0027pt too high) detected at line 548
  []
 
-[72
+[90
 
 ]
 Overfull \vbox (1.0027pt too high) detected at line 548
  []
 
-[73
+[91
 
-] [74
+] [92
 
-] [75
+] [93
 
-] [76
+] [94
 
-] [77
+] [95
 
 ]
 Overfull \hbox (10.98357pt too wide) in paragraph at lines 585--585
 [] 
  []
 
-<../Abbildungen/formMuster.png, id=1284, 185.2521pt x 86.724pt>
+<../Abbildungen/formMuster.png, id=1522, 185.2521pt x 86.724pt>
 File: ../Abbildungen/formMuster.png Graphic file (type png)
 
 <use ../Abbildungen/formMuster.png>
@@ -3370,7 +3608,7 @@ Overfull \hbox (208.95352pt too wide) in paragraph at lines 585--585
  [] 
  []
 
-[78
+[96
 
  <../Abbildungen/formMuster.png>]
 Overfull \hbox (10.98357pt too wide) in paragraph at lines 585--585
@@ -3386,35 +3624,36 @@ Overfull \hbox (208.95352pt too wide) in paragraph at lines 585--585
  [] 
  []
 
-[79
+[97
 
-] [80
+] [98
 
-] [81
+] [99
 
-] [82
+] [100
 
-] [83
+] [101
 
-] [84
+] [102
 
-] [85
+] [103
 
-] [86
+] [104
 
-] [87
+] [105
 
-] [88
+] [106
 
-] [89
+] [107
 
-] [90
+] [108
 
-] [91
+] [109
 
-] [92
+]
+[110
 
-] [93
+] [111
 
 ]
 
@@ -3429,18 +3668,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 642.
 
-(./beamer.toc) [94
+(./beamer.toc) [112
 
-] [95
+] [113
 
-] [96
+] [114
 
-] [97
+] [115
 
-] [98
+] [116
 
 ]
-<../Fit/D0-2O-topt.pdf, id=1590, 587.19376pt x 442.65375pt>
+<../Fit/D0-2O-topt.pdf, id=1827, 587.19376pt x 442.65375pt>
 File: ../Fit/D0-2O-topt.pdf Graphic file (type pdf)
 
 <use ../Fit/D0-2O-topt.pdf>
@@ -3451,10 +3690,10 @@ Overfull \hbox (30.4509pt too wide) in paragraph at lines 683--683
  [] 
  []
 
-[99
+[117
 
  <../Fit/D0-2O-topt.pdf>]
-<../Fit/D+-2O-tmin.pdf, id=1679, 587.19376pt x 442.65375pt>
+<../Fit/D+-2O-tmin.pdf, id=1916, 587.19376pt x 442.65375pt>
 File: ../Fit/D+-2O-tmin.pdf Graphic file (type pdf)
 
 <use ../Fit/D+-2O-tmin.pdf>
@@ -3465,10 +3704,10 @@ Overfull \hbox (28.6259pt too wide) in paragraph at lines 712--712
  [] 
  []
 
-[100
+[118
 
  <../Fit/D+-2O-tmin.pdf>]
-<../Fit/D+-2O-0.pdf, id=1766, 587.19376pt x 442.65375pt>
+<../Fit/D+-2O-0.pdf, id=2003, 587.19376pt x 442.65375pt>
 File: ../Fit/D+-2O-0.pdf Graphic file (type pdf)
 
 <use ../Fit/D+-2O-0.pdf>
@@ -3479,10 +3718,10 @@ Overfull \hbox (28.6259pt too wide) in paragraph at lines 741--741
  [] 
  []
 
-[101
+[119
 
  <../Fit/D+-2O-0.pdf>]
-<../Fit/D+-2O-topt.pdf, id=1853, 587.19376pt x 442.65375pt>
+<../Fit/D+-2O-topt.pdf, id=2090, 587.19376pt x 442.65375pt>
 File: ../Fit/D+-2O-topt.pdf Graphic file (type pdf)
 
 <use ../Fit/D+-2O-topt.pdf>
@@ -3493,7 +3732,7 @@ Overfull \hbox (28.6259pt too wide) in paragraph at lines 769--769
  [] 
  []
 
-[102
+[120
 
  <../Fit/D+-2O-topt.pdf>]
 File: ../Fit/D+-2O-topt.pdf Graphic file (type pdf)
@@ -3505,9 +3744,9 @@ Overfull \hbox (28.6259pt too wide) in paragraph at lines 798--798
  [] 
  []
 
-[103
+[121
 
-] <../Fit/D+-1O-topt.pdf, id=1954, 587.19376pt x 442.65375pt>
+] <../Fit/D+-1O-topt.pdf, id=2191, 587.19376pt x 442.65375pt>
 File: ../Fit/D+-1O-topt.pdf Graphic file (type pdf)
 
 <use ../Fit/D+-1O-topt.pdf>
@@ -3518,10 +3757,10 @@ Overfull \hbox (25.58426pt too wide) in paragraph at lines 826--826
  [] 
  []
 
-[104
+[122
 
  <../Fit/D+-1O-topt.pdf>]
-<../Fit/D+-0O-topt.pdf, id=2043, 587.19376pt x 442.65375pt>
+<../Fit/D+-0O-topt.pdf, id=2280, 587.19376pt x 442.65375pt>
 File: ../Fit/D+-0O-topt.pdf Graphic file (type pdf)
 
 <use ../Fit/D+-0O-topt.pdf>
@@ -3532,47 +3771,9 @@ Overfull \hbox (10.98428pt too wide) in paragraph at lines 854--854
  [] 
  []
 
-[105
-
- <../Fit/D+-0O-topt.pdf>] [106
-
-] [107
-
-] [108
-
-] [109
-
-] [110
-
-] [111
-
-] [112
-
-]
-[113
-
-] [114
-
-] [115
-
-] [116
-
-] (./beamer.toc) [117
-
-] [118
-
-] [119
-
-] [120
-
-] [121
-
-] [122
-
-]
 [123
 
-] [124
+ <../Fit/D+-0O-topt.pdf>] [124
 
 ] [125
 
@@ -3584,21 +3785,59 @@ Overfull \hbox (10.98428pt too wide) in paragraph at lines 854--854
 
 ] [129
 
+] [130
+
+]
+[131
+
+] [132
+
+] [133
+
+] [134
+
+] (./beamer.toc) [135
+
+] [136
+
+] [137
+
+] [138
+
+] [139
+
+] [140
+
+]
+[141
+
+] [142
+
+] [143
+
+] [144
+
+] [145
+
+] [146
+
+] [147
+
 ]
 Overfull \hbox (5.94957pt too wide) in paragraph at lines 954--954
 []  
  []
 
-[130
+[148
 
-] [131
+] [149
 
 ]
 Overfull \hbox (7.72574pt too wide) in paragraph at lines 974--974
 []  
  []
 
-[132
+[150
 
 ]
 \tf@nav=\write6
@@ -3624,7 +3863,7 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1032.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1032.
 
 Package rerunfilecheck Info: File `beamer.out' has not changed.
-(rerunfilecheck)             Checksum: 30A9FECDC3F7DF3FFF8162769D141B8D;799.
+(rerunfilecheck)             Checksum: F07C78F25F759543ED0BD95F1D9477C9;800.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3633,16 +3872,16 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1032.
  ) 
 Here is how much of TeX's memory you used:
- 29034 strings out of 493304
- 581590 string characters out of 6139871
+ 29143 strings out of 493304
+ 583784 string characters out of 6139871
  649215 words of memory out of 5000000
- 31575 multiletter control sequences out of 15000+600000
+ 31642 multiletter control sequences out of 15000+600000
  218948 words of font info for 171 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,28n,63p,10441b,808s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/font
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/t
@@ -3658,10 +3897,10 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on beamer.pdf (132 pages, 680437 bytes).
+Output written on beamer.pdf (150 pages, 1004107 bytes).
 PDF statistics:
- 2616 PDF objects out of 2984 (max. 8388607)
- 2067 compressed objects within 21 object streams
- 279 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2861 PDF objects out of 2984 (max. 8388607)
+ 2278 compressed objects within 23 object streams
+ 315 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
