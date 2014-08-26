@@ -312,7 +312,7 @@ def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
     plt.tick_params(labelsize = 'large')
     #pylab.rc('font', family='serif', size =30)
     pylab.ylabel(r'$f_+(q^2)|V_{cs}|$', fontsize = 30)
-    pylab.xlabel(r'$q^2 $ in GeV', fontsize = 30)
+    pylab.xlabel(r'$q^2 $ in GeV^2', fontsize = 30)
     plt.plot((t_minus,t_minus), (formfactor(0,a,m_P,m_D,m_Pr,t0)-0.1, formfactor(t_minus, a ,m_P ,m_D ,m_Pr ,t0)+0.2), 'k--', linewidth=2)
     plt.annotate('$q^2_{max}$', xy=(t_minus-0.2, formfactor(0,a,m_P,m_D,m_Pr,t0)), fontsize = 20)
     plt.grid()

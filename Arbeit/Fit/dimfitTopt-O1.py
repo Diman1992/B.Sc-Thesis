@@ -215,10 +215,10 @@ def integrate_gamma(q_bin, *args):
     return integrate.quad(diff_gamma_theo, q_bin[0], q_bin[1], args)
 
 
-def chi2(q_bins, dG, m_P, m_D, m_Pr, t0, a0, a1, a2):
+def chi2(q_bins, dG, m_P, m_D, m_Pr, t0, a0, a1):
 
     bin_number = len(q_bins)
-    a = [a0, a1 ,a2]
+    a = [a0, a1]
 
     c2 = 0.0
 
@@ -231,9 +231,9 @@ def chi2(q_bins, dG, m_P, m_D, m_Pr, t0, a0, a1, a2):
             term_j = dG[j] - dG_th_j
 
             c2 += term_i * cov_inv[i,j] * term_j
-	
-    
     print "chi2: %f" %c2
+	
+
     return c2
 
 
@@ -280,6 +280,7 @@ def fit_form(chi2, q_bins, dG, m_P, m_D, m_Pr, t0, **kwds):
     )
     m.migrad()
     m.hesse()
+    
 
     return m
 
@@ -311,7 +312,7 @@ def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
     plt.tick_params(labelsize = 'large')
     #pylab.rc('font', family='serif', size =30)
     pylab.ylabel(r'$f_+(q^2)|V_{cs}|$', fontsize = 30)
-    pylab.xlabel(r'$q^2 $ in GeV', fontsize = 30)
+    pylab.xlabel(r'$q^2 $ in GeV^2', fontsize = 30)
     plt.plot((t_minus,t_minus), (formfactor(0,a,m_P,m_D,m_Pr,t0)-0.1, formfactor(t_minus, a ,m_P ,m_D ,m_Pr ,t0)+0.2), 'k--', linewidth=2)
     plt.annotate('$q^2_{max}$', xy=(t_minus-0.2, formfactor(0,a,m_P,m_D,m_Pr,t0)), fontsize = 20)
     plt.grid()
@@ -396,8 +397,8 @@ q_max_D0Km = (m_D0-m_Km)**2
 # Parameter für z-Entwicklung
 t_minus = (m_D0 - m_Km)**2
 t_plus = (m_D0 + m_Km)**2
-#t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
-t0 = 0
+t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
+#t0 = 0
 
 
 
@@ -485,7 +486,7 @@ m = fit_form(
     t0,
     a0=0.01,
     a1=-0.1,
-    a2=0.1,
+    #a2=0.1,
     # error_a0=0.1,
     # error_a1=0.1,
     # error_a2=0.01,
@@ -497,7 +498,7 @@ plot_fittedform(m, q_bins, dG_0_uc_arr, m_D0, m_Km, m_Dr, t0)
 
 f0 = formfactor(
     0.0,
-    [m.values["a0"], m.values["a1"], m.values["a2"]],
+    [m.values["a0"], m.values["a1"]],
     m_D0,
     m_Km,
     m_Dr,
@@ -518,8 +519,8 @@ print t0
 # Parameter für z-Entwicklung
 t_minus = (m_D0 - m_Km)**2
 t_plus = (m_D0 + m_Km)**2
-#t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
-t0 = 0
+t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
+#t0 = 0
 
 
 # Einheit GeV**2 / c**4
@@ -596,7 +597,7 @@ m = fit_form(
     t0,
     a0=0.01,
     a1=-0.1,
-    a2=0.1,
+    #a2=0.1,
     # error_a0=0.1,
     # error_a1=0.1,
     # error_a2=0.01,
@@ -609,7 +610,7 @@ plot_fittedform(m, q_bins, dG_0_uc_arr, m_D0, m_Km, m_Dr, t0)
 
 f0 = formfactor(
     0.0,
-    [m.values["a0"], m.values["a1"], m.values["a2"]],
+    [m.values["a0"], m.values["a1"]],
     m_D,
     m_K0,
     m_Dr,

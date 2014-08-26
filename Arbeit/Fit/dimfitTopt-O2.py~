@@ -232,8 +232,7 @@ def chi2(q_bins, dG, m_P, m_D, m_Pr, t0, a0, a1, a2):
 
             c2 += term_i * cov_inv[i,j] * term_j
 	
-    
-    print "chi2: %f" %c2
+
     return c2
 
 
@@ -311,7 +310,7 @@ def plot_fittedform( m, q_bin, dG, m_P, m_D, m_Pr, t0):
     plt.tick_params(labelsize = 'large')
     #pylab.rc('font', family='serif', size =30)
     pylab.ylabel(r'$f_+(q^2)|V_{cs}|$', fontsize = 30)
-    pylab.xlabel(r'$q^2 $ in GeV', fontsize = 30)
+    pylab.xlabel(r'$q^2 $ in GeV$^2$', fontsize = 30)
     plt.plot((t_minus,t_minus), (formfactor(0,a,m_P,m_D,m_Pr,t0)-0.1, formfactor(t_minus, a ,m_P ,m_D ,m_Pr ,t0)+0.2), 'k--', linewidth=2)
     plt.annotate('$q^2_{max}$', xy=(t_minus-0.2, formfactor(0,a,m_P,m_D,m_Pr,t0)), fontsize = 20)
     plt.grid()
@@ -396,8 +395,8 @@ q_max_D0Km = (m_D0-m_Km)**2
 # Parameter für z-Entwicklung
 t_minus = (m_D0 - m_Km)**2
 t_plus = (m_D0 + m_Km)**2
-#t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
-t0 = 0
+t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
+#t0 = 0
 
 
 
@@ -518,8 +517,8 @@ print t0
 # Parameter für z-Entwicklung
 t_minus = (m_D0 - m_Km)**2
 t_plus = (m_D0 + m_Km)**2
-#t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
-t0 = 0
+t0 = t_plus * (1.0 - np.sqrt(1.0 - t_minus / t_plus))
+#t0 = 0
 
 
 # Einheit GeV**2 / c**4
